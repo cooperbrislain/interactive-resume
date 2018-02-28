@@ -16,14 +16,9 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
 
 ## SKILLS
 
-    Excellent written communication skills
-    Lifelong learner
-    Critical thinker
-    Ability to conceptualize complex systems
-    Adaptable and creative problem solving skills
-    Able to foresee potential future complications and constraints, designing for extensibility and scalability.
+    {% include list.html items=site.data.skills_soft %}
 
-    {% include skills.html skills=site.data.skills_technical %}
+    {% include list.html items=site.data.skills_technical %}
 
 ## EDUCATION
 
@@ -32,23 +27,7 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
 
 ## COURSEWORK
 
-    Abstract Data Structures
-    Algorithms
-    X86 Assembly
-    Differential Equations
-    Discrete Math
-    Linear Algebra
-    Logic
-    Digital Media Production
-    Film Studio Production
-    Documentary Production
-    Film Theory
-    Digital Media Theory
-    Social Documentation
-    Java Programming
-    C Programming
-    AP Computer Science
-    Cisco Networking
+    {% include list.html items=site.data.coursework %}
 
 ## ASSOCIATIONS
 
@@ -58,4 +37,4 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
     Tech Director, SCTV; UCSC • 2005
     Student Trustee, Napa Valley College • 2002
 
-{% include experience.md %}
+{% include experience.md experience=site.data.experience %}
