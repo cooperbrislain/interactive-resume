@@ -1,4 +1,6 @@
 ---
+    layout: page
+    title: Cooper Brislain's Resume
     pdf: true
 ---
 # COOPER BRISLAIN
