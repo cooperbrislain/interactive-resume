@@ -6,10 +6,10 @@
 # COOPER BRISLAIN
 ### Software Engineer • Creative Coder
 
-    19604 Camden Ave
-    Hayward, CA 94541
-    707.853.3731
-    cbrislain@gmail.com
+    {{site.address}}
+    {{site.location}}
+    {{site.phone}}
+    {{site.email}}
     spaceboycoop.github.io
 
 Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields. 
