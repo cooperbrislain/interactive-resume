@@ -147,3 +147,8 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
     Monitored logs to detect the exploitation of bugs and unintended game imbalances by players seeking to gain an unfair advantage, and issued fixes.
     Assisted with major transition and branch of code base.
     Played with Legos.
+
+## Core Values
+
+* If someone is still working, the work isn't done.
+* Monetization should never preclude quality of product. 
