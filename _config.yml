@@ -51,7 +51,6 @@ defaults:
     author:
 
 # Jekyll
-permalink:          /blog/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
