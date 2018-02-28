@@ -259,7 +259,11 @@ DEPENDENCIES
   github-pages
   jekyll-assets
   jekyll-feed (~> 0.6)
+  jekyll-gist
+  jekyll-mentions
+  jekyll-paginate
   jekyll-pdf
+  jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data
 
