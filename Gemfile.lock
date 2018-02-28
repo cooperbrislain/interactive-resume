@@ -5,6 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
+    digest (0.0.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -29,6 +30,11 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
+    jekyll-pdf (0.1.7)
+      digest (~> 0)
+      jekyll (~> 3.1, >= 2.0)
+      pdfkit (~> 0.8)
+      wkhtmltopdf-installer (~> 0.12)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.4.0)
@@ -48,6 +54,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
+    pdfkit (0.8.2)
     public_suffix (3.0.2)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
@@ -60,6 +67,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    wkhtmltopdf-installer (0.12.4.2)
 
 PLATFORMS
   ruby
@@ -67,6 +75,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.7.2)
   jekyll-feed (~> 0.6)
+  jekyll-pdf
   minima (~> 2.0)
   tzinfo-data
 
