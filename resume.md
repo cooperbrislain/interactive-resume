@@ -11,9 +11,53 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
 
 ## SKILLS
 
-    Excellent communicator, lifelong learner, adaptable and creative problem solving skills, critical thinking, ability to conceptualize complex systems, project potential future complications and constraints and design for extensibility and scalability.
-    C# Unity GLSL Javascript Quartz Composer JQuery PHP MySQL HTML5 SCSS Node.js Arduino Flash Git Trello Object Oriented Programming MVC RegEx LAMP Relational Databases Content Management Systems Photoshop Illustrator Photography Video Production Video Editing Generative Art Projection Mapping  Live Visuals
-  
+    Excellent written communication skills
+    Lifelong learner
+    Critical thinker
+    Ability to conceptualize complex systems
+    Adaptable and creative problem solving skills
+    Able to foresee potential future complications and constraints, designing for extensibility and scalability.
+
+- Unity
+    - C#
+- Full-Stack Development
+    - LAMP
+    - Linux
+    - Apache
+    - PHP
+    - MySQL
+    - HTML5
+    - SCSS
+    - RegEx
+- Node.js
+- Front-End Development
+    - Javascript
+    - JQuery
+    - Flash
+- Real-Time Graphics for Live Events
+    - GLSL Shaders
+    - Quartz Composer 
+    - Projection Mapping
+- Video Editing
+- Agile Development
+    - Git
+    - Trello
+- Creative Coding
+- Hardware Development
+    - Arduino
+- Object Oriented Programming 
+    - MVC
+- Relational Databases
+    - MySQL
+- Content Management Systems
+    - Joomla
+    - Wordpress
+- Photoshop
+- Illustrator
+- Photography
+- Video Production
+- Generative Art
+
 ## EDUCATION
 
     UC Santa Cruz – Film & Digital Media • 2007
@@ -21,7 +65,23 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
 
 ## COURSEWORK
 
-    Abstract Data Structures Algorithms Assembly Programming Differential Equations Discrete Math Linear Algebra Logic Digital Media Production Film Studio Production Documentary Production Film Theory Digital Media Theory Social Documentation Java Programming AP Computer Science Cisco Networking
+    Abstract Data Structures
+    Algorithms
+    X86 Assembly
+    Differential Equations
+    Discrete Math
+    Linear Algebra
+    Logic
+    Digital Media Production
+    Film Studio Production
+    Documentary Production
+    Film Theory
+    Digital Media Theory
+    Social Documentation
+    Java Programming
+    C Programming
+    AP Computer Science
+    Cisco Networking
 
 ## ASSOCIATIONS
 
