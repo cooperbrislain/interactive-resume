@@ -19,39 +19,39 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
     Able to foresee potential future complications and constraints, designing for extensibility and scalability.
 
 - Unity
--- C#
+    - C#
 - Full-Stack Development
--- LAMP
---- Linux
----- Apache
----- PHP
----- MySQL
---- HTML5
---- SCSS
---- RegEx
--- Node.js
--- Front-End Development
---- Javascript
---- JQuery
---- Flash
+    - LAMP
+    - Linux
+    - Apache
+    - PHP
+    - MySQL
+    - HTML5
+    - SCSS
+    - RegEx
+- Node.js
+- Front-End Development
+    - Javascript
+    - JQuery
+    - Flash
 - Real-Time Graphics for Live Events
--- GLSL Shaders
--- Quartz Composer 
--- Projection Mapping
--- Video Editing
+    - GLSL Shaders
+    - Quartz Composer 
+    - Projection Mapping
+- Video Editing
 - Agile Development
--- Git
--- Trello
+    - Git
+    - Trello
 - Creative Coding
 - Hardware Development
--- Arduino
+    - Arduino
 - Object Oriented Programming 
--- MVC
+    - MVC
 - Relational Databases
--- MySQL
+    - MySQL
 - Content Management Systems
--- Joomla
--- Wordpress
+    - Joomla
+    - Wordpress
 - Photoshop
 - Illustrator
 - Photography
