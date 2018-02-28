@@ -23,45 +23,7 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
     Adaptable and creative problem solving skills
     Able to foresee potential future complications and constraints, designing for extensibility and scalability.
 
-- Unity
-    - C#
-- Full-Stack Development
-    - LAMP
-    - Linux
-    - Apache
-    - PHP
-    - MySQL
-    - HTML5
-    - SCSS
-    - RegEx
-- Node.js
-- Front-End Development
-    - Javascript
-    - JQuery
-    - Flash
-- Real-Time Graphics for Live Events
-    - GLSL Shaders
-    - Quartz Composer 
-    - Projection Mapping
-- Video Editing
-- Agile Development
-    - Git
-    - Trello
-- Creative Coding
-- Hardware Development
-    - Arduino
-- Object Oriented Programming 
-    - MVC
-- Relational Databases
-    - MySQL
-- Content Management Systems
-    - Joomla
-    - Wordpress
-- Photoshop
-- Illustrator
-- Photography
-- Video Production
-- Generative Art
+    {% include skills.html skills=site.data.skills_technical %}
 
 ## EDUCATION
 
