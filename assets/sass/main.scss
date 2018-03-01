@@ -63,3 +63,9 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/navPanel';
+
+	@import 'custom';
+
+ul li p {
+	margin: 0px;
+}

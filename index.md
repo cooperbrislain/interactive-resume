@@ -16,9 +16,9 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
 
 ## SKILLS
 
-    {% include list.html items=site.data.skills_soft %}
+    {% include list.md items=site.data.skills_soft %}
 
-    {% include list.html items=site.data.skills_technical %}
+    {% include list.md items=site.data.skills_technical %}
 
 ## EDUCATION
 
@@ -27,7 +27,7 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
 
 ## COURSEWORK
 
-    {% include list.html items=site.data.coursework %}
+    {% include list.md items=site.data.coursework %}
 
 ## ASSOCIATIONS
 
