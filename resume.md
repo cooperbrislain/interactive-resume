@@ -37,4 +37,4 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
     Tech Director, SCTV; UCSC • 2005
     Student Trustee, Napa Valley College • 2002
 
-{% include experience.md experience=site.data.experience %}
+{% include experience.md %}
