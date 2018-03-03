@@ -4488,3 +4488,26 @@ ul li p {
 ul {
 	list-style-type: none;
 }
+
+#skills+div+ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#skills+div+ul>li{
+	flex: 0 1 auto;
+}
+
+#skills+div+ul>li>p{
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+#skills+div+ul>li:nth-child(odd)>p{
+	color: #BBB;
+}
+
+#skills+div+ul>li:nth-child(even)>p{
+	color: #999;
+}
