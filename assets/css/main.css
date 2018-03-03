@@ -4511,3 +4511,26 @@ ul {
 #skills+div+ul>li:nth-child(even)>p{
 	color: #999;
 }
+
+#coursework+ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+#coursework+ul>li{
+	flex: 0 1 auto;
+	width: 30%;
+}
+
+h1 {
+	margin: 0;
+}
+
+h1+h3+div{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 300px;
+}
