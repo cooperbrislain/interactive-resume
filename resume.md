@@ -6,11 +6,7 @@
 # COOPER BRISLAIN
 ### Software Engineer • Creative Coder
 
-    {{site.address}}
-    {{site.location}}
-    {{site.phone}}
-    {{site.email}}
-    spaceboycoop.github.io
+{% include contact.html %}
 
 Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields. 
 
