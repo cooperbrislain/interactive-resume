@@ -39,3 +39,9 @@ Interdisciplinary Software Engineer and Visual Artist seeking role on a team dev
     Student Trustee, Napa Valley College • 2002
 
 {% include experience.md %}
+
+## CORE VALUES
+
+* The end user's privacy and security is paramount. 
+* Monetization shouldn't compromise utility.
+* The best thing to say when you don't know is that you don't know.
