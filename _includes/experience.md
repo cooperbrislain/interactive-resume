@@ -1,5 +1,3 @@
-## EXPERIENCE
-{% assign experience_sorted = (site.data.experience) %}
-{% for job in experience_sorted %}
+{% for job in site.data.experience %}
 {% include job.md job=job %}
 {% endfor %}
