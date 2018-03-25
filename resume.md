@@ -17,7 +17,8 @@
     Critical thinker
     Ability to conceptualize complex systems
     Adaptable and creative problem solving skills
-    Able to foresee potential future complications and constraints, designing for extensibility and scalability.
+    Able to foresee potential future complications and constraints, 
+        designing for extensibility and scalability.
 
 
     {% include list.md items=site.data.skills_technical %}
