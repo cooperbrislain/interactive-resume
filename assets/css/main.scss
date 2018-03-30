@@ -4549,11 +4549,21 @@ h1+h3+div>dl>dd, h1+h3+div>dl>dt{
 }
 
 blockquote {
+	border: none;
+	margin-left: 50px;
+	margin-right: 150px;
+	margin-bottom: 10px;
 	ul {
 		li {
 			display: inline-block;
+			padding: 3px;
 			p {
+				font-family: Ubuntu;
+				font-style: normal;
 				display: inline-block;
+				background-color: #EEEEEE;
+				padding-left: 3px;
+				padding-right: 3px;
 			}
 		}
 	}
@@ -4590,5 +4600,11 @@ blockquote {
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+h3+ul {
+	li {
+		list-style-type: disc;
 	}
 }
