@@ -72,3 +72,14 @@ ul li p {
 ul {
 	margin: 0;
 }
+
+blockquote {
+	ul {
+		li {
+			display: inline-block;
+			p {
+				display: inline;
+			}
+		}
+	}
+}

@@ -4545,3 +4545,14 @@ h1+h3+div>dl>dd, h1+h3+div>dl>dt{
 	width: 30%;
 	font-size: 10px;
 }
+
+blockquote {
+	ul {
+		li {
+			display: inline-block;
+			p {
+				display: inline-block;
+			}
+		}
+	}
+}

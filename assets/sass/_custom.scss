@@ -3,3 +3,11 @@
 ul li p {
     margin: 0;
 }
+
+blockquote {
+    ul {
+        li {
+            display: inline-block;
+        }
+    }
+}
