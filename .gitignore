@@ -1,4 +1,6 @@
 _site/*
+!.pdf
+!**/.pdf
+!**/*.pdf
 .sass-cache
 .jekyll-metadata
-!_site/.pdf
