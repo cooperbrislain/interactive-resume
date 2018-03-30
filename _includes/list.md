@@ -1,3 +1,3 @@
-{% for item in include.items %}
-- {{ item.title }}
-{% endfor %}
+> {% for item in include.items %}
+> * {{ item.title }}  
+> {% endfor %}

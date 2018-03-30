@@ -12,16 +12,17 @@
 
 ## SKILLS
 
-    Excellent written communication skills
-    Lifelong learner
-    Critical thinker
-    Ability to conceptualize complex systems
-    Adaptable and creative problem solving skills
-    Able to foresee potential future complications and constraints, 
-        designing for extensibility and scalability.
+* Excellent written communication skills  
+* Lifelong learner  
+* Critical thinker  
+* Ability to conceptualize complex systems  
+* Adaptable and creative problem solving skills
+* Able to foresee potential future complications and constraints, 
+  designing for extensibility and scalability.
 
+### TECHNICAL SKILLS
 
-    {% include list.md items=site.data.skills_technical %}
+{% include list.md items=site.data.skills_technical %}
 
 ## EDUCATION
 
@@ -30,7 +31,7 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 
 ## COURSEWORK
 
-    {% include list.md items=site.data.coursework %}
+{% include list.md items=site.data.coursework %}
 
 ## EXPERIENCE 
 

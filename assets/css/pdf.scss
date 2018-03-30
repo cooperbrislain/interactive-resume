@@ -1,0 +1,51 @@
+---
+---
+* {
+    color: #000;
+    font-size: 100%;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    font-family: arial black;
+}
+h1 {
+    font-size: 80pt;
+}
+h2 {
+    font-size: 60pt;
+}
+h3, h4, h5 {
+    font-size: 50pt;
+}
+body {
+    font-size: 40pt;
+    .contact {
+        font-size: 14pt;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+    blockquote {
+        margin: 0px;
+        ul {
+            li {
+                display: inline-block;
+                width: 15%;
+                padding: 0px;
+                margin-top: 5pt;
+                margin-bottom: 3pt;
+                margin-left: 3pt;
+                margin-right: 3pt;
+                text-align: center;
+                vertical-align: middle;
+                height: 120pt;
+            }
+        }
+    }
+}
+
