@@ -1,6 +1,7 @@
+- title: Full-Stack Development
+- title: Git
 - title: Unity
 - title: C#
-- title: Full-Stack Development
 - title: LAMP
 - title: Linux
 - title: Apache
@@ -10,22 +11,21 @@
 - title: SCSS
 - title: RegEx
 - title: Node.js
-- title: Front-End Development
 - title: Javascript
 - title: JQuery
+- title: Front-End Development
 - title: Flash
 - title: Real-Time Graphics for Live Events
 - title: GLSL Shaders
-- title: Quartz Composer 
+- title: Quartz Composer
 - title: Projection Mapping
 - title: Video Editing
 - title: Agile Development
-- title: Git
 - title: Trello
 - title: Creative Coding
 - title: Hardware Development
 - title: Arduino
-- title: Object Oriented Programming 
+- title: Object Oriented Programming
 - title: MVC
 - title: Relational Databases
 - title: MySQL
@@ -37,3 +37,4 @@
 - title: Photography
 - title: Video Production
 - title: Generative Art
+- title: Integration and Automation
