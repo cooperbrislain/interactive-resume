@@ -1,3 +1,5 @@
+---
+---
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
@@ -4552,6 +4554,40 @@ blockquote {
 			display: inline-block;
 			p {
 				display: inline-block;
+			}
+		}
+	}
+}
+
+.contact {
+	padding: 10px;
+	padding-right: 25px;
+	padding-left: 0px;
+	dl {
+		display: flex;
+		justify-content: flex-start;
+
+		margin: 0px;
+		dt {
+			flex-basis: 1;
+			text-align: right;
+			a {
+				border-bottom: none;
+			}
+		}
+		dd {
+			flex-basis: 8;
+			flex-grow: 10;
+		}
+		dt, dd {
+			font-weight: bold;
+			font-family: Arial Black;
+			font-size: 14px;
+			i {
+				font-size: 24px;
+			}
+			a {
+				text-decoration: none;
 			}
 		}
 	}
