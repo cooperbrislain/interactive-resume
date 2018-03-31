@@ -4551,7 +4551,7 @@ h1+h3+div>dl>dd, h1+h3+div>dl>dt{
 blockquote {
 	border: none;
 	margin-left: 50px;
-	margin-right: 150px;
+	margin-right: 100px;
 	margin-bottom: 10px;
 	ul {
 		li {
@@ -4567,6 +4567,11 @@ blockquote {
 			}
 		}
 	}
+}
+
+.contact+blockquote {
+	margin-right: 280px;
+	margin-left: 0px;
 }
 
 .contact {

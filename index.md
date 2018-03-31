@@ -1,7 +1,7 @@
 ---
-    layout: page
-    title: Cooper Brislain's Resume
-    pdf: true
+layout: page
+title: Cooper Brislain's Resume
+pdf: true
 ---
 # COOPER BRISLAIN
 ### Software Engineer • Creative Coder
