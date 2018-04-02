@@ -21,12 +21,16 @@ h3, h4, h5 {
     margin-bottom: 1em;
 }
 body {
-    font-size: 40pt;
+    font-size: 36pt;
+    font-family: Ubuntu;
     .contact {
         font-size: 14pt;
         position: absolute;
         right: 0px;
         top: 0px;
+    }
+    a {
+        text-decoration: none;
     }
     ul {
         li {
@@ -38,18 +42,18 @@ body {
         padding: 0px;
         ul {
             margin: 0px;
+            line-height: 1.2em;
             li {
+                line-height: normal;
                 font-family: Ubuntu;
                 display: inline-block;
                 width: 15%;
                 padding: 0px;
-                margin-top: 5pt;
-                margin-bottom: 3pt;
+                margin: 0px;
                 margin-left: 3pt;
                 margin-right: 3pt;
                 text-align: center;
                 vertical-align: middle;
-                height: 120pt;
             }
         }
     }
@@ -59,12 +63,18 @@ body {
             display: inline-block;
             width: 15em;
             line-height: 1.6em;
+            &nth-child(4), &nth-child(5) {
+                display: none;
+            }
         }
         dt {
             display: inline-block;
             font-size: 32pt;
             width: 1em;
             line-height: 1.6em;
+            &nth-child(4), &nth-child(5) {
+                display: none;
+            }
         }
     }
 }
