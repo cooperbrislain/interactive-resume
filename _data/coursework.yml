@@ -1,17 +1,34 @@
-- title: Abstract Data Structures
+- title: Abstract Data Structuresv
+  enabled: true
 - title: Algorithms
+  enabled: true
 - title: X86 Assembly
+  enabled: true
 - title: Differential Equations
+  enabled: true
 - title: Discrete Math
+  enabled: true
 - title: Linear Algebra
+  enabled: true
 - title: Logic
+  enabled: true
 - title: Digital Media Production
+  enabled: true
 - title: Film Studio Production
+  enabled: true
 - title: Documentary Production
+  enabled: true
 - title: Film Theory
+  enabled: true
 - title: Digital Media Theory
+  enabled: true
 - title: Social Documentation
+  enabled: true
 - title: Java Programming
+  enabled: true
 - title: C Programming
+  enabled: true
 - title: AP Computer Science
+  enabled: true
 - title: Cisco Networking
+  enabled: true

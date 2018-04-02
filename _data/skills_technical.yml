@@ -1,40 +1,80 @@
 - title: Full-Stack Development
+  enabled: true
 - title: Git
+  enabled: true
 - title: Unity
+  enabled: true
 - title: C#
+  enabled: true
 - title: LAMP
+  enabled: true
 - title: Linux
+  enabled: true
 - title: Apache
+  enabled: true
 - title: PHP
+  enabled: true
 - title: MySQL
+  enabled: true
 - title: HTML5
+  enabled: true
 - title: SCSS
+  enabled: true
 - title: RegEx
+  enabled: true
 - title: Node.js
+  enabled: true
 - title: Javascript
+  enabled: true
 - title: JQuery
+  enabled: true
 - title: Front-End Development
+  enabled: true
 - title: Flash
+  enabled: true
 - title: Real-Time Graphics for Live Events
+  enabled: false
 - title: GLSL Shaders
+  enabled: true
 - title: Quartz Composer
+  enabled: true
 - title: Projection Mapping
+  enabled: true
 - title: Video Editing
+  enabled: false
 - title: Agile Development
+  enabled: true
 - title: Trello
+  enabled: true
 - title: Creative Coding
+  enabled: false
 - title: Hardware Development
+  enabled: false
 - title: Arduino
+  enabled: true
 - title: Object Oriented Programming
+  enabled: true
 - title: MVC
+  enabled: true
 - title: Relational Databases
-- title: MySQL
+  enabled: false
 - title: Content Management Systems
+  enabled: true
 - title: Joomla
+  enabled: true
 - title: Wordpress
+  enabled: true
+- title: Adobe Creative Cloud
+  enabled: true
 - title: Photoshop
+  enabled: false
 - title: Illustrator
+  enabled: false
 - title: Photography
+  enabled: true
 - title: Video Production
+  enabled: true
 - title: Generative Art
+  enabled: false
 - title: Integration and Automation
+  enabled: true
