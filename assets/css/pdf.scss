@@ -59,23 +59,23 @@ body {
     }
     dl {
         width: 18em;
-        dd {
-            display: inline-block;
-            width: 15em;
-            line-height: 1.6em;
-            &:nth-child(4), &:nth-child(5) {
-                display: none;
-            }
-        }
         dt {
             display: inline-block;
             font-size: 32pt;
             width: 1em;
             line-height: 1.6em;
-            &:nth-child(4), &:nth-child(5) {
+            &:nth-child(7), &:nth-child(8) {
                 display: none;
             }
         }
-    }
+        dd {
+            display: inline-block;
+            width: 15em;
+            line-height: 1.6em;
+            &:nth-child(9), &:nth-child(10) {
+                display: none;
+            }
+        }
+     }
 }
 
