@@ -38,7 +38,12 @@
   to: 2017
   tags: ['part-time','freelance','full-stack','programming','engineer']
   responsibilities:
-    - description: Developed and managed front/back-end solutions including database engine, APIs, data validation, and data-routing deployed across 500+ websites and affiliates.
+    - description: Designed mySQL database for auto-shipping leads.
+    - description: Built RESTful API for partners and affiliates.
+    - description: Created embeddable form widget for use by affiliates and partners.
+    - description: Redesigned system for greater extensibility, to both increase lead volume and offer additional cross-selling opportunities.
+    - description: Designed tools for the reporting and visualization of lead data.
+    - description: Automated regular or time-consuming tasks to improve efficiency and agility.
   enabled: true
 - title: Flash/Motion Graphics Engineer
   company: Design Reactor
