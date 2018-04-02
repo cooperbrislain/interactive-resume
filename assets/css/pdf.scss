@@ -21,6 +21,7 @@ h3, h4, h5 {
     margin-bottom: 1em;
 }
 body {
+    font-family: Ubuntu;
     font-size: 40pt;
     .contact {
         font-size: 14pt;
@@ -37,19 +38,20 @@ body {
         margin: 0px;
         padding: 0px;
         ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
             margin: 0px;
             li {
-                font-family: Ubuntu;
-                display: inline-block;
-                width: 15%;
-                padding: 0px;
+                flex-basis: 1;
                 margin-top: 5pt;
                 margin-bottom: 3pt;
                 margin-left: 3pt;
                 margin-right: 3pt;
                 text-align: center;
                 vertical-align: middle;
-                height: 120pt;
+                align-items: center;
             }
         }
     }
