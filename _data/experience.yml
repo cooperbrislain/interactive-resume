@@ -30,6 +30,10 @@
   responsibilities:
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings.
+    - description: Audited content-management-system extensions and determined optimization strategies to minimize overhead and points of failure.
+    - description: Brought outdated code repository up-to-date.
+    - description: Audited repository and codebase diffs to determine points at which undesirable behavior was introduced.
+    - description: Developed strategies and solutions to avoid future complications.
   enabled: true
 - title: Development Lead; Contractor
   company: Taylor Online Marketing
