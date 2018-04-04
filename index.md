@@ -10,7 +10,7 @@ pdf: true
 
 > Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields. 
 
-## SKILLS
+## KEY SKILLS
 
 * Excellent written communication skills  
 * Lifelong learner  
@@ -19,6 +19,10 @@ pdf: true
 * Adaptable and creative problem solving skills
 * Able to foresee potential future complications and constraints, 
   designing for extensibility and scalability.
+
+## EXPERIENCE 
+
+{% include experience.md %}
 
 ### TECHNICAL SKILLS
 
@@ -32,10 +36,6 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 ## COURSEWORK
 
 {% include list.md items=site.data.coursework %}
-
-## EXPERIENCE 
-
-{% include experience.md %}
 
 ## ASSOCIATIONS
 
