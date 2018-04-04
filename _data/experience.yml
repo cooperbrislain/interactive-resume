@@ -16,11 +16,11 @@
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
   responsibilities:
-    - description: Create audio-reactive, realtime visual content for live music events.
-    - description: Employ novel human interface devices including Lemur, LEAP Motion, WiiMote, Kinect, TouchOSC, Arduino for live visual performance.
+    - description: Created audio-reactive, realtime visual content for live music events using Unity, Quartz Composer, GLSL Shaders and Processing.
+    - description: Design human-computer interaction schemes for controlling live visuals using control surfaces and gesture devices, including Wii Remote, XBox Kinect, LEAP Motion, and various MIDI controllers.
     - description: Design projection and LED mapping for stages.
-    - description: Solve complex technical challenges in fast-paced environment with limited resources.
-    - description: Performed live visuals for shows and festivals for world-class performing artists with up to 20,000 in attendance.
+    - description: Solve complex technical challenges on location, using limited available resources.
+    - description: Performed original content live before audiences of up to 10,000.
   enabled: true
 - title: Software Engineer
   company: Visions in Education
