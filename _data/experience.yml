@@ -1,27 +1,28 @@
-- title: Full-Stack Engineer
+- title: Software Engineer
   company: BetterHelp
   location: Sunnyvale, CA
   from: 2015
   to: 2016
   tags: ['full-stack','engineer','full-time','programming']
   responsibilities:
-    - description: Reduced landing page load time by 40%.
-    - description: Automated financial aid application process.
-    - description: Implemented Braintree API.
+    - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
+    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
+    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
+    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
   enabled: true
-- title: Synesthetic Visioneer
+- title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
   from: 2011
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
   responsibilities:
-    - description: Create audio-reactive, realtime visual content for live music events.
-    - description: Employ novel human interface devices including Lemur, LEAP Motion, WiiMote, Kinect, TouchOSC, Arduino for live visual performance.
+    - description: Created audio-reactive, realtime visual content for live music events using Unity, Quartz Composer, GLSL Shaders and Processing.
+    - description: Design human-computer interaction schemes for controlling live visuals using control surfaces and gesture devices, including Wii Remote, XBox Kinect, LEAP Motion, and various MIDI controllers.
     - description: Design projection and LED mapping for stages.
-    - description: Solve complex technical challenges in fast-paced environment with limited resources.
-    - description: Performed live visuals for shows and festivals for world-class performing artists with up to 20,000 in attendance.
+    - description: Solve complex technical challenges on location, using limited available resources.
+    - description: Performed original content live before audiences of up to 10,000.
   enabled: true
-- title: Programmer
+- title: Software Engineer
   company: Visions in Education
   location: Carmichael, CA
   from: 2015
@@ -30,12 +31,12 @@
   responsibilities:
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings.
-    - description: Audited content-management-system extensions and determined optimization strategies to minimize overhead and points of failure.
+    - description: Audited Wordpress extensions and determined optimization strategies to minimize overhead and points of failure.
     - description: Brought outdated code repository up-to-date.
     - description: Audited repository and codebase diffs to determine points at which undesirable behavior was introduced.
     - description: Developed strategies and solutions to avoid future complications.
   enabled: true
-- title: Development Lead; Contractor
+- title: Lead Software Engineer
   company: Taylor Online Marketing
   location: Aptos, CA
   from: 2010
@@ -49,19 +50,18 @@
     - description: Designed tools for the reporting and visualization of lead data.
     - description: Automated regular or time-consuming tasks to improve efficiency and agility.
   enabled: true
-- title: Flash/Motion Graphics Engineer
+- title: Software Engineer
   company: Design Reactor
   location: Campbell, CA
   from: 2008
   to: 2008
   tags: ['full-time','engineer','creative','programming','full-stack']
   responsibilities:
-    - description: Developed interactive Flash website for Disney Parks 2008 campaign.
-    - description: Assisted with localization for HP campaign
-    - description: Produced various PayPal promotional materials.
-    - description: Created Flash-based agency portfolio front-end driven by Expression Engine back-end.
+    - description: Developed interactive Flash landing page for Disney Parks 2008 campaign.
+    - description: Produced pixel-perfect web materials for marketing campaigns, adhering to strict style guidelines.
+    - description: Created rich, interactive user interface for agency portfolio, with dynamically populated content.
   enabled: true
-- title: Programmer - L2
+- title: Software Engineer
   company: Jupiter Hosting
   location: Santa Clara, CA
   from: 2007
@@ -71,7 +71,7 @@
     - description: Developed custom modules and features for in-house content management system. (Based on Joomla and Drupal)
     - description:  Optimized MySQL queries for highly-trafficked websites.
   enabled: true
-- title: Classroom Media Support
+- title: Support Technician
   company: UCSC Media Services
   location: Santa Cruz, CA
   from: 2006
@@ -83,7 +83,7 @@
     - description: Operated service vans on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
     - description: Set up and struck A/V and other media equipment for on-campus events.
   enabled: true
-- title: Event Staff
+- title: Event Crew
   company: Plan-It Interactive
   location: Concord, CA
   from: 2000
@@ -96,7 +96,7 @@
     - description: Performed on-site troubleshooting and repair of R/C cars.
     - description: Drove box trucks with trailers on highway to and from events.
   enabled: false
-- title: Technical Support - Mac
+- title: Support Technician
   company: InterX Technologies; Napa, CA
   from: 1997
   to: 1998
