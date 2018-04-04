@@ -24,10 +24,6 @@ pdf: true
 
 {% include experience.md %}
 
-### TECHNICAL SKILLS
-
-{% include list.md items=site.data.skills_technical %}
-
 ## EDUCATION
 
 UC Santa Cruz – Film & Digital Media • 2007  
@@ -36,6 +32,10 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 ## COURSEWORK
 
 {% include list.md items=site.data.coursework %}
+
+## TECHNICAL SKILLS
+
+{% include list.md items=site.data.skills_technical %}
 
 ## ASSOCIATIONS
 
