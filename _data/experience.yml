@@ -1,4 +1,4 @@
-- title: Full-Stack Engineer
+- title: Software Engineer
   company: BetterHelp
   location: Sunnyvale, CA
   from: 2015
@@ -9,7 +9,7 @@
     - description: Automated financial aid application process.
     - description: Implemented Braintree API.
   enabled: true
-- title: Synesthetic Visioneer
+- title: Software Engineer - Motion Graphics & Visual Artist
   company: Vektor Selektor
   from: 2011
   to: present
@@ -21,7 +21,7 @@
     - description: Solve complex technical challenges in fast-paced environment with limited resources.
     - description: Performed live visuals for shows and festivals for world-class performing artists with up to 20,000 in attendance.
   enabled: true
-- title: Programmer
+- title: Software Engineer
   company: Visions in Education
   location: Carmichael, CA
   from: 2015
@@ -35,7 +35,7 @@
     - description: Audited repository and codebase diffs to determine points at which undesirable behavior was introduced.
     - description: Developed strategies and solutions to avoid future complications.
   enabled: true
-- title: Development Lead; Contractor
+- title: Lead Software Engineer
   company: Taylor Online Marketing
   location: Aptos, CA
   from: 2010
@@ -49,7 +49,7 @@
     - description: Designed tools for the reporting and visualization of lead data.
     - description: Automated regular or time-consuming tasks to improve efficiency and agility.
   enabled: true
-- title: Flash/Motion Graphics Engineer
+- title: Software Engineer - Motion Graphics
   company: Design Reactor
   location: Campbell, CA
   from: 2008
@@ -61,7 +61,7 @@
     - description: Produced various PayPal promotional materials.
     - description: Created Flash-based agency portfolio front-end driven by Expression Engine back-end.
   enabled: true
-- title: Programmer - L2
+- title: Software Engineer
   company: Jupiter Hosting
   location: Santa Clara, CA
   from: 2007
@@ -71,7 +71,7 @@
     - description: Developed custom modules and features for in-house content management system. (Based on Joomla and Drupal)
     - description:  Optimized MySQL queries for highly-trafficked websites.
   enabled: true
-- title: Classroom Media Support
+- title: Support Technician
   company: UCSC Media Services
   location: Santa Cruz, CA
   from: 2006
@@ -83,7 +83,7 @@
     - description: Operated service vans on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
     - description: Set up and struck A/V and other media equipment for on-campus events.
   enabled: true
-- title: Event Staff
+- title: Event Crew
   company: Plan-It Interactive
   location: Concord, CA
   from: 2000
@@ -96,7 +96,7 @@
     - description: Performed on-site troubleshooting and repair of R/C cars.
     - description: Drove box trucks with trailers on highway to and from events.
   enabled: false
-- title: Technical Support - Mac
+- title: Support Technician
   company: InterX Technologies; Napa, CA
   from: 1997
   to: 1998
