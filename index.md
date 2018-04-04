@@ -45,6 +45,12 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 - Technology Director, SCTV; UCSC • 2005
 - Student Trustee, Napa Valley College • 2002
 
+## INTERESTS
+
+- Real-time audio-reactive music visualizations  
+- IoT Projects  
+- Generative Art
+
 ## CORE VALUES
 
 * The end user's privacy and security is paramount. 
