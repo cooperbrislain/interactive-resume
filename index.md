@@ -4,7 +4,7 @@ title: Cooper Brislain's Resume
 pdf: true
 ---
 # COOPER BRISLAIN
-### Software Engineer • Creative Coder
+### Software Engineer
 
 {% include contact.html %}
 
@@ -42,7 +42,7 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 - Visual Artist, Opulent Chill • 2017
 - Visual Artist, Wormhole; Oakland • 2015–Present
 - Visual Artist, Camp Question Mark • 2009–)?( 
-- Tech Director, SCTV; UCSC • 2005
+- Technology Director, SCTV; UCSC • 2005
 - Student Trustee, Napa Valley College • 2002
 
 ## CORE VALUES
