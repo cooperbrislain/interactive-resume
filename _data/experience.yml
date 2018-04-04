@@ -5,9 +5,10 @@
   to: 2016
   tags: ['full-stack','engineer','full-time','programming']
   responsibilities:
-    - description: Reduced landing page load time by 40%.
-    - description: Automated financial aid application process.
-    - description: Implemented Braintree API.
+    - description: Worked on an agile team to release iterative improvements to user based on data acquired from multivariate analytics.
+    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
+    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
+    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
