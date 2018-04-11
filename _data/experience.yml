@@ -1,8 +1,8 @@
 - title: Software Engineer
   company: BetterHelp
   location: Sunnyvale, CA
-  from: 2015
-  to: 2016
+  from: 2015-11-01 12:00:00 -0800
+  to: 2016-02-04 12:00:00 -0800
   tags: ['full-stack','engineer','full-time','programming']
   responsibilities:
     - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
@@ -12,7 +12,7 @@
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
-  from: 2011
+  from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
   responsibilities:
@@ -25,8 +25,8 @@
 - title: Software Engineer
   company: Visions in Education
   location: Carmichael, CA
-  from: 2015
-  to: 2016
+  from: 2015-03-01
+  to: 2016-08-01
   tags: ['full-time','programming','full-stack']
   responsibilities:
     - description: Modernized student information portal.
@@ -39,8 +39,8 @@
 - title: Lead Software Engineer
   company: Taylor Online Marketing
   location: Aptos, CA
-  from: 2010
-  to: 2017
+  from: 2010-03-01
+  to: 2017-12-31
   tags: ['part-time','freelance','full-stack','programming','engineer']
   responsibilities:
     - description: Designed mySQL database for auto-shipping leads.
@@ -53,8 +53,8 @@
 - title: Software Engineer
   company: Design Reactor
   location: Campbell, CA
-  from: 2008
-  to: 2008
+  from: 2008-03-01
+  to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
   responsibilities:
     - description: Developed interactive Flash landing page for Disney Parks 2008 campaign.
@@ -64,8 +64,8 @@
 - title: Software Engineer
   company: Jupiter Hosting
   location: Santa Clara, CA
-  from: 2007
-  to: 2007
+  from: 2007-05-01
+  to: 2007-12-15
   tags: ['full-stack','engineer','programming','full-time']
   responsibilities:
     - description: Developed custom modules and features for in-house content management system. (Based on Joomla and Drupal)
@@ -74,8 +74,8 @@
 - title: Support Technician
   company: UCSC Media Services
   location: Santa Cruz, CA
-  from: 2006
-  to: 2007
+  from: 2006-09-01
+  to: 2007-06-15
   tags: ['part-time','production','technical']
   responsibilities:
     - description: Provided technical support to faculty and students using university media equipment including projectors, video cameras, audio systems, and computers.
@@ -86,8 +86,8 @@
 - title: Event Crew
   company: Plan-It Interactive
   location: Concord, CA
-  from: 2000
-  to: 2000
+  from: 2000-06-01
+  to: 2000-08-30
   tags: ['part-time','production']
   responsibilities:
     - description: Set up and struck large interactive play systems for special events.
@@ -98,8 +98,8 @@
   enabled: false
 - title: Support Technician
   company: InterX Technologies; Napa, CA
-  from: 1997
-  to: 1998
+  from: 1997-09-15
+  to: 1998-01-15
   tags: ['part-time','technical']
   responsibilities:
     - description: Provided support to users of MacOS System 7/8 as well as Windows 95 experiencing dial-up internet connectivity issues.
@@ -108,8 +108,8 @@
   enabled: false
 - title: Mentor
   company: CoreMUD
-  from: 1996
-  to: 2000
+  from: 1996-01-01
+  to: 2000-01-01
   tags: ['part-time','programming']
   responsibilities:
     - description: Created in-game stories, experiences, and spaces for text-based sci-fi online roleplaying game.
