@@ -1,80 +1,122 @@
 - title: Full-Stack Development
   enabled: true
+  years: 10
 - title: Git
   enabled: true
+  years: 3
 - title: Unity
   enabled: true
+  years: 1
 - title: C#
   enabled: true
+  years: 1
 - title: LAMP
   enabled: true
+  years: 12
 - title: Linux
   enabled: true
+  years: 10
 - title: Apache
   enabled: true
+  years: 5
 - title: PHP
   enabled: true
+  years: 15
 - title: MySQL
   enabled: true
+  years: 12
 - title: HTML5
   enabled: true
+  years: 10
 - title: SCSS
   enabled: true
+  years: 8
 - title: RegEx
   enabled: true
+  years: 20
 - title: Node.js
   enabled: true
+  years: 5
 - title: Javascript
   enabled: true
+  years: 15
 - title: JQuery
   enabled: true
+  years: 10
 - title: Front-End Development
   enabled: true
+  years: 10
 - title: Flash
   enabled: true
+  years:  5
 - title: Real-Time Graphics for Live Events
   enabled: false
+  years: 10
 - title: GLSL Shaders
   enabled: true
+  years: 10
 - title: Quartz Composer
   enabled: true
+  years: 10
 - title: Projection Mapping
   enabled: true
+  years: 5
 - title: Video Editing
   enabled: false
+  years: 5
 - title: Agile Development
   enabled: true
+  years: 7
 - title: Trello
   enabled: true
+  years: 5
 - title: Creative Coding
   enabled: false
+  years: 10
 - title: Hardware Development
   enabled: false
+  years: 2
 - title: Arduino
   enabled: true
+  years: 3
 - title: Object Oriented Programming
   enabled: true
+  years: 7
 - title: MVC
   enabled: true
+  years: 2
 - title: Relational Databases
   enabled: false
+  years: 8
 - title: Content Management Systems
   enabled: true
+  years: 10
 - title: Joomla
   enabled: true
+  years: 10
 - title: Wordpress
   enabled: true
+  years: 10
 - title: Adobe Creative Cloud
   enabled: true
+  years: 5
 - title: Photoshop
   enabled: false
+  years: 20
 - title: Illustrator
   enabled: false
+  years: 5
 - title: Photography
   enabled: true
+  years: 10
 - title: Video Production
   enabled: true
+  years: 5
 - title: Generative Art
   enabled: false
+  years: 10
 - title: Integration and Automation
   enabled: true
+  years: 5
+- title: Spiline Reticulation
+  years: 25
