@@ -1,15 +1,5 @@
 - title: Software Engineer
   company: BetterHelp
-  location: Sunnyvale, CA
-  from: 2015-11-01 12:00:00 -0800
-  to: 2016-02-04 12:00:00 -0800
-  tags: ['full-stack','engineer','full-time','programming']
-  responsibilities:
-    - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
-    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
-    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
-    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
-  enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
   from: 2011-01-01
@@ -21,6 +11,15 @@
     - description: Design projection and LED mapping for stages.
     - description: Solve complex technical challenges on location, using limited available resources.
     - description: Performed original content live before audiences of up to 10,000.
+  enabled: true  location: Sunnyvale, CA
+  from: 2015-11-01 12:00:00 -0800
+  to: 2016-02-04 12:00:00 -0800
+  tags: ['full-stack','engineer','full-time','programming']
+  responsibilities:
+    - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
+    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
+    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
+    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
   enabled: true
 - title: Software Engineer
   company: Visions in Education
@@ -95,7 +94,7 @@
     - description: Operated rock-climbing wall, ensuring the correct use of safety equipment and procedures by participants.
     - description: Performed on-site troubleshooting and repair of R/C cars.
     - description: Drove box trucks with trailers on highway to and from events.
-  enabled: false
+  enabled: true
 - title: Support Technician
   company: InterX Technologies; Napa, CA
   from: 1997-09-15
