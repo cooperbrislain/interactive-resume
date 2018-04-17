@@ -4,7 +4,7 @@ title: Cooper Brislain's Resume
 pdf: true
 ---
 # COOPER BRISLAIN
-### Synesthetic Visioneer • Software Engineer • Creative Coder
+### Synesthetic Visioneer • Creative Coder
 
 {% include contact.html %}
 
