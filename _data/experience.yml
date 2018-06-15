@@ -3,7 +3,11 @@
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
-  icons: ['code','code-branch','microchip','database','lightbulb','bolt']
+  links:
+    - icon: fab fa-github
+      url: https://github.com/spaceboycoop/led-test-bench
+      title: LED Test Bench
+  tech: ['git','arduino','blender','3d printing','artnet']
   responsibilities:
     - description: Collaboratively designed custom-fabricated parts for high-performance ARTNet LED fixtures for intelligent stage lighting.
     - description: Delivered 150 LED fixtures in time for use for installations at live events.
@@ -21,6 +25,15 @@
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
+  links:
+      - icon: fab fa-vimeo
+        url:
+        title: Vektor Selektor on Vimeo
+      - icon: fab fa-github
+      - icon: fab fa-youtube
+      - icon: fab fa-instagram
+      - icon: fab fa-facebook
+  tech: ['git','unity','c#','javascript','glsl','quartz composer']
   responsibilities:
     - description: Created audio-reactive, realtime visual content for live music events using Unity, Quartz Composer, GLSL Shaders and Processing.
     - description: Design human-computer interaction schemes for controlling live visuals using control surfaces and gesture devices, including Wii Remote, XBox Kinect, LEAP Motion, and various MIDI controllers.
@@ -30,6 +43,7 @@
   enabled: true
 - title: Software Engineer
   company: BetterHelp
+  url: https://www.betterhelp.com
   location: Sunnyvale, CA
   from: 2015-11-01 12:00:00 -0800
   to: 2016-02-04 12:00:00 -0800

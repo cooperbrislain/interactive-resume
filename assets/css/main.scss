@@ -4614,6 +4614,12 @@ h3+p+ul {
 	}
 }
 
-p i.fa {
-	margin: 5px;
+p a {
+	text-decoration: none;
+	color: #BBB;
+	&.icon {
+		color: #000;
+		margin: 5px;
+	i {
+	}
 }
