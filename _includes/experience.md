@@ -1,5 +1,5 @@
 {% for job in site.data.experience %}
     {% if job.enabled %}
-{% include job.md job=job %}
+{% include job.html job=job %}
     {% endif %}
 {% endfor %}
