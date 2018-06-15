@@ -3,5 +3,6 @@ _site/*
 !.pdf
 !**/.pdf
 !**/*.pdf
+!_site/assets
 .sass-cache
 .jekyll-metadata
