@@ -4608,8 +4608,12 @@ blockquote {
 	}
 }
 
-h3+ul {
+h3+p+ul {
 	li {
 		list-style-type: disc;
 	}
+}
+
+p i.fa {
+	margin: 5px;
 }

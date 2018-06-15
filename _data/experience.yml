@@ -3,7 +3,7 @@
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
-  badges: ['code']
+  icons: ['code','code-branch','microchip','database','lightbulb','bolt']
   responsibilities:
     - description: Collaboratively designed custom-fabricated parts for high-performance ARTNet LED fixtures for intelligent stage lighting.
     - description: Delivered 150 LED fixtures in time for use for installations at live events.
