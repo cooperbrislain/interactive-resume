@@ -1,0 +1,29 @@
+{% capture year_from %}{{ include.job.from | date: '%Y'}}{% endcapture %}
+{% capture year_to %}{{ include.job.to | date: '%Y'}}{% endcapture %}
+<div class="job">
+    <h3>
+        {{ include.job.title }},
+        {% if include.job.url %}
+            <a href="{{ include.job.url }}">
+        {% endif %}
+        {{ include.job.company }}
+        {% if include.job.url %}
+            </a>
+        {% endif %}
+        {% if year_from == year_to %}
+            {{ year_to }}
+        {% else %}
+            {{ year_from }}-{{ year_to }}
+        {% endif %}
+    </h3>
+    <ul class="links">
+        {% for item in include.job.links %}
+            <a href="{{ item.url }}"><i class="{{ item.icon }}"></i></a>
+        {% endfor %}
+    </ul>
+    <ul class="responsibilities">
+        {% for item in include.job.responsibilities %}
+            <li>{{ item.description }}</li>
+        {% endfor %}
+    </ul>
+</div>
