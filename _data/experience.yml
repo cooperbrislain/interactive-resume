@@ -1,14 +1,19 @@
-- title: Software Engineer
-  company: BetterHelp
-  location: Sunnyvale, CA
-  from: 2015-11-01 12:00:00 -0800
-  to: 2016-02-04 12:00:00 -0800
-  tags: ['full-stack','engineer','full-time','programming']
+- title: Lighting R&D Engineer
+  company: Simple Machinists
+  from: 2018-04-01
+  to: 1018-06-11
+  tags: ['production','gig','art','creative','programming','electronics']
   responsibilities:
-    - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
-    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
-    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
-    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
+    - description: Collaboratively designed custom-fabricated parts for high-performance ARTNet LED fixtures for intelligent stage lighting.
+    - description: Delivered 150 LED fixtures in time for use for installations at live events.
+    - description: Developed production, q/a, and asset tracking software using QR codes, Pub/Sub, and mySQL
+    - description: Developed testing tools for use in production and for field-diagnostics using Arduino
+    - description: Iterated on product design based on event post-mortem analysis.
+    - description: Recommended parts, materials, and tools to overcome engineering and usability challenges.
+    - description: Designed custom 3D-printed parts to improve durability and normalize assembly.
+    - description: Developed and iterated mass-production methodologies to meet requirement.
+    - description: Analyzed failed units for causes of failure and revised design to reduce or eliminate rate of failure.
+    - description: Drew upon live event experience to make recommendations regarding industry-standard solutions, practices, and common challenges.
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
@@ -21,6 +26,18 @@
     - description: Design projection and LED mapping for stages.
     - description: Solve complex technical challenges on location, using limited available resources.
     - description: Performed original content live before audiences of up to 10,000.
+  enabled: true
+- title: Software Engineer
+  company: BetterHelp
+  location: Sunnyvale, CA
+  from: 2015-11-01 12:00:00 -0800
+  to: 2016-02-04 12:00:00 -0800
+  tags: ['full-stack','engineer','full-time','programming']
+  responsibilities:
+    - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
+    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
+    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
+    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
   enabled: true
 - title: Software Engineer
   company: Visions in Education
@@ -95,7 +112,7 @@
     - description: Operated rock-climbing wall, ensuring the correct use of safety equipment and procedures by participants.
     - description: Performed on-site troubleshooting and repair of R/C cars.
     - description: Drove box trucks with trailers on highway to and from events.
-  enabled: false
+  enabled: true
 - title: Support Technician
   company: InterX Technologies; Napa, CA
   from: 1997-09-15

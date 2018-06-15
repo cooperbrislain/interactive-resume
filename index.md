@@ -4,11 +4,11 @@ title: Cooper Brislain's Resume
 pdf: true
 ---
 # COOPER BRISLAIN
-### Software Engineer
+### Synesthetic Visioneer • Creative Coder
 
 {% include contact.html %}
 
-> Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields. 
+> VJ and Software Engineer specializing in synethesizing video production techniques with real-time environment parameterization, seeking opportunities to enhance event immersion and experience. 
 
 ## KEY SKILLS
 

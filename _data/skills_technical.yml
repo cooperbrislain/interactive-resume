@@ -50,7 +50,7 @@
   enabled: true
   years:  5
 - title: Real-Time Graphics for Live Events
-  enabled: false
+  enabled: true
   years: 10
 - title: GLSL Shaders
   enabled: true
@@ -62,7 +62,7 @@
   enabled: true
   years: 5
 - title: Video Editing
-  enabled: false
+  enabled: true
   years: 5
 - title: Agile Development
   enabled: true
@@ -71,7 +71,7 @@
   enabled: true
   years: 5
 - title: Creative Coding
-  enabled: false
+  enabled: true
   years: 10
 - title: Hardware Development
   enabled: false
@@ -113,10 +113,11 @@
   enabled: true
   years: 5
 - title: Generative Art
-  enabled: false
+  enabled: true
   years: 10
 - title: Integration and Automation
   enabled: true
   years: 5
 - title: Spiline Reticulation
   years: 25
+  enabled: true
