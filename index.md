@@ -31,11 +31,11 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 
 ## COURSEWORK
 
-{% include list.md items=site.data.coursework %}
+{% include list.html items=site.data.coursework %}
 
 ## TECHNICAL SKILLS
 
-{% include list.md items=site.data.skills_technical %}
+{% include list.html items=site.data.skills_technical %}
 
 ## ASSOCIATIONS
 

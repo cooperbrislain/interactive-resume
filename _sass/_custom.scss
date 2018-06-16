@@ -1,0 +1,157 @@
+ul {
+    list-style-type: none;
+    li {
+        p {
+            margin: 0;
+        }
+    }
+}
+
+#skills {
+    &+div+ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &>li {
+            flex: 0 1 auto;
+            &>p {
+                font-family: helvetica;
+                font-weight: bold;
+            }
+            &:nth-child(odd)>p {
+                color: #BBB;
+            }
+            &:nth-child(even)>p {
+                color: #999;
+            }
+        }
+    }
+}
+
+#coursework+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &>>li{
+        flex: 0 1 auto;
+        width: 30%;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+h1+h3+div{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    background-color: #EEE;
+    padding: 25px;
+    &>dl {
+        display: flex;
+        flex-wrap: wrap;
+        &>dd, &>dt {
+            flex-basis: 1;
+            width: 30%;
+            font-size: 10px;
+        }
+    }
+}
+
+blockquote {
+    border: none;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    ul {
+        li {
+            display: inline-block;
+            padding: 3px;
+            p {
+                font-family: Ubuntu;
+                font-style: normal;
+                display: inline-block;
+                background-color: #EEEEEE;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+        }
+    }
+}
+
+.contact {
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 0px;
+    dl {
+        display: flex;
+        justify-content: flex-start;
+
+        margin: 0px;
+        dt {
+            flex-basis: 1;
+            text-align: right;
+            a {
+                border-bottom: none;
+            }
+        }
+        dd {
+            flex-basis: 8;
+            flex-grow: 10;
+        }
+        dt, dd {
+            font-weight: bold;
+            font-family: Arial Black;
+            font-size: 14px;
+            i {
+                font-size: 24px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    &+blockquote {
+        margin-right: 280px;
+        margin-left: 0px;
+    }
+}
+
+div.job {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    ul {
+        li {
+            list-style-type: disc;
+        }
+    }
+    a {
+        &.icon {
+            color: #000;
+            margin: 5px;
+        }
+    }
+    &:nth-child(even) {
+    }
+    &:nth-child(odd) {
+    }
+}
+
+#technical-skills+ul {
+    li {
+        display: inline-block;
+        border: 1px dotted #777;
+    }
+}
+
+a {
+    text-decoration: none;
+    sup {
+        font-size: 60%;
+        i {
+        }
+    }
+}

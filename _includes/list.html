@@ -1,0 +1,16 @@
+<ul>
+    {% for item in include.items %}
+        {% if item.enabled %}
+            <li>
+                {% if item.url %}
+                    <a href="{{ item.url }}" target="_blank">
+                        {{ item.title }}
+                        <sup><i class="fa fa-external-link-square-alt"></i></sup>
+                    </a>
+                {% else %}
+                    {{ item.title }}
+                {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
