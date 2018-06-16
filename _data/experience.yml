@@ -103,9 +103,9 @@
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
   responsibilities:
-    - description: Developed interactive Flash landing page for Disney Parks 2008 campaign.
-    - description: Produced pixel-perfect web materials for marketing campaigns, adhering to strict style guidelines.
-    - description: Created rich, interactive user interface for agency portfolio, with dynamically populated content.
+    - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
+    - description: Produced __pixel-perfect__ web materials for marketing campaigns, adhering to strict __style guidelines__.
+    - description: Created __rich, interactive user interface__ for agency portfolio, with dynamically populated content.
   enabled: true
 - title: Software Engineer
   company: Jupiter Hosting
@@ -116,8 +116,8 @@
   to: 2007-12-15
   tags: ['full-stack','engineer','programming','full-time']
   responsibilities:
-    - description: Developed custom modules and features for in-house content management system. (Based on Joomla and Drupal)
-    - description:  Optimized MySQL queries for highly-trafficked websites.
+    - description: Developed custom modules and features for in-house __content management system__. (Based on __Joomla__)
+    - description: Optimized __MySQL__ queries for highly-trafficked websites.
   enabled: true
 - title: Support Technician
   company: UCSC Media Services
