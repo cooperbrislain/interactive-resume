@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
 body {
-    font-family: Verdana;
+    font-family: "Cormorant Garamond";
 }
 
 ul {
@@ -149,15 +152,24 @@ div.job {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    font-family: Roboto Condensed;
+    margin-bottom: 0px;
     li {
         flex-basis: auto;
         margin: 2px;
         padding: 2px;
+        margin-right: 1em;
         a {
             text-decoration: none;
             font-weight: bold;
             border-bottom: none;
         }
+    }
+}
+
+#key-skills+ul {
+    li {
+        font-weight: 700;
     }
 }
 
@@ -170,7 +182,7 @@ a {
     }
 }
 
-#key-skills {
-    margin-top: 0px;
-    margin-bottom: 1em;
+h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
