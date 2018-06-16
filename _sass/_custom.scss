@@ -1,3 +1,7 @@
+body {
+    font-family: Verdana;
+}
+
 ul {
     list-style-type: none;
     li {
@@ -40,25 +44,17 @@ ul {
 }
 
 h1 {
-    margin: 0;
+    margin: 0px;
 }
 
-h1+h3+div{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 300px;
-    background-color: #EEE;
-    padding: 25px;
-    &>dl {
-        display: flex;
-        flex-wrap: wrap;
-        &>dd, &>dt {
-            flex-basis: 1;
-            width: 30%;
-            font-size: 10px;
-        }
-    }
+h2 {
+    margin: 0px;
+    margin-top: 1.5em;
+}
+
+h3 {
+    margin: 0px;
+    margin-top: 1em;
 }
 
 blockquote {
@@ -83,26 +79,20 @@ blockquote {
 }
 
 .contact {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    background-color: #EEE;
     padding: 10px;
     padding-right: 25px;
     padding-left: 0px;
     dl {
         display: flex;
         justify-content: flex-start;
-
+        flex-wrap: wrap;
         margin: 0px;
-        dt {
-            flex-basis: 1;
-            text-align: right;
-            a {
-                border-bottom: none;
-            }
-        }
-        dd {
-            flex-basis: 8;
-            flex-grow: 10;
-        }
-        dt, dd {
+        dd, dt {
             font-weight: bold;
             font-family: Arial Black;
             font-size: 14px;
@@ -112,6 +102,20 @@ blockquote {
             a {
                 text-decoration: none;
             }
+        }
+        dt {
+            flex-basis: 1;
+            text-align: right;
+            font-size: 10px;
+            width: 25%;
+            a {
+                border-bottom: none;
+            }
+        }
+        dd {
+            width: 50%;
+            flex-basis: 8;
+            flex-grow: 10;
         }
     }
     &+blockquote {
@@ -141,9 +145,18 @@ div.job {
 }
 
 #technical-skills+ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     li {
-        display: inline-block;
-        border: 1px dotted #777;
+        flex-basis: auto;
+        margin: 2px;
+        padding: 2px;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: none;
+        }
     }
 }
 
@@ -154,4 +167,9 @@ a {
         i {
         }
     }
+}
+
+#key-skills {
+    margin-top: 0px;
+    margin-bottom: 1em;
 }
