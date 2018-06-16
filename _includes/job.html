@@ -23,7 +23,7 @@
     </ul>
     <ul class="responsibilities">
         {% for item in include.job.responsibilities %}
-            <li>{{ item.description }}</li>
+            <li>{{ item.description | markdownify }}</li>
         {% endfor %}
     </ul>
 </div>

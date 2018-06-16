@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:200,300,400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:200,700,900');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900');
+$font-text: "Tajawal";
 
 body {
-    font-family: "Cormorant Garamond";
+    font-family: $font-text;
+    font-weight: 200;
+    b, strong {
+        font-weight: 500;
+        color: #777;
+    }
 }
 
 ul {
@@ -112,6 +119,9 @@ div.job {
     ul {
         li {
             list-style-type: disc;
+            b {
+                font-weight: 900;
+            }
         }
     }
     a {

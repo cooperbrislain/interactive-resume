@@ -10,9 +10,9 @@
       title: LED Test Bench
   tech: ['git','arduino','blender','3d printing','artnet']
   responsibilities:
-    - description: Collaboratively designed custom-fabricated parts for high-performance ARTNet LED fixtures for intelligent stage lighting.
+    - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures for intelligent stage lighting.
     - description: Delivered 150 LED fixtures in time for use for installations at live events.
-    - description: Developed production, q/a, and asset tracking software using QR codes, Pub/Sub, and mySQL
+    - description: Developed production, q/a, and asset tracking software using __QR codes__, __Pub/Sub__, and __mySQL__
     - description: Developed testing tools for use in production and for field-diagnostics using Arduino
     - description: Iterated on product design based on event post-mortem analysis.
     - description: Recommended parts, materials, and tools to overcome engineering and usability challenges.
@@ -30,16 +30,20 @@
   links:
       - icon: fab fa-vimeo
         url:
-        title: Vektor Selektor on Vimeo
+        title: VektorSelektor on Vimeo
       - icon: fab fa-github
       - icon: fab fa-youtube
       - icon: fab fa-instagram
+        url: https://www.instagram.com/vektorselektor
+        title: VektorSelektor on Instagram
       - icon: fab fa-facebook
+        url: https://www.facebook.com/vektorselektor
+        title: VektorSelektor on Facebook
   tech: ['git','unity','c#','javascript','glsl','quartz composer']
   responsibilities:
-    - description: Created audio-reactive, realtime visual content for live music events using Unity, Quartz Composer, GLSL Shaders and Processing.
-    - description: Design human-computer interaction schemes for controlling live visuals using control surfaces and gesture devices, including Wii Remote, XBox Kinect, LEAP Motion, and various MIDI controllers.
-    - description: Design projection and LED mapping for stages.
+    - description: Created audio-reactive, __realtime visual content__ for live events using __Unity__, __Quartz Composer__, __GLSL Shaders__ and __Processing__.
+    - description: Design __human-computer interaction__ schemes for controlling live visuals using control surfaces and gesture devices, including Wii Remote, XBox Kinect, LEAP Motion, and various MIDI controllers.
+    - description: Design LED and __projection mapping__ for stages.
     - description: Solve complex technical challenges on location, using limited available resources.
     - description: Performed original content live before audiences of up to 10,000.
   enabled: true
@@ -52,10 +56,10 @@
   to: 2016-02-04 12:00:00 -0800
   tags: ['full-stack','engineer','full-time','programming']
   responsibilities:
-    - description: Worked on an agile team to release iterative improvements to user experiene based on data acquired from multivariate analytics.
-    - description: Utilized XDebug for PHP to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
+    - description: Worked on an __agile__ team to release iterative improvements to __user experiene__ based on data acquired from __multivariate analytics__.
+    - description: Utilized __XDebug__ for __PHP__ to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
     - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
-    - description: Integrated billing system with Paypal's Braintree API, standardizing payment flow and allowing acceptance of new payment methods.
+    - description: Integrated billing system with Paypal's __Braintree API__, standardizing payment flow and allowing acceptance of new payment methods.
   enabled: true
 - title: Software Engineer
   company: Visions in Education
@@ -80,12 +84,12 @@
   to: 2017-12-31
   tags: ['part-time','freelance','full-stack','programming','engineer']
   responsibilities:
-    - description: Designed mySQL database for auto-shipping leads.
-    - description: Built RESTful API for partners and affiliates.
+    - description: Designed __mySQL__ database for auto-shipping leads.
+    - description: Built __RESTful API__ for partners and affiliates.
     - description: Created embeddable form widget for use by affiliates and partners.
     - description: Redesigned system for greater extensibility, to both increase lead volume and offer additional cross-selling opportunities.
     - description: Designed tools for the reporting and visualization of lead data.
-    - description: Automated regular or time-consuming tasks to improve efficiency and agility.
+    - description: Improved efficiency and agility by __automating__ frequent or time-consuming tasks.
   enabled: true
 - title: Software Engineer
   company: Design Reactor
