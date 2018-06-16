@@ -15,50 +15,27 @@ ul {
     margin: 0px;
 }
 
-#skills {
-    &+div+ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        &>li {
-            flex: 0 1 auto;
-            &>p {
-                font-family: helvetica;
-                font-weight: bold;
-            }
-            &:nth-child(odd)>p {
-                color: #BBB;
-            }
-            &:nth-child(even)>p {
-                color: #999;
-            }
-        }
-    }
-}
-
-#coursework+ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    &>>li{
-        flex: 0 1 auto;
-        width: 30%;
-    }
-}
-
 h1 {
     margin: 0px;
 }
 
 h2 {
-    margin: 0px;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 h3 {
     margin: 0px;
     margin-top: 1em;
+}
+
+a {
+    text-decoration: none;
+    sup {
+        font-size: 60%;
+        i {
+        }
+    }
 }
 
 blockquote {
@@ -173,16 +150,17 @@ div.job {
     }
 }
 
-a {
-    text-decoration: none;
-    sup {
-        font-size: 60%;
-        i {
-        }
+#coursework+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &>>li{
+        flex: 0 1 auto;
+        width: 30%;
     }
 }
 
-h2 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+h2+ul {
+    font-weight: 700;
 }
