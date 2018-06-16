@@ -47,9 +47,9 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 
 ## INTERESTS
 
-- Real-time audio-reactive music visualizations  
-- IoT Projects  
 - Generative Art
+- Flow-Based Programming
+- IoT
 
 ## CORE VALUES
 
