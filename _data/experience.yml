@@ -13,10 +13,10 @@
     - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures for intelligent stage lighting.
     - description: Delivered 150 LED fixtures in time for use for installations at live events.
     - description: Developed production, q/a, and asset tracking software using __QR codes__, __Pub/Sub__, and __mySQL__
-    - description: Developed testing tools for use in production and for field-diagnostics using Arduino
+    - description: Developed testing tools for use in production and for field-diagnostics using __Arduino__
     - description: Iterated on product design based on event post-mortem analysis.
     - description: Recommended parts, materials, and tools to overcome engineering and usability challenges.
-    - description: Designed custom 3D-printed parts to improve durability and normalize assembly.
+    - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
     - description: Developed and iterated mass-production methodologies to meet requirement.
     - description: Analyzed failed units for causes of failure and revised design to reduce or eliminate rate of failure.
     - description: Drew upon live event experience to make recommendations regarding industry-standard solutions, practices, and common challenges.
@@ -127,23 +127,25 @@
   to: 2007-06-15
   tags: ['part-time','production','technical']
   responsibilities:
-    - description: Provided technical support to faculty and students using university media equipment including projectors, video cameras, audio systems, and computers.
-    - description: Maintained readiness of pool of media equipment for rental and checkout, ensuring good working order, cleanliness, and presence of all included components.
-    - description: Operated service vans on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
-    - description: Set up and struck A/V and other media equipment for on-campus events.
+    - description: Set up and struck media equipment for __special events__ and academic __productions__.
+    - description: Provided __technical support__ to students and faculty in the use of __media equipment__ including __projectors__, __video cameras__, __audio systems__, and __computers__
+    - description: __Maintained__ readiness of equipment pool for rental and checkout, ensuring good working order, cleanliness, and presence of all included components.
+    - description: Operated __service vans__ on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
+    - description: Held keys and access codes to secure areas, media cabinets, and equipment closets throughout the university campus.
   enabled: true
 - title: Event Crew
   company: Plan-It Interactive
   logo: /assets/svg/watermarks/planit.svg
+  url: https://www.interactivegame.com/
   location: Concord, CA
   from: 2000-06-01
   to: 2000-08-30
   tags: ['part-time','production']
   responsibilities:
-    - description: Set up and struck large interactive play systems for special events.
-    - description: Regularly loaded and unloaded heavy equipment.
-    - description: Operated rock-climbing wall, ensuring the correct use of safety equipment and procedures by participants.
-    - description: Performed on-site troubleshooting and repair of R/C cars.
+    - description: Set up and struck large __interactive play systems__ for __special events__.
+    - description: Regularly loaded and unloaded __heavy__ equipment.
+    - description: Operated rock-climbing wall, ensuring the correct use of __safety__ equipment and procedures by participants.
+    - description: Performed on-site __troubleshooting and repair__ of R/C cars.
     - description: Drove box trucks with trailers on highway to and from events.
   enabled: true
 - title: Support Technician

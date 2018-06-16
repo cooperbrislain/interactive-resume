@@ -153,6 +153,10 @@ div.job {
             text-decoration: none;
             font-weight: bold;
             border-bottom: none;
+            sup {
+                right: 2px;
+                top: -1em;
+            }
         }
     }
 }
