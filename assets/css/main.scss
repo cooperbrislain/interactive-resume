@@ -4610,7 +4610,7 @@ blockquote {
 
 div.job {
     background-repeat: no-repeat;
-    background-position: 80% 50%;
+    background-position: 50% 50%;
     ul {
         li {
             list-style-type: disc;
@@ -4621,5 +4621,9 @@ div.job {
             color: #000;
             margin: 5px;
         }
+    }
+    &:nth-child(even) {
+    }
+    &:nth-child(odd) {
     }
 }

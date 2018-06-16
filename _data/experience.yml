@@ -90,6 +90,7 @@
 - title: Software Engineer
   company: Design Reactor
   location: Campbell, CA
+  logo: /assets/svg/watermarks/designreactor.svg
   from: 2008-03-01
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
@@ -100,6 +101,7 @@
   enabled: true
 - title: Software Engineer
   company: Jupiter Hosting
+  logo: /assets/svg/watermarks/jupiterhosting.svg
   location: Santa Clara, CA
   from: 2007-05-01
   to: 2007-12-15
@@ -111,6 +113,7 @@
 - title: Support Technician
   company: UCSC Media Services
   location: Santa Cruz, CA
+  logo: /assets/svg/watermarks/ucsc.svg
   from: 2006-09-01
   to: 2007-06-15
   tags: ['part-time','production','technical']
