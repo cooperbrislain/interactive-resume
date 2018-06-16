@@ -24,6 +24,7 @@
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
   logo: /assets/svg/watermarks/vektorselektor.svg
+  url: https://www.vektorselektor.com
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
@@ -64,6 +65,7 @@
 - title: Software Engineer
   company: Visions in Education
   logo: /assets/svg/watermarks/viedu.svg
+  url: https://www.viedu.org
   location: Carmichael, CA
   from: 2015-03-01
   to: 2016-08-01
@@ -79,6 +81,7 @@
 - title: Lead Software Engineer
   company: Taylor Online Marketing
   logo: /assets/svg/watermarks/tolm.svg
+  url: https://www.tolm.co
   location: Aptos, CA
   from: 2010-03-01
   to: 2017-12-31
@@ -95,6 +98,7 @@
   company: Design Reactor
   location: Campbell, CA
   logo: /assets/svg/watermarks/designreactor.svg
+  url: https://www.designreactor.comp
   from: 2008-03-01
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
@@ -106,6 +110,7 @@
 - title: Software Engineer
   company: Jupiter Hosting
   logo: /assets/svg/watermarks/jupiterhosting.svg
+  url: https://www.jupiterhosting.com
   location: Santa Clara, CA
   from: 2007-05-01
   to: 2007-12-15
