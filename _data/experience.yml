@@ -1,6 +1,6 @@
 - title: Lighting R&D Engineer
   company: Simple Machinists
-  logo: simple-machinists.png
+  logo: /assets/svg/watermarks/simplemachinists.svg
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
@@ -23,6 +23,7 @@
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
+  logo: /assets/svg/watermarks/vektorselektor.svg
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
@@ -44,6 +45,7 @@
   enabled: true
 - title: Software Engineer
   company: BetterHelp
+  logo: /assets/svg/watermarks/betterhelp.svg
   url: https://www.betterhelp.com
   location: Sunnyvale, CA
   from: 2015-11-01 12:00:00 -0800
@@ -57,6 +59,7 @@
   enabled: true
 - title: Software Engineer
   company: Visions in Education
+  logo: /assets/svg/watermarks/viedu.svg
   location: Carmichael, CA
   from: 2015-03-01
   to: 2016-08-01
@@ -71,6 +74,7 @@
   enabled: true
 - title: Lead Software Engineer
   company: Taylor Online Marketing
+  logo: /assets/svg/watermarks/tolm.svg
   location: Aptos, CA
   from: 2010-03-01
   to: 2017-12-31

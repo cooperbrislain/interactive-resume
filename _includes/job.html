@@ -1,6 +1,6 @@
 {% capture year_from %}{{ include.job.from | date: '%Y'}}{% endcapture %}
 {% capture year_to %}{{ include.job.to | date: '%Y'}}{% endcapture %}
-<div class="job">
+<div class="job" style="background-image:url({{ include.job.logo | absolute_url }})">
     <h3>
         {{ include.job.title }},
         {% if include.job.url %}

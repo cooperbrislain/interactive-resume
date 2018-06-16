@@ -4608,23 +4608,18 @@ blockquote {
     }
 }
 
-h3+p+ul {
-    li {
-        list-style-type: disc;
-    }
-}
-
-p a {
-    text-decoration: none;
-    color: #BBB;
-    &.icon {
-        color: #000;
-        margin: 5px;
-    }
-    i {
-    }
-}
-
 div.job {
-
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    ul {
+        li {
+            list-style-type: disc;
+        }
+    }
+    a {
+        &.icon {
+            color: #000;
+            margin: 5px;
+        }
+    }
 }
