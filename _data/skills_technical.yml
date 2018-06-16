@@ -111,6 +111,7 @@
   enabled: false
   years: 5
 - title: Photography
+  url: https://cbrislain.myportfolio.com/photography
   enabled: true
   years: 10
 - title: Video Production
