@@ -90,9 +90,9 @@
     - description: Designed __mySQL__ database for auto-shipping leads.
     - description: Built __RESTful API__ for partners and affiliates.
     - description: Created embeddable form widget for use by affiliates and partners.
-    - description: Redesigned system for greater extensibility, to both increase lead volume and offer additional cross-selling opportunities.
-    - description: Designed tools for the reporting and visualization of lead data.
-    - description: Improved efficiency and agility by __automating__ frequent or time-consuming tasks.
+    - description: Redesigned system for greater __extensibility__, increasing lead volume and providing additional cross-selling opportunities.
+    - description: __Designed tools__ for the __reporting__ and __visualization__ of lead data.
+    - description: Improved __efficiency__ and __agility__ by __automating__ frequent or time-consuming tasks.
   enabled: true
 - title: Software Engineer
   company: Design Reactor
