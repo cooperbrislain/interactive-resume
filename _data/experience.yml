@@ -11,15 +11,15 @@
   tech: ['git','arduino','blender','3d printing','artnet']
   responsibilities:
     - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures for intelligent stage lighting.
-    - description: Delivered 150 LED fixtures in time for use for installations at live events.
-    - description: Developed production, q/a, and asset tracking software using __QR codes__, __Pub/Sub__, and __mySQL__
-    - description: Developed testing tools for use in production and for field-diagnostics using __Arduino__
-    - description: Iterated on product design based on event post-mortem analysis.
-    - description: Recommended parts, materials, and tools to overcome engineering and usability challenges.
+    - description: Delivered __150 LED fixtures__ in time for use for installations at live events.
+    - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
+    - description: __Developed testing tools__ for use in production and for field __diagnostics__ using __Arduino__
+    - description: Iterated on product design based on event __post-mortem analysis__.
+    - description: Recommended parts, materials, and tools to overcome engineering challenges.
     - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
-    - description: Developed and iterated mass-production methodologies to meet requirement.
-    - description: Analyzed failed units for causes of failure and revised design to reduce or eliminate rate of failure.
-    - description: Drew upon live event experience to make recommendations regarding industry-standard solutions, practices, and common challenges.
+    - description: Developed and iterated __mass-production methodologies__ to meet requirement.
+    - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
+    - description: Made design recommendations based on common challenges encountered in __live event production__.
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
