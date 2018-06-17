@@ -30,10 +30,10 @@
   tags: ['part-time','gig','art','production','creative','programming']
   links:
       - icon: fab fa-vimeo
-        url:
+        url: https://www.vimeo.com/vektorselektor
         title: VektorSelektor on Vimeo
-      - icon: fab fa-github
-      - icon: fab fa-youtube
+      - icon: fab fa-youtube on YouTube
+
       - icon: fab fa-instagram
         url: https://www.instagram.com/vektorselektor
         title: VektorSelektor on Instagram
