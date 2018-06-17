@@ -26,6 +26,7 @@ group :jekyll_plugins do
     gem "jekyll-gist"
     gem 'jekyll-mentions'
     gem 'jekyll-paginate'
+    gem 'font-awesome-sass', '~> 5.0.13'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

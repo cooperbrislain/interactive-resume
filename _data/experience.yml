@@ -11,10 +11,11 @@
       title: LED Test Bench
   tech: ['git','arduino','blender','3d printing','artnet']
   responsibilities:
-    - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures for intelligent stage lighting.
+    - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures.
     - description: Delivered __150 LED fixtures__ in time for use for installations at live events.
     - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
     - description: __Developed testing tools__ for use in production and for field __diagnostics__ using __Arduino__
+      icon: \f2db
     - description: Iterated on product design based on event __post-mortem analysis__.
     - description: Recommended parts, materials, and tools to overcome engineering challenges.
     - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
