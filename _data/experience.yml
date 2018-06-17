@@ -4,6 +4,7 @@
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
+  skills: ['git','arduino']
   links:
     - icon: fab fa-github
       url: https://github.com/spaceboycoop/led-test-bench

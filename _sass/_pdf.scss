@@ -1,0 +1,87 @@
+---
+#pdf
+---
+
+$bold-font: "Verdana";
+$text-font: "Calibri";
+
+* {
+    color: #000;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    font-family: $bold_font;
+}
+h1 {
+    font-size: 80pt;
+}
+h2 {
+    font-size: 60pt;
+}
+h3, h4, h5 {
+    font-size: 50pt;
+    margin-bottom: 1em;
+}
+body {
+    font-size: 36pt;
+    font-family: $text_font;
+    .contact {
+        width: 17em;
+        font-size: 40pt;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        dl {
+            dt {
+                display: inline-block;
+                width: 1em;
+                line-height: 1.6em;
+                &:nth-child(7), &:nth-child(9) {
+                    display: none;
+                }
+            }
+            dd {
+                display: inline-block;
+                width: 15em;
+                line-height: 1.6em;
+                &:nth-child(8), &:nth-child(10) {
+                    display: none;
+                }
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+    blockquote {
+        margin: 0px;
+        padding: 0px;
+        ul {
+            margin: 0px;
+            line-height: 1em;
+            li {
+                line-height: normal;
+                font-family: $bold_font;
+                display: inline-block;
+                width: 15%;
+                padding: 0px;
+                margin: 0px;
+                margin-left: 3pt;
+                margin-right: 3pt;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+    .job {
+        background-image: none !important;
+    }
+}
+
