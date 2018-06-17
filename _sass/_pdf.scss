@@ -1,6 +1,8 @@
----
-#pdf
----
+.job {
+    background-image: none !important;
+}
+
+@import "main";
 
 $bold-font: "Verdana";
 $text-font: "Calibri";
