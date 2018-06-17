@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Cooper Brislain's Resume
-pdf: true
+pdf: false
 ---
 # COOPER BRISLAIN
 ### Synesthetic Visioneer • Creative Coder
 
 {% include contact.html %}
 
-> VJ and Software Engineer specializing in synethesizing video production techniques with real-time environment parameterization, seeking opportunities to enhance event immersion and experience. 
+> Software Engineer and Creative Coder specializing in synethesizing video production techniques with real-time environment parameterization, seeking opportunities to enhance event immersion and experience. 
 
 ## KEY SKILLS
 

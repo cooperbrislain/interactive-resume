@@ -75,7 +75,7 @@
   enabled: true
   years: 5
 - title: Creative Coding
-  enabled: true
+  enabled: false
   years: 10
 - title: Hardware Development
   enabled: false
@@ -84,7 +84,7 @@
   enabled: true
   years: 3
 - title: Object Oriented Programming
-  enabled: true
+  enabled: false
   years: 7
 - title: MVC
   enabled: true
@@ -115,7 +115,7 @@
   enabled: true
   years: 10
 - title: Video Production
-  enabled: true
+  enabled: false
   years: 5
 - title: Generative Art
   enabled: true

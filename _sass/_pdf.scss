@@ -1,76 +1,64 @@
-.job {
-    background-image: none !important;
-}
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:200,300,400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:200,300,400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
 
-@import "main";
+$title-font: "Work Sans";
+$book-font: "Encode Sans";
+$block-font: "Encode Sans Condensed";
 
-$bold-font: "Verdana";
-$text-font: "Calibri";
+@import "common";
 
 * {
     color: #000;
-    font-size: 100%;
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5 {
-    font-weight: bold;
-    font-family: $bold_font;
-}
-h1 {
-    font-size: 80pt;
-}
-h2 {
-    font-size: 60pt;
-}
-h3, h4, h5 {
-    font-size: 50pt;
-    margin-bottom: 1em;
-}
 body {
-    font-size: 36pt;
-    font-family: $text_font;
-    .contact {
-        width: 17em;
-        font-size: 40pt;
-        position: absolute;
-        right: 0px;
-        top: 10px;
-        dl {
-            dt {
-                display: inline-block;
-                width: 1em;
-                line-height: 1.6em;
-                &:nth-child(7), &:nth-child(9) {
-                    display: none;
-                }
-            }
-            dd {
-                display: inline-block;
-                width: 15em;
-                line-height: 1.6em;
-                &:nth-child(8), &:nth-child(10) {
-                    display: none;
-                }
-            }
+    font-family: $book_font;
+    font-weight: 200;
+
+    h1, h2, h3, h4, h5 {
+        font-weight: bold;
+        font-family: $title_font;
+    }
+    h1 {
+        &+h3 {
+            margin-top: 0px;
         }
     }
+    h2 {
+    }
+    h3, h4, h5 {
+        margin-bottom: 1em;
+    }
     a {
+        border-bottom: none;
         text-decoration: none;
+        color: inherit;
+        sup {
+            display: none;
+        }
+    }
+    b {
+        font-weight: 300;
     }
     ul {
         li {
             list-style-type: none;
         }
     }
+    ul.links {
+        display: none;
+    }
     blockquote {
         margin: 0px;
         padding: 0px;
+        width: 65%;
         ul {
             margin: 0px;
             line-height: 1em;
             li {
                 line-height: normal;
-                font-family: $bold_font;
+                font-family: $title_font;
                 display: inline-block;
                 width: 15%;
                 padding: 0px;
@@ -82,8 +70,54 @@ body {
             }
         }
     }
-    .job {
-        background-image: none !important;
+    .contact {
+        width: 17em;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        dl {
+            dt {
+                display: inline-block;
+                width: 2em;
+                line-height: 1.6em;
+                white-space: nowrap;
+                &:nth-child(7), &:nth-child(9) {
+                    display: none;
+                }
+            }
+            dd {
+                display: inline-block;
+                width: 15em;
+                line-height: 1.6em;
+                white-space: nowrap;
+                &:nth-child(8), &:nth-child(10) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    h2+ul {
+        li {
+            font-weight: 500;
+        }
+    }
+
+    #technical-skills+ul,
+    #coursework+ul {
+        li {
+            font-family: $block-font;
+            display: inline-block;
+            white-space: nowrap;
+            padding: 0.5em;
+            &:nth-child(even) {
+                font-weight: 300;
+                color: #888;
+            }
+            &:nth-child(odd) {
+                font-weight: 200;
+            }
+        }
     }
 }
 

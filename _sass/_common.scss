@@ -1,0 +1,33 @@
+.job {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    ul {
+        list-style: none;
+        li {
+            b {
+                font-weight: 900;
+            }
+            &::before {
+                content: "• ";
+                color: #AAA;
+                font-weight: 900;
+                width: 0.5em;
+                margin-left: -0.5em;
+                font-family: $title-font;
+            }
+            p {
+                display: inline;
+            }
+        }
+    }
+    a {
+        &.icon {
+            color: #000;
+            margin: 5px;
+        }
+    }
+    &:nth-child(even) {
+    }
+    &:nth-child(odd) {
+    }
+}
