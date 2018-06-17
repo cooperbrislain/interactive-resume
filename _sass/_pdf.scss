@@ -71,7 +71,7 @@ body {
         }
     }
     .contact {
-        width: 17em;
+        width: 15em;
         position: absolute;
         right: 0px;
         top: 10px;
@@ -81,22 +81,26 @@ body {
                 width: 2em;
                 line-height: 1.6em;
                 white-space: nowrap;
+                text-align: right;
                 &:nth-child(7), &:nth-child(9) {
                     display: none;
                 }
             }
             dd {
                 display: inline-block;
-                width: 15em;
+                width: 12em;
                 line-height: 1.6em;
                 white-space: nowrap;
+                text-align: left;
+                overflow: visible;
+                font-weight: 700;
+                margin-left: 0.25em;
                 &:nth-child(8), &:nth-child(10) {
                     display: none;
                 }
             }
         }
     }
-
     h2+ul {
         li {
             font-weight: 500;
