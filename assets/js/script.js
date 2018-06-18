@@ -77,7 +77,8 @@ $(document).ready(function() {
                 };
                 ctx = document.ctx;
                 ctx.beginPath();
-                ctx.arc(document.endpoint.x,document.endpoint.y,50,0,2*Math.PI);
+                rad = 50;
+                ctx.arc(document.endpoint.x,document.endpoint.y,rad,0,2*Math.PI);
                 grd = ctx.createRadialGradient(document.endpoint.x,document.endpoint.y,5,document.endpoint.x,document.endpoint.y,100);
                 grd.addColorStop(0,"white");
                 grd.addColorStop(1,"#DDEECC");
@@ -85,18 +86,34 @@ $(document).ready(function() {
                 ctx.strokeStyle="#AABBCC";
                 ctx.fill();
                 ctx.stroke();
+                ang = Math.atan2(
+                                 document.endpoint.y-document.skillorigin.y,
+                                 document.endpoint.x-document.skillorigin.x
+                                 );
+                lineorigin = {
+                    'x': document.skillorigin.x+Math.cos(ang)*rad,
+                    'y': document.skillorigin.y+Math.sin(ang)*rad
+                }
+                lineend = {
+                    'x': document.endpoint.x-Math.cos(ang)*rad,
+                    'y': document.endpoint.y-Math.sin(ang)*rad
+                }
+                ctx.arc(lineorigin.x,lineorigin.y,8,0,2*Math.PI);
+                ctx.fill();
                 ctx.beginPath();
                 ctx.moveTo(
-                   document.skillorigin.x,
-                   document.skillorigin.y
+                   lineorigin.x,
+                   lineorigin.y
                 );
-
                 ctx.lineTo(
-                    document.endpoint.x,
-                    document.endpoint.y
+                    lineend.x,
+                    lineend.y
                 );
                 ctx.strokeStyle="#AABBCC";
-                ctx.stroke();
+                if (Math.abs(document.skillorigin.x - document.endpoint.x) > 1
+                    && Math.abs(document.skillorigin.y - document.endpoint.y) > 1) {
+                        ctx.stroke();
+                }
             });
         });
 
