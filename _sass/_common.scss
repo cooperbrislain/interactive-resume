@@ -19,7 +19,7 @@
                 bottom: 2.5pt;
             }
             p {
-                display: inline;
+                display: inline-block;
             }
         }
     }
@@ -32,5 +32,20 @@
     &:nth-child(even) {
     }
     &:nth-child(odd) {
+    }
+}
+
+blockquote {
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+a {
+    sup {
+        i {
+            color: #555;
+        }
     }
 }

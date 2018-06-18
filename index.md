@@ -10,7 +10,11 @@ pdf: false
 
 > Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
 
-## KEY SKILLS
+## TECHNICAL SKILLS
+
+{% include list.html items=site.data.skills_technical %}
+
+## SOFT SKILLS
 
 * Excellent written communication skills  
 * Lifelong learner  
@@ -23,10 +27,6 @@ pdf: false
 ## EXPERIENCE 
 
 {% include experience.md %}
-
-## TECHNICAL SKILLS
-
-{% include list.html items=site.data.skills_technical %}
 
 ## EDUCATION
 
