@@ -163,7 +163,6 @@ $(document).ready(function() {
         });
 
         $(this).on('click',function() {
-            $(this).css('visibility','hidden');
             document.$selected = $(this);
             document.fromanchor = {
                 x: $(this).offset().left+$(this).outerWidth()/2,
@@ -183,7 +182,7 @@ $(document).ready(function() {
                 ctx.strokeStyle = "white";
                 ctx.textAlign = "center";
                 ctx.eclipseText(document.$selected.text().trim(), document.fromanchor.x, document.fromanchor.y, 15);
-
+                document.$selected.css('visibility','hidden');
                 document.ctx = ctx;
             });
             $('canvas').on('click', function() {
