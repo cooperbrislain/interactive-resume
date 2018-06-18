@@ -9,13 +9,24 @@ function sp(str) {
 
 CanvasRenderingContext2D.prototype.innerGlow = function(iters) {
     this.save();
-    this.globalAlpha = 0.05;
+    this.globalAlpha = 0.08;
     this.clip();
     for (i=1; i<=iters; i++) {
         this.lineWidth = i;
         this.stroke();
     }
     this.restore();
+}
+
+CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iters) {
+    this.save();
+    this.globalAlpha = 0.12;
+    for (i=1; i<=iters; i++) {
+        this.lineWidth = i;
+        this.strokeText(text, x, y);
+    }
+    this.restore();
+    ctx.fillText(text, x, y);
 }
 
 $(document).ready(function() {
@@ -67,7 +78,7 @@ $(document).ready(function() {
             grd = ctx.createRadialGradient(document.skillorigin.x,document.skillorigin.y,5,document.skillorigin.x,document.skillorigin.y,100);
             grd.addColorStop(0,"white");
             grd.addColorStop(1,"#DDEECC");
-            ctx.strokeStyle="#AABBCC";
+            ctx.strokeStyle="#DEFAC9";
             ctx.beginPath();
             ctx.arc(document.skillorigin.x,document.skillorigin.y,50,0,2*Math.PI);
             ctx.innerGlow(25);
@@ -137,20 +148,15 @@ $(document).ready(function() {
 
         $(this).on('click',function() {
             ctx = document.ctx;
-            ctx.globalAlpha = 0.25;
+            ctx.beginPath();
             ctx.font = "900 20pt Tajawal";
             ctx.fillStyle = "black";
             ctx.strokeStyle = "white";
+            ctx.globalAlpha = 1;
             ctx.textAlign = "center";
-            $(this).css('visibility','hidden');
-            for (i=1; i<=10; i++) {
-                ctx.lineWidth = i;
-                ctx.strokeText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
-            }
-            ctx.lineWidth = 4;
-            ctx.globalAlpha = 0.95;
-            ctx.fillText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
+            ctx.eclipseText($(this).text().trim(), document.skillorigin.x, document.skillorigin.y+10, 15);
             document.ctx = ctx;
+            $(this).css('visibility','hidden');
             $('canvas').css('pointer-events', 'auto');
             $('canvas').on('click', function() {
                 $('[data-skill]').css('visibility','visible');
