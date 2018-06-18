@@ -162,3 +162,17 @@ blockquote {
 h2+ul {
     font-weight: 700;
 }
+
+.highlight {
+    border: 1px dotted #FAB;
+    background-color: #FEA;
+}
+
+.job {
+    .links {
+        display: none;
+    }
+    .skills {
+        display: none;
+    }
+}
