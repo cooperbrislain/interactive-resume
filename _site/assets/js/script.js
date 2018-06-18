@@ -193,6 +193,7 @@ $(document).ready(function() {
                 ctx.globalAlpha = 1;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
                 document.ctx = ctx;
+                event.stopPropagation();
                 $(this).css('pointer-events', 'none');
                 $(this).off('click');
             });
