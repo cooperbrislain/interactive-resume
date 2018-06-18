@@ -4,7 +4,7 @@
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
-  skills: ['git','arduino']
+  skills: ['git','arduino','generative-art','integration-and-automation','trello','agile-development','projection-mapping','rapid-prototyping']
   links:
     - icon: fab fa-github
       url: https://github.com/spaceboycoop/led-test-bench
@@ -15,7 +15,6 @@
     - description: Delivered __150 LED fixtures__ in time for use for installations at live events.
     - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
     - description: __Developed testing tools__ for use in production and for field __diagnostics__ using __Arduino__
-      icon: \f2db
     - description: Iterated on product design based on event __post-mortem analysis__.
     - description: Recommended parts, materials, and tools to overcome engineering challenges.
     - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
@@ -30,6 +29,7 @@
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
+  skills: ['arduino','unity','flow-based-programming','c#','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender']
   links:
       - icon: fab fa-vimeo
         url: https://www.vimeo.com/vektorselektor
@@ -52,6 +52,7 @@
   enabled: true
 - title: Software Engineer
   company: BetterHelp
+  skills: ['php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello']
   logo: /assets/svg/watermarks/betterhelp.svg
   url: https://www.betterhelp.com
   location: Sunnyvale, CA

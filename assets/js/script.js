@@ -7,26 +7,112 @@ function sp(str) {
     return spinal;
 }
 
+function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
+    ctx = document.ctx;
+
+    fromanchor = {
+        x: $from.offset().left+$from.outerWidth()/2,
+        y: $from.offset().top+$from.outerHeight()/2
+    }
+    // from bubble
+    ctx.beginPath();
+    ctx.strokeStyle = "#00ef60";
+    ctx.arc(fromanchor.x,fromanchor.y,from_rad,0,2*Math.PI);
+    ctx.innerGlow(18);
+
+    document.ctx = ctx;
+    document.$selected = $from;
+
+    // to loop
+    $to.each(function() {
+        $from = document.$selected;
+        fromanchor = {
+            x: $from.offset().left+$from.outerWidth()/2,
+            y: $from.offset().top+$from.outerHeight()/2
+        }
+        if ($(this)[0] == $from[0]) {
+            return 0;
+        }
+        if ($(this).is('.job .skills li')) {
+            toanchor = {
+                x: $(this).parent().parent().find('h3').offset().left-15,
+                y: $(this).parent().parent().find('h3').offset().top+$(this).parent().parent().find('h3').outerHeight()/2
+            }
+            to_rad = 15;
+        } else {
+            toanchor = {
+                x: $(this).offset().left+$(this).outerWidth()/2,
+                y: $(this).offset().top+$(this).outerHeight()/2
+            }
+            to_rad = 50;
+        }
+
+        // calculate angle
+        ang = Math.atan2(
+            toanchor.y-fromanchor.y,
+            toanchor.x-fromanchor.x
+        );
+        // calculate segment between
+        lineorigin = {
+            'x': fromanchor.x+Math.cos(ang)*from_rad,
+            'y': fromanchor.y+Math.sin(ang)*from_rad
+        }
+        lineend = {
+            'x': toanchor.x-Math.cos(ang)*to_rad,
+            'y': toanchor.y-Math.sin(ang)*to_rad
+        }
+
+        ctx = document.ctx;
+
+        // draw line
+        ctx.beginPath();
+        ctx.strokeStyle="#02acf3";
+        ctx.lineWidth = 3;
+        ctx.moveTo(
+           lineorigin.x,
+           lineorigin.y
+        );
+        ctx.lineTo(
+            lineend.x,
+            lineend.y
+        );
+        ctx.stroke();
+
+        // glow target
+        ctx.beginPath();
+        ctx.arc(toanchor.x,toanchor.y,to_rad,0,2*Math.PI);
+        ctx.strokeStyle="#02acf3";
+        ctx.innerGlow(20);
+
+        document.ctx = ctx;
+    })
+}
+
 CanvasRenderingContext2D.prototype.innerGlow = function(iters) {
     this.save();
+
     this.globalAlpha = 0.08;
     this.clip();
     for (i=1; i<=iters; i++) {
         this.lineWidth = i;
         this.stroke();
     }
+
     this.restore();
 }
 
 CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iters) {
     this.save();
+
     this.globalAlpha = 0.12;
     for (i=1; i<=iters; i++) {
         this.lineWidth = i;
-        this.strokeText(text, x, y);
+        this.strokeText(text, x, y+7);
     }
+    this.globalAlpha = 1;
+    ctx.fillText(text, x, y+7);
+
     this.restore();
-    ctx.fillText(text, x, y);
 }
 
 $(document).ready(function() {
@@ -67,99 +153,42 @@ $(document).ready(function() {
         $(this).attr('data-skill',skillname);
 
         $(this).on('mouseenter', function() {
-            $('.highlight').remove();
-            document.skillorigin = {
-                'x': $(this).offset().left+$(this).outerWidth()/2,
-                'y': $(this).offset().top+$(this).outerHeight()/2
-                };
+            document.$selected = $(this);
             ctx = document.ctx;
             ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
-            ctx.save();
-            grd = ctx.createRadialGradient(document.skillorigin.x,document.skillorigin.y,5,document.skillorigin.x,document.skillorigin.y,100);
-            grd.addColorStop(0,"white");
-            grd.addColorStop(1,"#DDEECC");
             ctx.strokeStyle="#DEFAC9";
-            ctx.beginPath();
-            ctx.arc(document.skillorigin.x,document.skillorigin.y,50,0,2*Math.PI);
-            ctx.innerGlow(25);
             document.ctx = ctx;
-            var $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]');
-            $skill_anchors.each(function(index) {
-                $highlight = $('<div>')
-                    .addClass('highlight')
-                    .css('width', $(this).width()+10)
-                    .css('height', $(this).height()+10)
-                    .css('top', $(this).position().top-5)
-                    .css('left', $(this).position().left-5)
-                    .css('z-index',101);
-                $highlight.insertAfter($(this));
-
-                startrad = 50;
-                if ($(this).is('.job .skills li')) {
-                    $anchor = $(this).parent().parent().find('h3');
-                    document.endpoint = {
-                        'x': $anchor.offset().left-25,
-                        'y': $anchor.offset().top+$anchor.outerHeight()/2
-                    }
-                    endrad = 10;
-                } else {
-                    document.endpoint = {
-                        'x': $(this).offset().left+$(this).outerWidth()/2,
-                        'y': $(this).offset().top+$(this).outerHeight()/2
-                    };
-                    endrad = 50;
-                }
-                ctx = document.ctx;
-                ctx.beginPath();
-                ctx.arc(document.endpoint.x,document.endpoint.y,endrad,0,2*Math.PI);
-                ctx.strokeStyle="#AABBCC";
-                ctx.innerGlow(15);
-                ang = Math.atan2(
-                                 document.endpoint.y-document.skillorigin.y,
-                                 document.endpoint.x-document.skillorigin.x
-                                 );
-                lineorigin = {
-                    'x': document.skillorigin.x+Math.cos(ang)*startrad,
-                    'y': document.skillorigin.y+Math.sin(ang)*startrad
-                }
-                lineend = {
-                    'x': document.endpoint.x-Math.cos(ang)*endrad,
-                    'y': document.endpoint.y-Math.sin(ang)*endrad
-                }
-
-                ctx.beginPath();
-                ctx.moveTo(
-                   lineorigin.x,
-                   lineorigin.y
-                );
-                ctx.lineTo(
-                    lineend.x,
-                    lineend.y
-                );
-
-                ctx.strokeStyle = "#AABBCC";
-                ctx.lineWidth = 3;
-                if (Math.abs(document.skillorigin.x - document.endpoint.x) > 1
-                    && Math.abs(document.skillorigin.y - document.endpoint.y) > 1) {
-                        ctx.stroke();
-                }
-            });
+            $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]');
+            connectBubbles($(this), $skill_anchors);
         });
 
         $(this).on('click',function() {
-            ctx = document.ctx;
-            ctx.beginPath();
-            ctx.font = "900 20pt Tajawal";
-            ctx.fillStyle = "black";
-            ctx.strokeStyle = "white";
-            ctx.globalAlpha = 1;
-            ctx.textAlign = "center";
-            ctx.eclipseText($(this).text().trim(), document.skillorigin.x, document.skillorigin.y+10, 15);
-            document.ctx = ctx;
             $(this).css('visibility','hidden');
-            $('canvas').css('pointer-events', 'auto');
+            document.$selected = $(this);
+            document.fromanchor = {
+                x: $(this).offset().left+$(this).outerWidth()/2,
+                y: $(this).offset().top+$(this).outerHeight()/2
+            };
+            $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
+            $('.job').not($('.job').has('[data-skill="' + document.$selected.data('skill') + '"]')).slideUp(function() {
+                $('canvas').css('pointer-events', 'auto');
+                ctx = document.ctx;
+                ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
+                ctx.beginPath();
+                document.ctx = ctx;
+                connectBubbles(document.$selected, $skill_anchors);
+                ctx = document.ctx;
+                ctx.font = "900 18pt Tajawal";
+                ctx.fillStyle = "black";
+                ctx.strokeStyle = "white";
+                ctx.textAlign = "center";
+                ctx.eclipseText(document.$selected.text().trim(), document.fromanchor.x, document.fromanchor.y, 15);
+
+                document.ctx = ctx;
+            });
             $('canvas').on('click', function() {
                 $('[data-skill]').css('visibility','visible');
+                $('.job').slideDown();
                 ctx = document.ctx;
                 ctx.globalAlpha = 1;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
