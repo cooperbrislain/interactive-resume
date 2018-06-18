@@ -7,12 +7,24 @@ function sp(str) {
     return spinal;
 }
 
+CanvasRenderingContext2D.prototype.innerGlow = function(iters) {
+    this.save();
+    this.globalAlpha = 0.05;
+    this.clip();
+    for (i=1; i<=iters; i++) {
+        this.lineWidth = i;
+        this.stroke();
+    }
+    this.restore();
+}
+
 $(document).ready(function() {
     $('<canvas id="canvas">').appendTo('body');
     canvas = document.getElementById('canvas');
     canvas.width = window.innerWidth;
     canvas.height = $(document).height();
     ctx = document.getElementById('canvas').getContext('2d');
+    console.log(ctx);
     document.ctx = ctx;
     devicePixelRatio = window.devicePixelRatio || 1,
     backingStoreRatio = ctx.webkitBackingStorePixelRatio ||
@@ -51,17 +63,16 @@ $(document).ready(function() {
                 };
             ctx = document.ctx;
             ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
+            ctx.save();
             grd = ctx.createRadialGradient(document.skillorigin.x,document.skillorigin.y,5,document.skillorigin.x,document.skillorigin.y,100);
             grd.addColorStop(0,"white");
             grd.addColorStop(1,"#DDEECC");
-            ctx.fillStyle = grd;
             ctx.strokeStyle="#AABBCC";
             ctx.beginPath();
             ctx.arc(document.skillorigin.x,document.skillorigin.y,50,0,2*Math.PI);
-            ctx.fill();
-            ctx.stroke();
+            ctx.innerGlow(25);
             document.ctx = ctx;
-            var $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]:visible');
+            var $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]');
             $skill_anchors.each(function(index) {
                 $highlight = $('<div>')
                     .addClass('highlight')
@@ -71,35 +82,40 @@ $(document).ready(function() {
                     .css('left', $(this).position().left-5)
                     .css('z-index',101);
                 $highlight.insertAfter($(this));
-                document.endpoint = {
-                    'x': $(this).offset().left+$(this).outerWidth()/2,
-                    'y': $(this).offset().top+$(this).outerHeight()/2
-                };
+
+                startrad = 50;
+                if ($(this).is('.job .skills li')) {
+                    $anchor = $(this).parent().parent().find('h3');
+                    document.endpoint = {
+                        'x': $anchor.offset().left-25,
+                        'y': $anchor.offset().top+$anchor.outerHeight()/2
+                    }
+                    endrad = 10;
+                } else {
+                    document.endpoint = {
+                        'x': $(this).offset().left+$(this).outerWidth()/2,
+                        'y': $(this).offset().top+$(this).outerHeight()/2
+                    };
+                    endrad = 50;
+                }
                 ctx = document.ctx;
                 ctx.beginPath();
-                rad = 50;
-                ctx.arc(document.endpoint.x,document.endpoint.y,rad,0,2*Math.PI);
-                grd = ctx.createRadialGradient(document.endpoint.x,document.endpoint.y,5,document.endpoint.x,document.endpoint.y,100);
-                grd.addColorStop(0,"white");
-                grd.addColorStop(1,"#DDEECC");
-                ctx.fillStyle = grd;
+                ctx.arc(document.endpoint.x,document.endpoint.y,endrad,0,2*Math.PI);
                 ctx.strokeStyle="#AABBCC";
-                ctx.fill();
-                ctx.stroke();
+                ctx.innerGlow(15);
                 ang = Math.atan2(
                                  document.endpoint.y-document.skillorigin.y,
                                  document.endpoint.x-document.skillorigin.x
                                  );
                 lineorigin = {
-                    'x': document.skillorigin.x+Math.cos(ang)*rad,
-                    'y': document.skillorigin.y+Math.sin(ang)*rad
+                    'x': document.skillorigin.x+Math.cos(ang)*startrad,
+                    'y': document.skillorigin.y+Math.sin(ang)*startrad
                 }
                 lineend = {
-                    'x': document.endpoint.x-Math.cos(ang)*rad,
-                    'y': document.endpoint.y-Math.sin(ang)*rad
+                    'x': document.endpoint.x-Math.cos(ang)*endrad,
+                    'y': document.endpoint.y-Math.sin(ang)*endrad
                 }
-                ctx.arc(lineorigin.x,lineorigin.y,8,0,2*Math.PI);
-                ctx.fill();
+
                 ctx.beginPath();
                 ctx.moveTo(
                    lineorigin.x,
@@ -109,7 +125,9 @@ $(document).ready(function() {
                     lineend.x,
                     lineend.y
                 );
-                ctx.strokeStyle="#AABBCC";
+
+                ctx.strokeStyle = "#AABBCC";
+                ctx.lineWidth = 3;
                 if (Math.abs(document.skillorigin.x - document.endpoint.x) > 1
                     && Math.abs(document.skillorigin.y - document.endpoint.y) > 1) {
                         ctx.stroke();
@@ -119,13 +137,13 @@ $(document).ready(function() {
 
         $(this).on('click',function() {
             ctx = document.ctx;
-            ctx.globalAlpha = 0.5;
+            ctx.globalAlpha = 0.25;
             ctx.font = "900 20pt Tajawal";
             ctx.fillStyle = "black";
             ctx.strokeStyle = "white";
             ctx.textAlign = "center";
             $(this).css('visibility','hidden');
-            for (i=1; i<=5; i++) {
+            for (i=1; i<=10; i++) {
                 ctx.lineWidth = i;
                 ctx.strokeText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
             }
@@ -137,7 +155,7 @@ $(document).ready(function() {
             $('canvas').on('click', function() {
                 $('[data-skill]').css('visibility','visible');
                 ctx = document.ctx;
-                ctx.globalAlpha = 0.5;
+                ctx.globalAlpha = 1;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
                 document.ctx = ctx;
                 $(this).css('pointer-events', 'none');
