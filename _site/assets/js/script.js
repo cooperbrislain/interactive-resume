@@ -42,7 +42,7 @@ $(document).ready(function() {
     $skills.each(function(index) {
         var skillname = sp($(this).text());
         $(this).attr('data-skill',skillname);
-        $(this).on('click', function() {
+        $(this).on('mouseenter', function() {
             $('.highlight').remove();
             document.skillorigin = {
                 'x': $(this).offset().left+$(this).outerWidth()/2,
@@ -52,9 +52,9 @@ $(document).ready(function() {
             context.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
             grd = context.createRadialGradient(document.skillorigin.x,document.skillorigin.y,5,document.skillorigin.x,document.skillorigin.y,100);
             grd.addColorStop(0,"white");
-            grd.addColorStop(1,"#99AAFF");
+            grd.addColorStop(1,"#DDEECC");
             context.fillStyle = grd;
-            context.strokeStyle="#A0F";
+            context.strokeStyle="#AABBCC";
             context.beginPath();
             context.arc(document.skillorigin.x,document.skillorigin.y,50,0,2*Math.PI);
             context.fill();
@@ -79,9 +79,9 @@ $(document).ready(function() {
                 context.arc(document.endpoint.x,document.endpoint.y,50,0,2*Math.PI);
                 grd = context.createRadialGradient(document.endpoint.x,document.endpoint.y,5,document.endpoint.x,document.endpoint.y,100);
                 grd.addColorStop(0,"white");
-                grd.addColorStop(1,"#99AAFF");
+                grd.addColorStop(1,"#DDEECC");
                 context.fillStyle = grd;
-                context.strokeStyle="#A0F";
+                context.strokeStyle="#AABBCC";
                 context.fill();
                 context.stroke();
                 context.beginPath();
@@ -94,7 +94,7 @@ $(document).ready(function() {
                     document.endpoint.x,
                     document.endpoint.y
                 );
-                context.strokeStyle="#A0F";
+                context.strokeStyle="#AABBCC";
                 context.stroke();
             });
         });
