@@ -4,7 +4,7 @@
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
-  skills: ['git','arduino','generative-art','integration-and-automation','trello','agile-development','projection-mapping','rapid-prototyping','experience-design']
+  skills: ['adobe-creative-cloud','git','arduino','generative-art','integration-and-automation','trello','agile-development','projection-mapping','rapid-prototyping','experience-design']
   links:
     - icon: fab fa-github
       url: https://github.com/spaceboycoop/led-test-bench
@@ -29,7 +29,7 @@
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
-  skills: ['arduino','unity','flow-based-programming','c#','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender','glsl','shaders','experience-design']
+  skills: ['adobe-creative-cloud','arduino','unity','flow-based-programming','c#','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender','glsl','shaders','experience-design']
   links:
       - icon: fab fa-vimeo
         url: https://www.vimeo.com/vektorselektor
@@ -52,7 +52,7 @@
   enabled: true
 - title: Software Engineer
   company: BetterHelp
-  skills: ['php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello','analytics','integration-and-automation','refactoring','scalability','virtual-environments','vagrant']
+  skills: ['adobe-creative-cloud','php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello','analytics','integration-and-automation','refactoring','scalability','virtual-environments','vagrant']
   logo: /assets/svg/watermarks/betterhelp.svg
   url: https://www.betterhelp.com
   location: Sunnyvale, CA
@@ -73,7 +73,7 @@
   from: 2015-03-01
   to: 2016-08-01
   tags: ['full-time','programming','full-stack']
-  skills: ['virtual-environments',full-stack-development','regex','wordpress','content-management-systems','trello','agile-development','scrum','git','angular-js','php','html5','mysql','scss','platform-migration']
+  skills: ['adobe-creative-cloud','virtual-environments',full-stack-development','regex','wordpress','content-management-systems','trello','agile-development','scrum','git','angular-js','php','html5','mysql','scss','platform-migration']
   responsibilities:
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings in __content management system__.
@@ -107,7 +107,7 @@
   from: 2008-03-01
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
-  skills: ['flash','actionscript','html5','css3','css','quartz-composer','lamp','php','javascript','expression-engine','jquery','content-management-systems']
+  skills: ['adobe-creative-cloud','flash','actionscript','html5','css3','css','quartz-composer','lamp','php','javascript','expression-engine','jquery','content-management-systems']
   responsibilities:
     - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
     - description: Produced __pixel-perfect__ web materials for marketing campaigns, adhering to strict __style guidelines__.
@@ -121,7 +121,7 @@
   from: 2007-05-01
   to: 2007-12-15
   tags: ['full-stack','engineer','programming','full-time']
-  skills: ['content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript']
+  skills: ['adobe-creative-cloud','content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript']
   responsibilities:
     - description: Developed custom modules and features for in-house __content management system__. (Based on __Joomla__)
     - description: Optimized __mySQL__ queries for highly-trafficked websites.
@@ -162,7 +162,7 @@
   from: 1997-09-15
   to: 1998-01-15
   tags: ['part-time','technical']
-  skills: ['technical-support','h4x0ring','javascript','html','apache','pop3','tcp-ip','windows','macos']
+  skills: ['adobe-photoshop','technical-support','h4x0ring','javascript','html','apache','pop3','tcp-ip','windows','macos']
   responsibilities:
     - description: Provided support to users of __MacOS__ System 7/8 as well as __Windows__ 95 experiencing dial-up internet connectivity issues.
     - description: Assisted web designer with updates to company and customer websites.
@@ -173,7 +173,7 @@
   from: 1996-01-01
   to: 2000-01-01
   tags: ['part-time','programming']
-  skills: ['c','game-development','capitalism']
+  skills: ['c','game-development','capitalism','adobe-photoshop']
   responsibilities:
     - description: Created in-game stories, experiences, and spaces for text-based sci-fi online roleplaying game.
     - description: Mentored new coders in observance of good coding practices, story and game-world guidelines, balance, and quality.
