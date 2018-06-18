@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:200,700,900');
 @import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900');
 
+$break-small: 500px;
+$break-large: 1200px;
+
 $title-font: "Tajawal";
 $book-font: "Tajawal";
 $block-font: "Roboto Condensed";
@@ -72,6 +75,9 @@ blockquote {
             }
         }
     }
+    @media screen and (max-width: $break-small) {
+        width: 100%;
+    }
 }
 
 .contact {
@@ -118,6 +124,9 @@ blockquote {
         margin-right: 280px;
         margin-left: 0px;
     }
+    @media screen and (max-width: $break-small) {
+        display: none;
+    }
 }
 
 #technical-skills+ul {
@@ -140,6 +149,9 @@ blockquote {
                 top: -1em;
             }
         }
+    }
+    @media screen and (max-width: $break-small) {
+        justify-content: space-around;
     }
 }
 
@@ -180,6 +192,13 @@ h2+ul {
     }
     .skills {
         display: none;
+    }
+    h3 {
+        .year {
+             @media screen and (max-width: $break-small) {
+                display: none;
+            }
+        }
     }
 }
 

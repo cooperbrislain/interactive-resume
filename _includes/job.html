@@ -10,11 +10,13 @@
         {% if include.job.url %}
             <sup><i class="fa fa-external-link-square-alt"></i></sup></a>
         {% endif %}
-        {% if year_from == year_to %}
-            {{ year_to }}
-        {% else %}
-            {{ year_from }}-{{ year_to }}
-        {% endif %}
+        <span class="year">
+            {% if year_from == year_to %}
+                {{ year_to }}
+            {% else %}
+                {{ year_from }}-{{ year_to }}
+            {% endif %}
+        </span>
     </h3>
     <ul class="links">
         {% for item in include.job.links %}
