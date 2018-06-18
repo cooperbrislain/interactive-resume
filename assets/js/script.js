@@ -102,14 +102,18 @@ $(document).ready(function() {
 
         $(this).on('click',function() {
             ctx = document.ctx;
-            ctx.globalAlpha = 0.95;
+            ctx.globalAlpha = 0.5;
             ctx.font = "900 20pt Tajawal";
             ctx.fillStyle = "black";
             ctx.strokeStyle = "white";
-            ctx.lineWidth = 4;
             ctx.textAlign = "center";
             $(this).css('visibility','hidden');
-            ctx.strokeText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
+            for (i=1; i<=5; i++) {
+                ctx.lineWidth = i;
+                ctx.strokeText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
+            }
+            ctx.lineWidth = 4;
+            ctx.globalAlpha = 0.95;
             ctx.fillText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
             document.ctx = ctx;
             $('canvas').css('pointer-events', 'auto');
