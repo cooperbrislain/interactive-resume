@@ -2,7 +2,6 @@
   enabled: true
   years: 10
 - title: Git
-  url: https://www.github.com/spaceboycoop
   enabled: true
   years: 3
 - title: Unity
@@ -26,7 +25,7 @@
 - title: PHP
   enabled: true
   years: 15
-- title: MySQL
+- title: mySQL
   enabled: true
   years: 12
 - title: HTML5
@@ -111,7 +110,6 @@
   enabled: false
   years: 5
 - title: Photography
-  url: https://cbrislain.myportfolio.com/photography
   enabled: true
   years: 10
 - title: Video Production

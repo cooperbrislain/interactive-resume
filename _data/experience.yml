@@ -21,7 +21,7 @@
     - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
     - description: Developed and iterated __mass-production methodologies__ to meet requirement.
     - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
-    - description: Made design recommendations based on common challenges encountered in __live event production__.
+    - description: Made design recommendations based on common challenges encountered in __event production__.
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
@@ -59,7 +59,7 @@
   to: 2016-02-04 12:00:00 -0800
   tags: ['full-stack','engineer','full-time','programming']
   responsibilities:
-    - description: Worked on an __agile__ team to release iterative improvements to __user experiene__ based on data acquired from __multivariate analytics__.
+    - description: Worked on an __agile__ team to release iterative improvements to __user experience__ based on data acquired from __multivariate analytics__.
     - description: Utilized __XDebug__ for __PHP__ to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
     - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
     - description: Integrated billing system with Paypal's __Braintree API__, standardizing payment flow and allowing acceptance of new payment methods.
@@ -74,9 +74,9 @@
   tags: ['full-time','programming','full-stack']
   responsibilities:
     - description: Modernized student information portal.
-    - description: Standardized course catalog and event listings.
-    - description: Audited Wordpress extensions and determined optimization strategies to minimize overhead and points of failure.
-    - description: Brought outdated code repository up-to-date.
+    - description: Standardized course catalog and event listings in __content management system__.
+    - description: Audited __Wordpress__ extensions and determined optimization strategies to minimize overhead and points of failure.
+    - description: Brought outdated __git__ repository up-to-date.
     - description: Audited repository and codebase diffs to determine points at which undesirable behavior was introduced.
     - description: Developed strategies and solutions to avoid future complications.
   enabled: true
@@ -90,10 +90,10 @@
   tags: ['part-time','freelance','full-stack','programming','engineer']
   responsibilities:
     - description: Designed __mySQL__ database for auto-shipping leads.
-    - description: Built __RESTful API__ for partners and affiliates.
+    - description: Built __REST__ful API for partners and affiliates.
     - description: Created embeddable form widget for use by affiliates and partners.
     - description: Redesigned system for greater __extensibility__, increasing lead volume and providing additional cross-selling opportunities.
-    - description: __Designed tools__ for the __reporting__ and __visualization__ of lead data.
+    - description: Designed __tools__ for the reporting and __visualization__ of lead data.
     - description: Improved __efficiency__ and __agility__ by __automating__ frequent or time-consuming tasks.
   enabled: true
 - title: Software Engineer
@@ -119,7 +119,7 @@
   tags: ['full-stack','engineer','programming','full-time']
   responsibilities:
     - description: Developed custom modules and features for in-house __content management system__. (Based on __Joomla__)
-    - description: Optimized __MySQL__ queries for highly-trafficked websites.
+    - description: Optimized __mySQL__ queries for highly-trafficked websites.
   enabled: true
 - title: Support Technician
   company: UCSC Media Services
@@ -156,7 +156,7 @@
   to: 1998-01-15
   tags: ['part-time','technical']
   responsibilities:
-    - description: Provided support to users of MacOS System 7/8 as well as Windows 95 experiencing dial-up internet connectivity issues.
+    - description: Provided support to users of __MacOS__ System 7/8 as well as __Windows__ 95 experiencing dial-up internet connectivity issues.
     - description: Assisted web designer with updates to company and customer websites.
     - description: Taught introductory class for new Internet users.
   enabled: false
