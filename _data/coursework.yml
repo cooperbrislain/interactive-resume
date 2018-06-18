@@ -1,8 +1,11 @@
 - title: Abstract Data Structures
+  skills: ['c++']
   enabled: true
 - title: Algorithms
+  skills: ['regex','c','java']
   enabled: true
 - title: X86 Assembly
+  skills: ['x86-assembly']
   enabled: true
 - title: Differential Equations
   enabled: true
@@ -13,22 +16,30 @@
 - title: Logic
   enabled: true
 - title: Digital Media Production
+  skills: ['photography','video-editing','adobe-creative-cloud']
   enabled: true
 - title: Film Studio Production
+  skills: ['photography','video-editing','lighting']
   enabled: true
 - title: Documentary Production
+  skills: ['video-editing']
   enabled: true
 - title: Film Theory
   enabled: true
 - title: Digital Media Theory
   enabled: true
 - title: Social Documentation
+  skills: ['photography']
   enabled: true
 - title: Java Programming
+  skills: ['java']
   enabled: true
-- title: C Programming
+- title: C++ Programming
+  skills: ['c++']
   enabled: true
 - title: AP Computer Science
+  skills: ['c++']
   enabled: true
 - title: Cisco Networking
   enabled: true
+  skills: ['network support','network administration']

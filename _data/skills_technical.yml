@@ -35,7 +35,9 @@
   enabled: true
   years: 8
 - title: RegEx
-  enabled: true
+  enabled: false
+  years: 20
+- title: Platform Migration
   years: 20
 - title: Node.js
   enabled: true
@@ -52,10 +54,13 @@
 - title: Flash
   enabled: true
   years:  5
-- title: Real-Time Graphics for Live Events
+- title: Real-Time Graphics
   enabled: true
   years: 10
-- title: GLSL Shaders
+- title: GLSL
+  enabled: true
+  years: 10
+- title: Shaders
   enabled: true
   years: 10
 - title: Quartz Composer
@@ -86,7 +91,7 @@
   enabled: false
   years: 7
 - title: MVC
-  enabled: true
+  enabled: false
   years: 2
 - title: Relational Databases
   enabled: false
@@ -121,6 +126,21 @@
 - title: Integration and Automation
   enabled: true
   years: 5
+- title: Experience Design
+  enabled: true
+  years: 5
+- title: Rapid Prototyping
+  enabled: true
+  years: 3
 - title: Spiline Reticulation
   years: 25
   enabled: true
+- title: Virtual Environments
+  years: 5
+  enabled: true
+- title: Vagrant
+  years: 5
+  enabled: false
+- title: VirtualBox
+  years: 1
+  enabled: false

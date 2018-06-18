@@ -4,7 +4,7 @@
   from: 2018-04-01
   to: 2018-06-11
   tags: ['production','gig','art','creative','programming','electronics']
-  skills: ['git','arduino','generative-art','integration-and-automation','trello','agile-development','projection-mapping','rapid-prototyping']
+  skills: ['git','arduino','generative-art','integration-and-automation','trello','agile-development','projection-mapping','rapid-prototyping','experience-design']
   links:
     - icon: fab fa-github
       url: https://github.com/spaceboycoop/led-test-bench
@@ -29,13 +29,13 @@
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
-  skills: ['arduino','unity','flow-based-programming','c#','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender']
+  skills: ['arduino','unity','flow-based-programming','c#','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender','glsl','shaders','experience-design']
   links:
       - icon: fab fa-vimeo
         url: https://www.vimeo.com/vektorselektor
         title: VektorSelektor on Vimeo
       - icon: fab fa-youtube on YouTube
-
+        title: VektorSelektor on YouTube
       - icon: fab fa-instagram
         url: https://www.instagram.com/vektorselektor
         title: VektorSelektor on Instagram
@@ -52,18 +52,18 @@
   enabled: true
 - title: Software Engineer
   company: BetterHelp
-  skills: ['php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello']
+  skills: ['php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello','analytics','integration-and-automation','refactoring','scalability','virtual-environments','vagrant']
   logo: /assets/svg/watermarks/betterhelp.svg
   url: https://www.betterhelp.com
   location: Sunnyvale, CA
   from: 2015-11-01 12:00:00 -0800
   to: 2016-02-04 12:00:00 -0800
-  tags: ['full-stack','engineer','full-time','programming']
+  tags: ['full-stack-development','engineer','full-time','programming']
   responsibilities:
-    - description: Worked on an __agile__ team to release iterative improvements to __user experience__ based on data acquired from __multivariate analytics__.
-    - description: Utilized __XDebug__ for __PHP__ to identify bottlenecks and reduce landing page load time by 40%, using caching, asynchronous loading, and optimized database queries.
-    - description: Developed automated qualification and approval for financial aid applicants, freeing significant customer support resources.
-    - description: Integrated billing system with Paypal's __Braintree API__, standardizing payment flow and allowing acceptance of new payment methods.
+    - description: Worked on an __agile development__ team to release iterative improvements to __user experience__ based on data acquired from __multivariate analytics__.
+    - description: Utilized __XDebug__ with __PHP__ and __NginX to identify bottlenecks and reduce landing page load time by 40%.
+    - description: Developed __automated__ qualification and approval for financial aid applicants, freeing significant customer support resources.
+    - description: __Integrated__ billing system with Paypal's __Braintree API__, standardizing __payment__ flow and allowing acceptance of new payment methods.
   enabled: true
 - title: Software Engineer
   company: Visions in Education
@@ -73,6 +73,7 @@
   from: 2015-03-01
   to: 2016-08-01
   tags: ['full-time','programming','full-stack']
+  skills: ['virtual-environments',full-stack-development','regex','wordpress','content-management-systems','trello','agile-development','scrum','git','angular-js','php','html5','mysql','scss','platform-migration']
   responsibilities:
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings in __content management system__.
@@ -89,6 +90,7 @@
   from: 2010-03-01
   to: 2017-12-31
   tags: ['part-time','freelance','full-stack','programming','engineer']
+  skills: ['virtual-environments','system-administration','php','lamp','mysql','joomla','wordpress','git','full-stack-development','javascript','jquery','front-end-development','flash','content-management-systems','linux','apache','nginx','system-administration','html5','scss','regex','adobe-creative-cloud','platform-migration','integration-and-automation','rest','api','plesk']
   responsibilities:
     - description: Designed __mySQL__ database for auto-shipping leads.
     - description: Built __REST__ful API for partners and affiliates.
@@ -105,6 +107,7 @@
   from: 2008-03-01
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
+  skills: ['flash','actionscript','html5','css3','css','quartz-composer','lamp','php','javascript','expression-engine','jquery','content-management-systems']
   responsibilities:
     - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
     - description: Produced __pixel-perfect__ web materials for marketing campaigns, adhering to strict __style guidelines__.
@@ -118,6 +121,7 @@
   from: 2007-05-01
   to: 2007-12-15
   tags: ['full-stack','engineer','programming','full-time']
+  skills: ['content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript']
   responsibilities:
     - description: Developed custom modules and features for in-house __content management system__. (Based on __Joomla__)
     - description: Optimized __mySQL__ queries for highly-trafficked websites.
@@ -129,6 +133,7 @@
   from: 2006-09-01
   to: 2007-06-15
   tags: ['part-time','production','technical']
+  skills: ['production','technical-support','projection-mapping','video-production','video-editing']
   responsibilities:
     - description: Set up and struck media equipment for __special events__ and academic __productions__.
     - description: Provided __technical support__ to students and faculty in the use of __media equipment__ including __projectors__, __video cameras__, __audio systems__, and __computers__
@@ -144,6 +149,7 @@
   from: 2000-06-01
   to: 2000-08-30
   tags: ['part-time','production']
+  skills: ['event-production','production','safety']
   responsibilities:
     - description: Set up and struck large __interactive play systems__ for __special events__.
     - description: Regularly loaded and unloaded __heavy__ equipment.
@@ -156,6 +162,7 @@
   from: 1997-09-15
   to: 1998-01-15
   tags: ['part-time','technical']
+  skills: ['technical-support','h4x0ring','javascript','html','apache','pop3','tcp-ip','windows','macos']
   responsibilities:
     - description: Provided support to users of __MacOS__ System 7/8 as well as __Windows__ 95 experiencing dial-up internet connectivity issues.
     - description: Assisted web designer with updates to company and customer websites.
@@ -166,6 +173,7 @@
   from: 1996-01-01
   to: 2000-01-01
   tags: ['part-time','programming']
+  skills: ['c','game-development','capitalism']
   responsibilities:
     - description: Created in-game stories, experiences, and spaces for text-based sci-fi online roleplaying game.
     - description: Mentored new coders in observance of good coding practices, story and game-world guidelines, balance, and quality.
