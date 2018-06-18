@@ -14,16 +14,6 @@ pdf: false
 
 {% include list.html items=site.data.skills_technical %}
 
-## SOFT SKILLS
-
-* Excellent written communication skills  
-* Lifelong learner  
-* Critical thinker  
-* Ability to conceptualize complex systems  
-* Adaptable and creative problem solving skills
-* Able to foresee potential future complications and constraints, 
-  designing for extensibility and scalability
-
 ## EXPERIENCE 
 
 {% include experience.md %}
