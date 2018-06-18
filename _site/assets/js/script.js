@@ -12,14 +12,14 @@ $(document).ready(function() {
     canvas = document.getElementById('canvas');
     canvas.width = window.innerWidth;
     canvas.height = $(document).height();
-    context = document.getElementById('canvas').getContext('2d');
-    document.context = context;
+    ctx = document.getElementById('canvas').getContext('2d');
+    document.ctx = ctx;
     devicePixelRatio = window.devicePixelRatio || 1,
-    backingStoreRatio = context.webkitBackingStorePixelRatio ||
-                        context.mozBackingStorePixelRatio ||
-                        context.msBackingStorePixelRatio ||
-                        context.oBackingStorePixelRatio ||
-                        context.backingStorePixelRatio || 1,
+    backingStoreRatio = ctx.webkitBackingStorePixelRatio ||
+                        ctx.mozBackingStorePixelRatio ||
+                        ctx.msBackingStorePixelRatio ||
+                        ctx.oBackingStorePixelRatio ||
+                        ctx.backingStorePixelRatio || 1,
     ratio = devicePixelRatio / backingStoreRatio;
     if (devicePixelRatio !== backingStoreRatio) {
         var oldWidth = canvas.width;
@@ -28,11 +28,11 @@ $(document).ready(function() {
         canvas.height = oldHeight * ratio;
         canvas.style.width = oldWidth + 'px';
         canvas.style.height = oldHeight + 'px';
-        context.scale(ratio, ratio);
+        ctx.scale(ratio, ratio);
     }
-    context.globalAlpha = 0.5;
-    context.lineWidth=3;
-    document.context = context;
+    ctx.globalAlpha = 0.5;
+    ctx.lineWidth=3;
+    document.ctx = ctx;
     $('strong').each(function(index) {
         var skillname = sp($(this).text());
         $(this).attr('data-skill',skillname);
@@ -42,25 +42,26 @@ $(document).ready(function() {
     $skills.each(function(index) {
         var skillname = sp($(this).text());
         $(this).attr('data-skill',skillname);
+
         $(this).on('mouseenter', function() {
             $('.highlight').remove();
             document.skillorigin = {
                 'x': $(this).offset().left+$(this).outerWidth()/2,
                 'y': $(this).offset().top+$(this).outerHeight()/2
                 };
-            context = document.context;
-            context.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
-            grd = context.createRadialGradient(document.skillorigin.x,document.skillorigin.y,5,document.skillorigin.x,document.skillorigin.y,100);
+            ctx = document.ctx;
+            ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
+            grd = ctx.createRadialGradient(document.skillorigin.x,document.skillorigin.y,5,document.skillorigin.x,document.skillorigin.y,100);
             grd.addColorStop(0,"white");
             grd.addColorStop(1,"#DDEECC");
-            context.fillStyle = grd;
-            context.strokeStyle="#AABBCC";
-            context.beginPath();
-            context.arc(document.skillorigin.x,document.skillorigin.y,50,0,2*Math.PI);
-            context.fill();
-            context.stroke();
-            document.context = context;
-            var $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]');
+            ctx.fillStyle = grd;
+            ctx.strokeStyle="#AABBCC";
+            ctx.beginPath();
+            ctx.arc(document.skillorigin.x,document.skillorigin.y,50,0,2*Math.PI);
+            ctx.fill();
+            ctx.stroke();
+            document.ctx = ctx;
+            var $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]:visible');
             $skill_anchors.each(function(index) {
                 $highlight = $('<div>')
                     .addClass('highlight')
@@ -74,29 +75,53 @@ $(document).ready(function() {
                     'x': $(this).offset().left+$(this).outerWidth()/2,
                     'y': $(this).offset().top+$(this).outerHeight()/2
                 };
-                context = document.context;
-                context.beginPath();
-                context.arc(document.endpoint.x,document.endpoint.y,50,0,2*Math.PI);
-                grd = context.createRadialGradient(document.endpoint.x,document.endpoint.y,5,document.endpoint.x,document.endpoint.y,100);
+                ctx = document.ctx;
+                ctx.beginPath();
+                ctx.arc(document.endpoint.x,document.endpoint.y,50,0,2*Math.PI);
+                grd = ctx.createRadialGradient(document.endpoint.x,document.endpoint.y,5,document.endpoint.x,document.endpoint.y,100);
                 grd.addColorStop(0,"white");
                 grd.addColorStop(1,"#DDEECC");
-                context.fillStyle = grd;
-                context.strokeStyle="#AABBCC";
-                context.fill();
-                context.stroke();
-                context.beginPath();
-                context.moveTo(
+                ctx.fillStyle = grd;
+                ctx.strokeStyle="#AABBCC";
+                ctx.fill();
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(
                    document.skillorigin.x,
                    document.skillorigin.y
                 );
 
-                context.lineTo(
+                ctx.lineTo(
                     document.endpoint.x,
                     document.endpoint.y
                 );
-                context.strokeStyle="#AABBCC";
-                context.stroke();
+                ctx.strokeStyle="#AABBCC";
+                ctx.stroke();
             });
         });
+
+        $(this).on('click',function() {
+            ctx = document.ctx;
+            ctx.globalAlpha = 0.95;
+            ctx.font = "900 20pt Tajawal";
+            ctx.fillStyle = "black";
+            ctx.strokeStyle = "white";
+            ctx.lineWidth = 4;
+            ctx.textAlign = "center";
+            $(this).css('visibility','hidden');
+            ctx.strokeText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
+            ctx.fillText($(this).text().trim(),document.skillorigin.x,document.skillorigin.y+10);
+            document.ctx = ctx;
+            $('canvas').css('pointer-events', 'auto');
+            $('canvas').on('click', function() {
+                $('[data-skill]').css('visibility','visible');
+                ctx = document.ctx;
+                ctx.globalAlpha = 0.5;
+                ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
+                document.ctx = ctx;
+                $(this).css('pointer-events', 'none');
+                $(this).off('click');
+            });
+        })
     });
 });
