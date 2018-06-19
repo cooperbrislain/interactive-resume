@@ -110,7 +110,7 @@
   skills: ['adobe-creative-cloud','flash','actionscript','html5','css3','css','quartz-composer','lamp','php','javascript','expression-engine','jquery','content-management-systems']
   responsibilities:
     - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
-    - description: Produced __pixel-perfect__ web materials for marketing campaigns, adhering to strict __style guidelines__.
+    - description: Produced __pixel-perfect__ web materials for marketing campaigns, adhering to critical __style guidelines__.
     - description: Created __rich, interactive user interface__ for agency portfolio, with dynamically populated content.
   enabled: true
 - title: Software Engineer
@@ -123,7 +123,7 @@
   tags: ['full-stack','engineer','programming','full-time']
   skills: ['adobe-creative-cloud','content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript']
   responsibilities:
-    - description: Developed custom modules and features for in-house __content management system__. (Based on __Joomla__)
+    - description: Developed custom modules and features for __Joomla__-based __content management system__.
     - description: Optimized __mySQL__ queries for highly-trafficked websites.
   enabled: true
 - title: Support Technician
