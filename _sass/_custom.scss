@@ -61,6 +61,12 @@ blockquote {
     margin-left: 50px;
     margin-right: 100px;
     margin-bottom: 10px;
+    p {
+        @media screen and (max-width: $break-small) {
+            margin: 0px;
+            font-weight: 400;
+        }
+    }
     ul {
         li {
             display: inline-block;
@@ -77,6 +83,10 @@ blockquote {
     }
     @media screen and (max-width: $break-small) {
         width: 100%;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 1em;
+        margin-top: 0.5em;
     }
 }
 
