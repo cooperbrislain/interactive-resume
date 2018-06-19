@@ -6,13 +6,11 @@ pdf: false
 # COOPER BRISLAIN
 ### Software Engineer • Creative Coder
 
-{% include contact.html %}
-
 > Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
 
 ## TECHNICAL SKILLS
 
-{% include list.html items=site.data.skills_technical %}
+{% include tag-list.html items=site.data.skills_technical %}
 
 ## EXPERIENCE 
 
@@ -46,3 +44,4 @@ Napa Valley College; Napa, CA – Computer Science • 2002
 * The end user's privacy and security is paramount. 
 * Monetization shouldn't compromise utility.
 * The best thing to say when you don't know is that you don't know.
+

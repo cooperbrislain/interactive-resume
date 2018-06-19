@@ -116,6 +116,33 @@ CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iters) {
 }
 
 $(document).ready(function() {
+    // assign data from json tags
+    $('[data-json]').each(function() {
+        $(this).data($(this).data('json'));
+        $(this).removeAttr('json');
+        $(this).removeData('json');
+    });
+    $('strong').each(function(index) {
+        var skillname = sp($(this).text());
+        $(this).attr('data-skill',skillname);
+        $(this).data('skill',skillname);
+    });
+    $('#technical-skills+ul li[data-skill]').each(function() {
+        if($(this).data('slug')) {
+            $(this).attr('data-skill',$(this).data('slug'));
+            $(this).data('skill',$(this).data('slug'));
+        }
+        if($(this).data('synonyms')) {
+            document.skillname = $(this).data('skill');
+            $.each($(this).data('synonyms'), function(index, value) {
+                $items = $('strong[data-skill="' + value + '"]');
+                $items.attr('data-skill', document.skillname);
+                $items.data('skill', document.skillname);
+
+            });
+        }
+    });
+    // set up canvas
     $('<canvas id="canvas">').appendTo('body');
     canvas = document.getElementById('canvas');
     canvas.width = window.innerWidth;
@@ -141,16 +168,10 @@ $(document).ready(function() {
     ctx.globalAlpha = 0.5;
     ctx.lineWidth=3;
     document.ctx = ctx;
-    $('strong').each(function(index) {
-        var skillname = sp($(this).text());
-        $(this).attr('data-skill',skillname);
-    });
 
     var $skills = $('#technical-skills+ul>li, strong[data-skill]');
     $skills.each(function(index) {
-        var skillname = sp($(this).text());
-        $(this).attr('data-skill',skillname);
-
+        skillname = $(this).data('skill');
         $(this).on('mouseenter', function() {
             document.$selected = $(this);
             ctx = document.ctx;

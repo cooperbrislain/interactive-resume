@@ -1,14 +1,44 @@
-<div class="contact">
-    <dl>
-        <dt><i class="fas fa-map-marker"></i></dt>
-        <dd>{{site.location}}</dd>
-        <dt><i class="fas fa-phone"></i></dt>
-        <dd><a href="tel:{{site.phone}}">{{site.phone}}</a></dd>
-        <dt><i class="fas fa-at"></i></dt>
-        <dd><a href="mailto:{{site.email}}">{{site.email}}</a></dd>
-        <dt><a href="resume.pdf"><i class="fas fa-file-pdf"></i></a></dt>
-        <dd><a href="resume.pdf">PDF</a></dd>
-        <dt><a href="https://cbrislain.myportfolio.com/"><i class="fas fa-briefcase"></i></a></dt>
-        <dd><a href="https://cbrislain.myportfolio.com/">Portfolio</a></dd>
-    </dl>
-</div>
+<section class="split contact">
+    <section class="alt">
+        <h3>
+            <i class="icon fa-map-marker"></i>
+            <span class="label">Location</span>
+        </h3>
+        <p>{{site.location}}</p>
+    </section>
+    <section>
+        <h3>
+            <i class="icon fa-phone"></i>
+            <span class="label">Phone</span>
+        </h3>
+        <p><a href="tel:{{site.phone}}">{{site.phone}}</a></p>
+    </section>
+    <section>
+        <h3>
+            <i class="icon fa-at"></i>
+            <span class="label">Email</span>
+        </h3>
+        <p><a href="mailto:{{site.email}}">{{site.email}}</a></p>
+    </section>
+    <section>
+        <h3>
+            <i class="icon fa-file-pdf"></i>
+        </h3>
+        <p>[PDF]</p>]
+    <section>
+    <section>
+        <h3>
+            <i class="icon fa-briefcase"></i>
+        </h3>
+        <p>Portfolio</p>
+    </section>
+    <section>
+        <h3>Social</h3>
+        <ul class="icons alt">
+            <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+            <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+            <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+            <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+        </ul>
+    </section>
+</section>

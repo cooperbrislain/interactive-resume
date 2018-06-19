@@ -1,19 +1,26 @@
 - title: Full-Stack Development
+  synonyms: ['full-stack']
   enabled: true
   years: 10
 - title: Git
+  synonyms: ['github']
   enabled: true
   years: 3
 - title: Unity
   enabled: true
+  related: ['c#','shaders','glsl','real-time-graphics']
   years: 1
 - title: Flow-Based Programming
+  synonyms: ['flow-based','node-based','quartz-composer']
+  related: ['real-time-graphics','glsl','shaders','generative-art']
   years: 10
   enabled: true
 - title: C#
+  related: ['c','unity']
   enabled: true
   years: 1
 - title: LAMP
+  related: ['linux','apache','php','mysql','html5','scss']
   enabled: true
   years: 12
 - title: Linux
@@ -29,61 +36,73 @@
   enabled: true
   years: 12
 - title: HTML5
+  slug: html
+  synonyms: ['html']
   enabled: true
   years: 10
 - title: SCSS
+  slug: css
+  synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
   enabled: true
   years: 8
 - title: RegEx
+  synonyms: ['regular-expressions']
   enabled: false
   years: 20
 - title: Platform Migration
+  synonyms: ['platform-migrations','migrated','migration','migrate']
   years: 20
 - title: Node.js
+  related: ['javascript']
   enabled: true
   years: 5
 - title: Javascript
+  synonyms: ['js']
+  related: ['node-js','jquery','angular-js']
   enabled: true
   years: 15
 - title: JQuery
+  related: ['javascript']
   enabled: true
   years: 10
 - title: Front-End Development
+  slug: 'front-end'
+  synonyms: ['front-end-development']
+  related: ['javascript','html','scss','jquery','angular-js']
   enabled: true
   years: 10
 - title: Flash
+  synonyms: ['actionscript']
   enabled: true
   years:  5
 - title: Real-Time Graphics
+  synonyms: ['real-time','live','audio-reactive']
+  related: ['generative-art','flow-based-programming']
   enabled: true
   years: 10
 - title: GLSL
+  synonyms: ['opengl','glsl-shader','glsl-shaders']
   enabled: true
   years: 10
 - title: Shaders
-  enabled: true
-  years: 10
-- title: Quartz Composer
+  synonyms: ['shader']
   enabled: true
   years: 10
 - title: Projection Mapping
+  synonyms: ['projector-mapping','mapping','mapped','projection-mapped','projection','projector']
   enabled: true
   years: 5
 - title: Video Editing
+  synonyms: ['editing','edited','edited-video']
   enabled: true
   years: 5
 - title: Agile Development
+  synonyms: ['agile','scrum']
   enabled: true
   years: 7
-- title: Trello
-  enabled: true
-  years: 5
 - title: Creative Coding
   enabled: false
   years: 10
-- title: Hardware Development
-  enabled: false
-  years: 2
 - title: Arduino
   enabled: true
   years: 3
@@ -97,50 +116,45 @@
   enabled: false
   years: 8
 - title: Content Management Systems
-  enabled: true
-  years: 10
-- title: Joomla
-  enabled: true
-  years: 10
-- title: Wordpress
+  slug: 'cms'
+  synonyms: ['cms','content-management-system','content-management','joomla','drupal','wordpress']
   enabled: true
   years: 10
 - title: Adobe Creative Cloud
+  synonyms: ['adobe','adobe-photoshop','photoshop','illustrator','premier','adobe-premier']
   enabled: true
-  years: 5
-- title: Photoshop
-  enabled: false
-  years: 20
-- title: Illustrator
-  enabled: false
-  years: 5
 - title: Photography
+  synonyms: ['photographed','photographic','photos']
   enabled: true
   years: 10
 - title: Video Production
+  synonyms: ['video','filmed','film']
   enabled: false
   years: 5
+- title: Event Production
+  synonyms: ['event','production']
+  years: 10
+  enabled: true
 - title: Generative Art
+  synonyms: ['generative']
   enabled: true
   years: 10
 - title: Integration and Automation
+  synonyms: ['integration','automation','integrated','integrate','automated']
   enabled: true
   years: 5
 - title: Experience Design
+  synonyms: ['designed','user-experience','user-experience-design','xd','ux','ui','human-computer-interaction','interaction-design','interactive']
   enabled: true
   years: 5
 - title: Rapid Prototyping
+  synonyms: ['prototyped','iterated']
   enabled: true
   years: 3
 - title: Spiline Reticulation
   years: 25
   enabled: true
 - title: Virtual Environments
+  synonyms: ['virtualized','vagrant','virtualbox','vm','virtual-machine','virtual-environment','aws','provisioning']
   years: 5
   enabled: true
-- title: Vagrant
-  years: 5
-  enabled: false
-- title: VirtualBox
-  years: 1
-  enabled: false
