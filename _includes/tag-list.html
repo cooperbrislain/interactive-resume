@@ -1,0 +1,15 @@
+<ul>
+    {% for item in include.items %}
+        {% if item.enabled %}
+            {% if item.slug %}
+                <li data-skill="{{ item.slug }}" data-json="{{ item | jsonify | xml_escape }}">
+                    {{ item.title }}
+                </li>
+            {% else %}
+                <li data-skill="{{ item.title | slugify }}" data-json="{{ item | jsonify | xml_escape }}">
+                    {{ item.title }}
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>

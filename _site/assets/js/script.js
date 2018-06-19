@@ -207,7 +207,6 @@ $(document).ready(function() {
             });
             $('canvas').on('click', function() {
                 $('[data-skill]').css('visibility','visible');
-                $('.job').slideDown();
                 ctx = document.ctx;
                 ctx.globalAlpha = 1;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
@@ -215,6 +214,7 @@ $(document).ready(function() {
                 event.stopPropagation();
                 $(this).css('pointer-events', 'none');
                 $(this).off('click');
+                $('.job').slideDown();
             });
         })
     });
