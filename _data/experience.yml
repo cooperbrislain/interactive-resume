@@ -138,8 +138,8 @@
     - description: Set up and struck media equipment for __special events__ and academic __productions__.
     - description: Provided __technical support__ to students and faculty in the use of __media equipment__ including __projectors__, __video cameras__, __audio systems__, and __computers__
     - description: __Maintained__ readiness of equipment pool for rental and checkout, ensuring good working order, cleanliness, and presence of all included components.
-    - description: Operated __service vans__ on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
-    - description: Held keys and access codes to secure areas, media cabinets, and equipment closets throughout the university campus.
+  #  - description: Operated __service vans__ on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
+  #  - description: Held keys and access codes to secure areas, media cabinets, and equipment closets throughout the university campus.
   enabled: true
 - title: Event Crew
   company: Plan-It Interactive
@@ -152,10 +152,10 @@
   skills: ['event-production','production','safety']
   responsibilities:
     - description: Set up and struck large __interactive play systems__ for __special events__.
-    - description: Regularly loaded and unloaded __heavy__ equipment.
+#    - description: Regularly loaded and unloaded __heavy__ equipment.
     - description: Operated rock-climbing wall, ensuring the correct use of __safety__ equipment and procedures by participants.
     - description: Performed on-site __troubleshooting and repair__ of R/C cars.
-    - description: Drove box trucks with trailers on highway to and from events.
+#    - description: Drove box trucks with trailers on highway to and from events.
   enabled: true
 - title: Support Technician
   company: InterX Technologies; Napa, CA
