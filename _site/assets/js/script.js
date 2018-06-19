@@ -147,7 +147,7 @@ $(document).ready(function() {
         $(this).attr('data-skill',skillname);
     });
 
-    var $skills = $('#technical-skills+ul>li');
+    var $skills = $('#technical-skills+ul>li, strong[data-skill]');
     $skills.each(function(index) {
         var skillname = sp($(this).text());
         $(this).attr('data-skill',skillname);
