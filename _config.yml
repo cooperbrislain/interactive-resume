@@ -59,8 +59,7 @@ sass:
 # Comments
 disqus_shortname:   default
 
-# Social
-analytics-id:       "default"
+analytics-id:       "UA-121066483-2"
 twitter:            spaceboycoop
 facebook:           spaceboycoop
 instagram:          spaceboycoop

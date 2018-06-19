@@ -121,7 +121,6 @@ $(document).ready(function() {
     canvas.width = window.innerWidth;
     canvas.height = $(document).height();
     ctx = document.getElementById('canvas').getContext('2d');
-    console.log(ctx);
     document.ctx = ctx;
     devicePixelRatio = window.devicePixelRatio || 1,
     backingStoreRatio = ctx.webkitBackingStorePixelRatio ||
