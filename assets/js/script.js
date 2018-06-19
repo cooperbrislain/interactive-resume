@@ -107,7 +107,7 @@ CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iters) {
     this.globalAlpha = 0.12;
     for (i=1; i<=iters; i++) {
         this.lineWidth = i;
-        this.strokeText(text, x, y+7);
+        this.strokeText(text, x, y+5);
     }
     this.globalAlpha = 1;
     ctx.fillText(text, x, y+7);
@@ -177,7 +177,7 @@ $(document).ready(function() {
                 document.ctx = ctx;
                 connectBubbles(document.$selected, $skill_anchors);
                 ctx = document.ctx;
-                ctx.font = "900 18pt Tajawal";
+                ctx.font = "900 14pt Tajawal";
                 ctx.fillStyle = "black";
                 ctx.strokeStyle = "white";
                 ctx.textAlign = "center";
