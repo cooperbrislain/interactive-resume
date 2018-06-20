@@ -16,9 +16,9 @@ function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
     }
     // from bubble
     ctx.beginPath();
-    ctx.strokeStyle = "#00ef60";
+    ctx.strokeStyle = "#4be500";
     ctx.arc(fromanchor.x,fromanchor.y,from_rad,0,2*Math.PI);
-    ctx.innerGlow(18);
+    ctx.innerGlow(10);
 
     document.ctx = ctx;
     document.$selected = $from;
@@ -66,8 +66,9 @@ function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
 
         // draw line
         ctx.beginPath();
-        ctx.strokeStyle="#02acf3";
+        ctx.strokeStyle = "#02acf3";
         ctx.lineWidth = 3;
+        ctx.globalAlpha = 0.5;
         ctx.moveTo(
            lineorigin.x,
            lineorigin.y
@@ -81,8 +82,8 @@ function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
         // glow target
         ctx.beginPath();
         ctx.arc(toanchor.x,toanchor.y,to_rad,0,2*Math.PI);
-        ctx.strokeStyle="#02acf3";
-        ctx.innerGlow(20);
+        ctx.strokeStyle="#32ccf3";
+        ctx.innerGlow(15);
 
         document.ctx = ctx;
     })

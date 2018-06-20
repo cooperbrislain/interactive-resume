@@ -117,7 +117,7 @@
   years: 8
 - title: Content Management Systems
   slug: 'cms'
-  synonyms: ['cms','content-management-system','content-management','joomla','drupal','wordpress']
+  synonyms: ['content-management-system','content-management-systems','content-management','joomla','drupal','wordpress']
   enabled: true
   years: 10
 - title: Adobe Creative Cloud

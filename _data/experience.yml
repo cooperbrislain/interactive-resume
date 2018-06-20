@@ -14,12 +14,12 @@
     - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures.
     - description: Delivered __150 LED fixtures__ in time for use for installations at live events.
     - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
-    - description: __Developed testing tools__ for use in production and for field __diagnostics__ using __Arduino__
-    - description: Iterated on product design based on event __post-mortem analysis__.
-    - description: Recommended parts, materials, and tools to overcome engineering challenges.
+    - description: Developed qa and diagnostic tools using __Arduino__
+#    - description: Iterated on product design based on event __post-mortem analysis__.
+#    - description: Recommended parts, materials, and tools to overcome engineering challenges.
     - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
-    - description: Developed and iterated __mass-production methodologies__ to meet requirement.
-    - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
+#    - description: Developed and iterated __mass-production methodologies__ to meet requirement.
+#    - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
     - description: Made design recommendations based on common challenges encountered in __event production__.
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
@@ -78,8 +78,8 @@
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings in __content management system__.
     - description: Audited __Wordpress__ extensions and determined optimization strategies to minimize overhead and points of failure.
-    - description: Brought outdated __git__ repository up-to-date.
-    - description: Audited repository and codebase diffs to determine points at which undesirable behavior was introduced.
+#    - description: Brought outdated __git__ repository up-to-date.
+    - description: Audited __git__ repository and codebase diffs to determine points at which undesirable behavior was introduced.
     - description: Developed strategies and solutions to avoid future complications.
   enabled: true
 - title: Lead Software Engineer
@@ -110,8 +110,8 @@
   skills: ['adobe-creative-cloud','flash','actionscript','html5','css3','css','quartz-composer','lamp','php','javascript','expression-engine','jquery','content-management-systems']
   responsibilities:
     - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
-    - description: Produced __pixel-perfect__ web materials for marketing campaigns, adhering to critical __style guidelines__.
-    - description: Created __rich, interactive user interface__ for agency portfolio, with dynamically populated content.
+    - description: Produced pixel-perfect web materials for marketing campaigns, adhering to critical style guidelines.
+    - description: Created rich, interactive user interface for agency portfolio, using __Actionscript__ and __Expression Engine__.
   enabled: true
 - title: Software Engineer
   company: Jupiter Hosting
