@@ -190,7 +190,7 @@ $(document).ready(function() {
                 y: $(this).offset().top+$(this).outerHeight()/2
             };
             $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
-            $('.job').not($('.job').has('[data-skill="' + document.$selected.data('skill') + '"]')).slideUp(function() {
+            $('.job').not($('.job').has('[data-skill="' + document.$selected.data('skill') + '"]')).fadeOut(function() {
                 $('canvas').css('pointer-events', 'auto');
                 ctx = document.ctx;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
@@ -215,7 +215,7 @@ $(document).ready(function() {
                 event.stopPropagation();
                 $(this).css('pointer-events', 'none');
                 $(this).off('click');
-                $('.job').slideDown();
+                $('.job').fadeIn();
             });
         })
     });
