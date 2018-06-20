@@ -189,60 +189,59 @@ h2+ul {
 }
 
 #navPanelToggle {
-    display: block;
+    display: none;
 }
 
 #nav {
-    position: absolute;
+    opacity: 0.75;
+    position: fixed;
+    display: block;
     top: 0px;
     right: 0px;
-}
-
-.contact {
-    border: 1px solid #000;
+    width: 200px;
     background-color: #EEE;
-    padding: 10px;
-    padding-right: 25px;
-    padding-left: 0px;
-    dl {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        margin: 0px;
-        dd, dt {
-            font-weight: bold;
-            font-family: Arial Black;
-            font-size: 14px;
-            i {
-                font-size: 24px;
-            }
-            a {
-                text-decoration: none;
-            }
-        }
-        dt {
-            flex-basis: 1;
-            text-align: right;
-            font-size: 10px;
-            width: 25%;
-            a {
-                border-bottom: none;
-            }
-        }
-        dd {
-            width: 50%;
-            flex-basis: 8;
-            flex-grow: 10;
-        }
-    }
-    &+blockquote {
-        margin-right: 280px;
-        margin-left: 0px;
-    }
-    @media screen and (max-width: $break-large) {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: $block-font;
+    font-weight: 700;
+    font-size: 12pt;
+    color: #000;
 
+    a {
+        color: #000;
+    }
+
+    .split.contact section {
+        display: flex;
+        border: 1px dotted #AAA;
+        h3 {
+            font-size: 16pt;
+            margin: 0;
+            padding: 5px;
+            flex-basis: 20pt;
+            padding-left: 10px;
+            color: #000;
+            span {
+                display: none;
+            }
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 2.5em;
+        }
+        ul {
+            display: flex;
+            li {
+                flex-basis: auto;
+                justify-content: center;
+                padding: 10px;
+            }
+        }
     }
 }
+
 
 canvas {
     position: absolute;
