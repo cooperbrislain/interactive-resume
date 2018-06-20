@@ -1,0 +1,24 @@
+<div id="#modal-correlator-question" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Welcome</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ '/images/screenshot.jpg' }}">
+                <p>Try the interactive term correlator! Hover over a skill or term to see where
+                    else it appears in experience.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Sure!</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No Thanks</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#modal-correlator-quesiton').on('click', 'initCanvas');
+</script>

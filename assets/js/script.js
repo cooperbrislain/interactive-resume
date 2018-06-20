@@ -173,7 +173,7 @@ $(document).ready(function() {
     var $skills = $('#technical-skills+ul>li, strong[data-skill]');
     $skills.each(function(index) {
         skillname = $(this).data('skill');
-        $(this).on('mouseenter', function() {
+        /*$(this).on('mouseenter', function() {
             document.$selected = $(this);
             ctx = document.ctx;
             ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
@@ -181,7 +181,7 @@ $(document).ready(function() {
             document.ctx = ctx;
             $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]');
             connectBubbles($(this), $skill_anchors);
-        });
+        });*/
 
         $(this).on('click',function() {
             document.$selected = $(this);
@@ -217,6 +217,6 @@ $(document).ready(function() {
                 $(this).off('click');
                 $('.job').fadeIn();
             });
-        })
+        });
     });
 });
