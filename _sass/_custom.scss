@@ -97,55 +97,6 @@ blockquote {
     }
 }
 
-.contact {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 300px;
-    background-color: #EEE;
-    padding: 10px;
-    padding-right: 25px;
-    padding-left: 0px;
-    dl {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        margin: 0px;
-        dd, dt {
-            font-weight: bold;
-            font-family: Arial Black;
-            font-size: 14px;
-            i {
-                font-size: 24px;
-            }
-            a {
-                text-decoration: none;
-            }
-        }
-        dt {
-            flex-basis: 1;
-            text-align: right;
-            font-size: 10px;
-            width: 25%;
-            a {
-                border-bottom: none;
-            }
-        }
-        dd {
-            width: 50%;
-            flex-basis: 8;
-            flex-grow: 10;
-        }
-    }
-    &+blockquote {
-        margin-right: 280px;
-        margin-left: 0px;
-    }
-    @media screen and (max-width: $break-large) {
-
-    }
-}
-
 #technical-skills+ul {
     display: flex;
     justify-content: flex-start;
@@ -237,8 +188,60 @@ h2+ul {
     }
 }
 
-#navpanel {
-//  display: none;
+#navPanelToggle {
+    display: block;
+}
+
+#nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.contact {
+    border: 1px solid #000;
+    background-color: #EEE;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 0px;
+    dl {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0px;
+        dd, dt {
+            font-weight: bold;
+            font-family: Arial Black;
+            font-size: 14px;
+            i {
+                font-size: 24px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        dt {
+            flex-basis: 1;
+            text-align: right;
+            font-size: 10px;
+            width: 25%;
+            a {
+                border-bottom: none;
+            }
+        }
+        dd {
+            width: 50%;
+            flex-basis: 8;
+            flex-grow: 10;
+        }
+    }
+    &+blockquote {
+        margin-right: 280px;
+        margin-left: 0px;
+    }
+    @media screen and (max-width: $break-large) {
+
+    }
 }
 
 canvas {
