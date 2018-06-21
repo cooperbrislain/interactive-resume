@@ -270,6 +270,28 @@ h2+ul {
     }
 }
 
+#education+ul {
+    li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        font-family: $title-font;
+        font-weight: 700;
+        color: #000;
+        strong {
+            color: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+
+        }
+        &:nth-child(n+1) {
+            ::after {
+                content: " • ";
+            }
+        }
+    }
+}
+
 #copyright {
     color: rgba(218,229,225,0.5);
     a {

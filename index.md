@@ -19,11 +19,10 @@ COOPER BRISLAIN
 
 ## EDUCATION
 
-#### UC Santa Cruz
-- Bachelor of Arts
-    Film & Digital Media
-    2007  
-#### Napa Valley College; Napa, CA – Computer Science • 2002
+* __BA__
+* __Film & Digital Media__
+* __UC Santa Cruz__
+* 2003-2007  
 
 ### COURSEWORK
 
