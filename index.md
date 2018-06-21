@@ -3,7 +3,8 @@ layout: page
 title: Cooper Brislain's Resume
 pdf: false
 ---
-# COOPER BRISLAIN
+COOPER BRISLAIN
+===============
 ### Software Engineer • Creative Coder
 
 > Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
@@ -18,10 +19,13 @@ pdf: false
 
 ## EDUCATION
 
-UC Santa Cruz – Film & Digital Media • 2007  
-Napa Valley College; Napa, CA – Computer Science • 2002
+#### UC Santa Cruz
+- Bachelor of Arts
+    Film & Digital Media
+    2007  
+#### Napa Valley College; Napa, CA – Computer Science • 2002
 
-## COURSEWORK
+### COURSEWORK
 
 {% include list.html items=site.data.coursework %}
 

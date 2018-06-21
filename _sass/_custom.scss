@@ -270,6 +270,12 @@ h2+ul {
     }
 }
 
+#copyright {
+    color: rgba(218,229,225,0.5);
+    a {
+        color: inherit;
+    }
+}
 
 canvas {
     position: absolute;
