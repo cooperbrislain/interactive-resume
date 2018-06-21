@@ -7,6 +7,12 @@ function sp(str) {
     return spinal;
 }
 
+Math.lerp = function (value1, value2, amount) {
+    amount = amount < 0 ? 0 : amount;
+    amount = amount > 1 ? 1 : amount;
+    return value1 + (value2 - value1) * amount;
+};
+
 function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
     ctx = document.ctx;
 
