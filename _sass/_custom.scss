@@ -188,57 +188,79 @@ h2+ul {
     }
 }
 
-#navPanelToggle {
-    display: none;
-}
-
 #nav {
-    opacity: 0.75;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: fixed;
-    display: block;
     top: 0px;
     right: 0px;
-    width: 200px;
     background-color: #EEE;
-    height: auto;
     margin: 0;
     padding: 0;
     font-family: $block-font;
     font-weight: 700;
     font-size: 12pt;
+    height: auto;
+    width: auto;
+    opacity: 0.75;
     color: #000;
-
+    .edge {
+        flex-basis: auto;
+        width: 100%;
+        opacity: 1;
+        background-color: #CCC;
+        button.btn-grip {
+            display: block;
+            height: 0.75em;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            i {
+                color: #000;
+            }
+        }
+    }
+    .panel {
+        flex-basis: auto;
+        opacity: 0.75;
+        .split.contact section {
+            display: flex;
+            border: 1px dotted #AAA;
+            h3 {
+                font-size: 16pt;
+                margin: 0;
+                padding: 5px;
+                flex-basis: 20pt;
+                padding-left: 10px;
+                color: #000;
+                span {
+                    display: none;
+                }
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                line-height: 2.5em;
+            }
+            ul {
+                display: flex;
+                li {
+                    flex-basis: auto;
+                    justify-content: center;
+                    padding: 10px;
+                }
+            }
+        }
+        &:first-child{
+        }
+        &+.edge {
+            &+button.btn-grip {
+            }
+        }
+    }
     a {
         color: #000;
-    }
-
-    .split.contact section {
-        display: flex;
-        border: 1px dotted #AAA;
-        h3 {
-            font-size: 16pt;
-            margin: 0;
-            padding: 5px;
-            flex-basis: 20pt;
-            padding-left: 10px;
-            color: #000;
-            span {
-                display: none;
-            }
-        }
-        p {
-            margin: 0;
-            padding: 0;
-            line-height: 2.5em;
-        }
-        ul {
-            display: flex;
-            li {
-                flex-basis: auto;
-                justify-content: center;
-                padding: 10px;
-            }
-        }
     }
 }
 

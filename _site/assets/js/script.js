@@ -219,4 +219,10 @@ $(document).ready(function() {
             });
         });
     });
+    // ah finally
+
+    // regular other stuff
+    $('.btn-grip').click(function() {
+        $('#nav .panel').slideToggle();
+    });
 });
