@@ -8,6 +8,7 @@ $title-font: "Tajawal";
 $book-font: "Tajawal";
 $block-font: "Roboto Condensed";
 
+$shadow-color: rgba(25,25,25,0.5);
 @import "common";
 
 body {
@@ -189,41 +190,46 @@ h2+ul {
 }
 
 #nav {
+    box-shadow: 1px 1px 5px 2px $shadow-color;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: fixed;
     top: 0px;
     right: 0px;
-    background-color: #EEE;
     margin: 0;
+    border: 0.5px solid rgba(45,45,45,0.5);
     padding: 0;
     font-family: $block-font;
     font-weight: 700;
     font-size: 12pt;
     height: auto;
     width: auto;
-    opacity: 0.75;
     color: #000;
     .edge {
         flex-basis: auto;
-        width: 100%;
         opacity: 1;
-        background-color: #CCC;
+        width: 100%;
         button.btn-grip {
             display: block;
-            height: 0.75em;
+            border: 0.5px solid rgba(45,45,45,0.5);
+            height: 2em;
+            box-shadow: none;
             width: 100%;
+            font-size: 18pt;
             padding: 0;
             margin: 0;
+            background-color: rgba(219,219,219,0.95);
             i {
                 color: #000;
+                width: 2em;
+                height: 2em;
             }
         }
     }
     .panel {
+        background-color: rgba(236,236,236,0.85);
         flex-basis: auto;
-        opacity: 0.75;
         .split.contact section {
             display: flex;
             border: 1px dotted #AAA;

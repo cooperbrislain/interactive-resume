@@ -225,4 +225,8 @@ $(document).ready(function() {
     $('.btn-grip').click(function() {
         $('#nav .panel').slideToggle();
     });
+
+    $(document).scroll(function() {
+        $('#nav .panel').slideUp();
+    });
 });
