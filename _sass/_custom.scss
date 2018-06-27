@@ -220,13 +220,21 @@ h2+ul {
             padding: 5px;
             .btn.toggle {
                 margin-right: 1em;
-                padding: 0.1em;
-                border-radius: 2;
+                border-radius: 20px;
                 border: 0.5px solid rgba(28, 25, 18, 0.33);
+                .toggle-handle {
+                    background-color: #AAA;
+                    position: relative;
+                    top: 1.5px;
+                }
+                label {
+                    padding-left: 0.5em;
+                }
             }
-            .toggle-handle {
-                background-color: rgba(25,25,25,0.5);
+            .toggle-on, .toggle-off {
+                border-radius: 20px;
             }
+
         }
     }
     .edge {

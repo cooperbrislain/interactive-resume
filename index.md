@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cooper Brislain's Resume
-pdf: false
+pdf: true
 ---
 COOPER BRISLAIN
 ===============
