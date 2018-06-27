@@ -30,6 +30,9 @@ body {
     h3, h4, h5 {
         margin-bottom: 1em;
     }
+    strong {
+        display: inline-block;
+    }
     a {
         border-bottom: none;
         text-decoration: none;
@@ -97,6 +100,19 @@ body {
                 margin-left: 0.25em;
                 &:nth-child(8), &:nth-child(10) {
                     display: none;
+                }
+            }
+        }
+    }
+    .job {
+        .skills {
+            display: none;
+        }
+        ul.responsibilities {
+            li {
+                &::before {
+                    position: relative;
+                    top: 3px;
                 }
             }
         }
