@@ -1,0 +1,9 @@
+<ul class="icons alt">
+    {% for item in site.data.social %}
+        <li>
+            <a href="{{ item.url | replace: '_handle_', item.handle }}" class="icon fa-{{ item.icon }}" rel="nofollow">
+                <span class="label">{{ item.label }}</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
