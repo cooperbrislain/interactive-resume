@@ -7,7 +7,7 @@ COOPER BRISLAIN
 ===============
 ### Software Engineer • Creative Coder
 
-> Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
+> Interdisciplinary Software Engineer and Visual Artist seeking a role on an agile team inventing tools to support development and content creation.
 
 ## TECHNICAL SKILLS
 
