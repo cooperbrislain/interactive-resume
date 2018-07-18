@@ -143,6 +143,12 @@
   synonyms: ['integration','automation','integrated','integrate','automated']
   enabled: true
   years: 5
+- title: Internal Tools Development
+  slug: internal-tools
+  enabled: true
+- title: Slack/Trello/Google/Zapier
+  slug: team-tools
+  enabled: true
 - title: Experience Design
   synonyms: ['designed','user-experience','user-experience-design','xd','ux','ui','human-computer-interaction','interaction-design','interactive']
   enabled: true

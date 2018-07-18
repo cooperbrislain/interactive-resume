@@ -262,7 +262,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  font-awesome-sass (~> 5.0.13)
+  font-awesome-sass
   github-pages
   jekyll-assets
   jekyll-feed (~> 0.6)

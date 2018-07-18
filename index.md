@@ -44,7 +44,6 @@ COOPER BRISLAIN
 
 ## CORE VALUES
 
-* The end user's privacy and security is paramount. 
-* Monetization shouldn't compromise utility.
+* Tools work for people, not the other way around. 
 * The best thing to say when you don't know is that you don't know.
-
+* The end user's privacy and security is paramount. 
