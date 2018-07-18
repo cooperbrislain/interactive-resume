@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans:200,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 $title-font: "Work Sans";
 $book-font: "Encode Sans";
 $block-font: "Encode Sans Condensed";
@@ -12,6 +15,7 @@ $block-font: "Encode Sans Condensed";
     color: #000;
     box-sizing: border-box;
 }
+
 body {
     font-family: $book_font;
     font-weight: 200;
@@ -30,6 +34,9 @@ body {
     h3, h4, h5 {
         margin-bottom: 1em;
     }
+    strong {
+        display: inline;
+    }
     a {
         border-bottom: none;
         text-decoration: none;
@@ -42,17 +49,26 @@ body {
         font-weight: 300;
     }
     ul {
+        display: inline-block;
         li {
             list-style-type: none;
         }
     }
-    ul.links {
+    .icon::before {
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+        margin-right: 0.5em;
+    }
+    .links {
         display: none;
     }
     blockquote {
         margin: 0px;
         padding: 0px;
-        width: 65%;
+        width: 75%;
         ul {
             margin: 0px;
             line-height: 1em;
@@ -71,32 +87,68 @@ body {
         }
     }
     .contact {
-        width: 15em;
         position: absolute;
+        top: 0px;
         right: 0px;
-        top: 10px;
-        dl {
-            dt {
-                display: inline-block;
-                width: 2em;
-                line-height: 1.6em;
-                white-space: nowrap;
-                text-align: right;
-                &:nth-child(7), &:nth-child(9) {
-                    display: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-size: 15pt;
+        font-amily: $block_font;
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                padding: 0;
+                margin: 0;
+                i.icon::before {
+                    -webkit-font-smoothing: antialiased;
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-transform: none !important;
+                    margin-right: 0.5em;
+                    width: 2em;
+                    display: inline-block;
                 }
+                font-weight: 400;
             }
-            dd {
+        }
+    }
+    .job {
+        width: 90%;
+        display: inline-block;
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .skills {
+            display: none;
+        }
+        .links {
+            display: none;
+        }
+        ul.responsibilities {
+            width: 100%;
+            li {
                 display: inline-block;
-                width: 12em;
-                line-height: 1.6em;
-                white-space: nowrap;
-                text-align: left;
-                overflow: visible;
-                font-weight: 700;
-                margin-left: 0.25em;
-                &:nth-child(8), &:nth-child(10) {
-                    display: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                margin-bottom: 0.25em;
+                &::before {
+                    vertical-align: text-top;
+                    margin-right: 1em;
+                    color: #999;
+                    font-size: inherit;
+                    position: relative;
+                    top: 0.1em;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    text-indent: 2em;
+                    display: inline;
                 }
             }
         }
@@ -107,8 +159,27 @@ body {
         }
     }
 
+    #technical-skills {
+        margin: 0;
+        padding: 0;
+        margin-top: 0.5em;
+    }
+    #education {
+    }
+    #education+ul {
+        li {
+            margin: 0;
+            padding: 0;
+            display: inline;
+            font-weight: 400;
+        }
+    }
+    #coursework {
+        margin-left: 1em;
+    }
     #technical-skills+ul,
     #coursework+ul {
+        display: inline-block;
         li {
             font-family: $block-font;
             display: inline-block;
@@ -121,6 +192,36 @@ body {
             &:nth-child(odd) {
                 font-weight: 200;
             }
+        }
+    }
+    #associations {
+        margin-top: 10em;
+    }
+    #associations+ul {
+        display: inline-block;
+        width: 80%;
+        li {
+            display: block;
+            font-weight: 400;
+            margin: 0.25em;
+        }
+    }
+    #interests+ul {
+        width: 80%;
+        display: inline-block;
+        li {
+            display: block;
+            font-weight: 400;
+            margin: 0.25em;
+        }
+    }
+    #core-values+ul {
+        width: 80%;
+        display: inline-block;
+        li {
+            display: block;
+            font-weight: 400;
+            margin: 0.25em;
         }
     }
 }

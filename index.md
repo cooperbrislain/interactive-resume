@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Cooper Brislain's Resume
-pdf: false
+pdf: true
 ---
 COOPER BRISLAIN
 ===============
 ### Software Engineer • Creative Coder
 
-> Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
+> Interdisciplinary Software Engineer and Visual Artist seeking a role on an agile team inventing tools to support development and content creation.
 
 ## TECHNICAL SKILLS
 
@@ -44,7 +44,6 @@ COOPER BRISLAIN
 
 ## CORE VALUES
 
-* The end user's privacy and security is paramount. 
-* Monetization shouldn't compromise utility.
+* Tools work for people, not the other way around. 
 * The best thing to say when you don't know is that you don't know.
-
+* The end user's privacy and security is paramount. 

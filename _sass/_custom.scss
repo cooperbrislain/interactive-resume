@@ -64,6 +64,12 @@ a {
     }
 }
 
+form {
+    .checkbox-inline {
+        display: inline-block;
+    }
+}
+
 blockquote {
     border: none;
     margin-left: 50px;
@@ -206,6 +212,31 @@ h2+ul {
     height: auto;
     width: auto;
     color: #000;
+    section.controls {
+        padding-top: 1em;
+        form {
+            display: block;
+            margin: 0px;
+            padding: 5px;
+            .btn.toggle {
+                margin-right: 1em;
+                border-radius: 20px;
+                border: 0.5px solid rgba(28, 25, 18, 0.33);
+                .toggle-handle {
+                    background-color: #AAA;
+                    position: relative;
+                    top: 1.5px;
+                }
+                label {
+                    padding-left: 0.5em;
+                }
+            }
+            .toggle-on, .toggle-off {
+                border-radius: 20px;
+            }
+
+        }
+    }
     .edge {
         flex-basis: auto;
         opacity: 1;

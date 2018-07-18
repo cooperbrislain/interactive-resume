@@ -5,16 +5,28 @@
 - title: Git
   synonyms: ['github']
   enabled: true
-  years: 3
+  years: 5
+- title: Javascript
+  synonyms: ['js']
+  related: ['node-js','jquery','angular-js']
+  enabled: true
+  years: 15
+- title: JQuery
+  related: ['javascript']
+  enabled: true
+  years: 10
+- title: Node.js
+  related: ['javascript']
+  enabled: true
+  years: 5
 - title: Unity
   enabled: true
   related: ['c#','shaders','glsl','real-time-graphics']
   years: 1
-- title: Flow-Based Programming
-  synonyms: ['flow-based','node-based','quartz-composer']
-  related: ['real-time-graphics','glsl','shaders','generative-art']
-  years: 10
+- title: Shaders
+  synonyms: ['shader','glsl','glsl-shader','glsl-shaders']
   enabled: true
+  years: 10
 - title: C#
   related: ['c','unity']
   enabled: true
@@ -45,63 +57,60 @@
   synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
   enabled: true
   years: 8
+- title: Bootstrap 4
+  slug: bootstrap
+  enabled: true
 - title: RegEx
   synonyms: ['regular-expressions']
-  enabled: false
+  enabled: true
   years: 20
+- title: Vagrant
+  years: 2
+  enabled: false
+- title: Docker/Vagrant/VirtualBox/Parallels
+  slug: virtualization
+  synonyms: ['virtualized','vagrant','virtualbox','vm','virtual-machine','virtual-environment','aws','provisioning']
+  years: 5
+  enabled: true
 - title: Platform Migration
   synonyms: ['platform-migrations','migrated','migration','migrate']
   years: 20
-- title: Node.js
-  related: ['javascript']
+- title: Flow-Based Programming
+  synonyms: ['flow-based','node-based','quartz-composer']
+  related: ['real-time-graphics','glsl','shaders','generative-art']
+  years: 10
   enabled: true
-  years: 5
-- title: Javascript
-  synonyms: ['js']
-  related: ['node-js','jquery','angular-js']
+- title: Actionscript/Flash
+  slug: 'flash'
+  synonyms: ['flash','actionscript']
   enabled: true
-  years: 15
-- title: JQuery
-  related: ['javascript']
+  years:  5
+- title: Content Management Systems
+  slug: 'cms'
+  synonyms: ['content-management-system','content-management-systems','content-management','joomla','drupal','wordpress']
   enabled: true
   years: 10
 - title: Front-End Development
   slug: 'front-end'
   synonyms: ['front-end-development']
   related: ['javascript','html','scss','jquery','angular-js']
-  enabled: true
+  enabled: false
   years: 10
-- title: Flash
-  synonyms: ['actionscript']
-  enabled: true
-  years:  5
 - title: Real-Time Graphics
   synonyms: ['real-time','live','audio-reactive']
   related: ['generative-art','flow-based-programming']
-  enabled: true
-  years: 10
-- title: GLSL
-  synonyms: ['opengl','glsl-shader','glsl-shaders']
-  enabled: true
-  years: 10
-- title: Shaders
-  synonyms: ['shader']
   enabled: true
   years: 10
 - title: Projection Mapping
   synonyms: ['projector-mapping','mapping','mapped','projection-mapped','projection','projector']
   enabled: true
   years: 5
-- title: Video Editing
-  synonyms: ['editing','edited','edited-video']
+- title: Video Production
+  synonyms: ['editing','edited','edited-video','video','filmed','film']
   enabled: true
   years: 5
-- title: Agile Development
-  synonyms: ['agile','scrum']
-  enabled: true
-  years: 7
 - title: Creative Coding
-  enabled: false
+  enabled: true
   years: 10
 - title: Arduino
   enabled: true
@@ -115,26 +124,17 @@
 - title: Relational Databases
   enabled: false
   years: 8
-- title: Content Management Systems
-  slug: 'cms'
-  synonyms: ['content-management-system','content-management-systems','content-management','joomla','drupal','wordpress']
-  enabled: true
-  years: 10
 - title: Adobe Creative Cloud
   synonyms: ['adobe','adobe-photoshop','photoshop','illustrator','premier','adobe-premier']
   enabled: true
 - title: Photography
   synonyms: ['photographed','photographic','photos']
-  enabled: true
-  years: 10
-- title: Video Production
-  synonyms: ['video','filmed','film']
   enabled: false
-  years: 5
+  years: 10
 - title: Event Production
   synonyms: ['event','production']
   years: 10
-  enabled: true
+  enabled: false
 - title: Generative Art
   synonyms: ['generative']
   enabled: true
@@ -143,6 +143,12 @@
   synonyms: ['integration','automation','integrated','integrate','automated']
   enabled: true
   years: 5
+- title: Internal Tools Development
+  slug: internal-tools
+  enabled: true
+- title: Slack/Trello/Google/Zapier
+  slug: team-tools
+  enabled: true
 - title: Experience Design
   synonyms: ['designed','user-experience','user-experience-design','xd','ux','ui','human-computer-interaction','interaction-design','interactive']
   enabled: true
@@ -151,10 +157,7 @@
   synonyms: ['prototyped','iterated']
   enabled: true
   years: 3
+  enabled: false
 - title: Spiline Reticulation
   years: 25
-  enabled: true
-- title: Virtual Environments
-  synonyms: ['virtualized','vagrant','virtualbox','vm','virtual-machine','virtual-environment','aws','provisioning']
-  years: 5
   enabled: true
