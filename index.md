@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cooper Brislain's Resume
-pdf: false
+pdf: true
 ---
 COOPER BRISLAIN
 ===============
@@ -40,7 +40,7 @@ COOPER BRISLAIN
 
 - Generative Art
 - Flow-Based Programming
-- IoT
+- Intelligent Lighting
 
 ## CORE VALUES
 
