@@ -9,6 +9,7 @@ $book-font: "Tajawal";
 $block-font: "Roboto Condensed";
 
 $shadow-color: rgba(25,25,25,0.5);
+
 @import "common";
 
 body {
@@ -16,7 +17,7 @@ body {
     font-weight: 200;
     b, strong {
         font-weight: 500;
-        color: #777;
+        color: #777674;
     }
 }
 
@@ -177,7 +178,7 @@ h2+ul {
                 display: block;
                 margin: 0px;
                 padding: 0px;
-                border-bottom: 1px dotted #AAA;
+                border-bottom: 1px dotted #ABACAB;
                 &::before {
                     content: '';
                 }
@@ -205,7 +206,7 @@ h2+ul {
     font-size: 12pt;
     height: auto;
     width: auto;
-    color: #000;
+    color: #232221;
     .edge {
         flex-basis: auto;
         opacity: 1;
@@ -277,7 +278,7 @@ h2+ul {
         display: inline;
         font-family: $title-font;
         font-weight: 700;
-        color: #000;
+        color: #777674;
         strong {
             color: inherit;
             font-weight: inherit;

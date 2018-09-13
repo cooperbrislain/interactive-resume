@@ -30,21 +30,13 @@ COOPER BRISLAIN
 
 ## ASSOCIATIONS
 
-- Visual Artist, Opulent Chill • 2017
-- Visual Artist, Wormhole; Oakland • 2015–Present
-- Visual Artist, Camp Question Mark • 2009–)?( 
-- Technology Director, SCTV; UCSC • 2005
-- Student Trustee, Napa Valley College • 2002
+- Resident Artist, Wormhole; Oakland • 2015-Present
+- Technology Director, SCTV; UCSC • 2005-2006
+- Student Trustee, Napa Valley College • 2001-2002
 
 ## INTERESTS
 
-- Generative Art
 - Flow-Based Programming
-- Intelligent Lighting
-
-## CORE VALUES
-
-* The end user's privacy and security is paramount. 
-* Monetization shouldn't compromise utility.
-* The best thing to say when you don't know is that you don't know.
-
+- Intelligent Lighting, LED & Projection Mapping
+- AI and Consciousness
+- Synesthetic Experiences

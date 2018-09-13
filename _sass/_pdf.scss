@@ -9,7 +9,7 @@ $block-font: "Encode Sans Condensed";
 @import "common";
 
 * {
-    color: #000;
+    color: #232120;
     box-sizing: border-box;
 }
 body {
@@ -19,6 +19,7 @@ body {
     h1, h2, h3, h4, h5 {
         font-weight: bold;
         font-family: $title_font;
+        color: #232221;
     }
     h1 {
         &+h3 {
@@ -44,6 +45,12 @@ body {
     ul {
         li {
             list-style-type: none;
+            line-height: default;
+            p {
+                margin: 0;
+                margin-top: 2.5pt;
+                margin-bottom: 2.5pt;
+            }
         }
     }
     ul.links {
@@ -57,7 +64,7 @@ body {
             margin: 0px;
             line-height: 1em;
             li {
-                line-height: normal;
+                line-height: default;
                 font-family: $title_font;
                 display: inline-block;
                 width: 15%;
@@ -106,7 +113,26 @@ body {
             font-weight: 500;
         }
     }
-
+    #education+ul {
+        li{
+            font-family: $block-font;
+            display: inline;
+            color: #777674;
+            font-weight: 300;
+            &:nth-child(even) {
+                color: #333231;
+                font-weight: 500;
+            }
+            strong {
+                font-weight: inherit;
+                color: inherit;
+            }
+        }
+    }
+    h2+ul>li {
+        color: #434241;
+        font-weight: 400;
+    }
     #technical-skills+ul,
     #coursework+ul {
         li {
@@ -115,11 +141,42 @@ body {
             white-space: nowrap;
             padding: 0.5em;
             &:nth-child(even) {
-                font-weight: 400;
-                color: #888;
+                font-weight:400;
+                color: #777674;
             }
             &:nth-child(odd) {
                 font-weight: 200;
+            }
+        }
+    }
+
+    .job {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        ul {
+            li {
+                &::before {
+                    content: "❯";
+                    color: #ABACAB;
+                    font-weight: 900;
+                    width: 1em;
+                    left: -1em;
+                    font-family: $title-font;
+                    font-size: 50%;
+                    top: 0.6em;
+                    position: relative;
+                    vertical-align: top;
+                    float: left;
+                }
+                p {
+                    display: block;
+                }
+            }
+        }
+        ul.responsibilities {
+            strong[data-skill] {
+                color: #777674;
             }
         }
     }

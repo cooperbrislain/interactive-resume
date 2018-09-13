@@ -11,16 +11,14 @@
       title: LED Test Bench
   tech: ['git','arduino','blender','3d printing','artnet']
   responsibilities:
-    - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures.
-    - description: Delivered __150 LED fixtures__ in time for use for installations at live events.
+    - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures for use at live events.
     - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
-    - description: Developed qa and diagnostic tools using __Arduino__
-#    - description: Iterated on product design based on event __post-mortem analysis__.
-#    - description: Recommended parts, materials, and tools to overcome engineering challenges.
+    - description: Iterated on product design based on event __post-mortem analysis__.
+    - description: Researched and recommended parts, materials, and tools to meet production requirements.
     - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
-#    - description: Developed and iterated __mass-production methodologies__ to meet requirement.
-#    - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
-    - description: Made design recommendations based on common challenges encountered in __event production__.
+#    - description: Developed and iterated __production methodologies__ to meet growing demand.
+    - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
+    - description: Proposed design recommendations based on common challenges encountered in __event production__.
   enabled: true
 - title: Motion Graphics Software Engineer & Visual Artist
   company: Vektor Selektor
@@ -61,9 +59,10 @@
   tags: ['full-stack-development','engineer','full-time','programming']
   responsibilities:
     - description: Worked on an __agile development__ team to release iterative improvements to __user experience__ based on data acquired from __multivariate analytics__.
-    - description: Utilized __XDebug__ with __PHP__ and __NginX to identify bottlenecks and reduce landing page load time by 40%.
+    - description: Utilized __XDebug__ with __PHP__ and __NginX__ to identify bottlenecks and reduce landing page load time by 40%.
     - description: Developed __automated__ qualification and approval for financial aid applicants, freeing significant customer support resources.
     - description: __Integrated__ billing system with Paypal's __Braintree API__, standardizing __payment__ flow and allowing acceptance of new payment methods.
+    - description: Created super cool __Slackbot__ integrations and __emojis__ to improve team communication and morale.
   enabled: true
 - title: Software Engineer
   company: Visions in Education
@@ -93,7 +92,7 @@
   skills: ['virtual-environments','system-administration','php','lamp','mysql','joomla','wordpress','git','full-stack-development','javascript','jquery','front-end-development','flash','content-management-systems','linux','apache','nginx','system-administration','html5','scss','regex','adobe-creative-cloud','platform-migration','integration-and-automation','rest','api','plesk']
   responsibilities:
     - description: Designed __mySQL__ database for auto-shipping leads.
-    - description: Built __REST__ful API for partners and affiliates.
+    - description: Built __RESTful__ API for partners and affiliates.
     - description: Created embeddable form widget for use by affiliates and partners.
     - description: Redesigned system for greater __extensibility__, increasing lead volume and providing additional cross-selling opportunities.
     - description: Designed __tools__ for the reporting and __visualization__ of lead data.
@@ -124,7 +123,7 @@
   skills: ['adobe-creative-cloud','content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript']
   responsibilities:
     - description: Developed custom modules and features for __Joomla__-based __content management system__.
-    - description: Optimized __mySQL__ queries for highly-trafficked websites.
+    - description: Optimized __mySQL__ queries for highly trafficked websites.
   enabled: true
 - title: Support Technician
   company: UCSC Media Services

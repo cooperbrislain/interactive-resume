@@ -13,13 +13,13 @@
 # theme: minima
 
 plugins:
-  - jekyll-feed
-  - jekyll-assets
-  - jekyll-pdf
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-paginate
+    - jekyll-feed
+    - jekyll-assets
+    - jekyll-pdf
+    - jekyll-mentions
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -35,7 +35,7 @@ plugins:
 # Site
 title:              "Cooper Brislain's Resume"
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my resume.
+    This is my resume.
 bio:     "I was born at a very young age."
 locale:  en_US
 baseurl: "/resume" # the subpath of your site, e.g. /blog
@@ -46,15 +46,15 @@ url: "https://spaceboycoop.github.io" # the base hostname & protocol for your si
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
+    auto_ids:         true
+    footnote_nr:      1
+    entity_output:    as_char
+    toc_levels:       1..6
+    enable_coderay:   false
 mathjax:            true
 sass:
-  sass_dir:         _sass
-  style:            compressed
+    sass_dir:         _sass
+    style:            compressed
 
 # Comments
 disqus_shortname:   default
@@ -66,8 +66,8 @@ instagram:          spaceboycoop
 github:             spaceboycoop
 
 # personal
-location:           Oakland, CA
-phone:              707-742-3731
+location:           Hayward, CA
+phone:              707-980-2340
 email:              cbrislain@gmail.com
 
 jekyll-mentions:
