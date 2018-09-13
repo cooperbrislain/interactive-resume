@@ -1,3 +1,5 @@
+@import "icons";
+
 .job {
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -9,7 +11,7 @@
             }
             &::before {
                 content: "❯";
-                color: #AAA;
+                color: #ABACAB;
                 font-weight: 900;
                 width: 1em;
                 margin-left: -1em;
@@ -23,9 +25,14 @@
             }
         }
     }
+    ul.responsibilities {
+        strong[data-skill] {
+            color: #777674;
+        }
+    }
     a {
         &.icon {
-            color: #000;
+            color: #333231;
             margin: 5px;
         }
     }
@@ -45,7 +52,7 @@ blockquote {
 a {
     sup {
         i {
-            color: #555;
+            color: #333231;
         }
     }
 }
