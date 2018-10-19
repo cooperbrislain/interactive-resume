@@ -99,6 +99,20 @@
     - description: Improved __efficiency__ and __agility__ by __automating__ frequent or time-consuming tasks.
   enabled: true
 - title: Software Engineer
+  company: Insignia Technologies
+  location: Monterey, CA
+  tags: ['full-time','engineer','programming','front-end']
+  skills: ['flash','actionscript','C#','asp.net']
+  responsibilities:
+  enabled: false
+- title: Software Engineer
+  company: CgrafX
+  location: Santa Clara, CA
+  tags: ['full-stack']
+  skills: ['php','mysql','flash','actionscript','css3']
+  responsibilities:
+  enabled: false
+- title: Software Engineer
   company: Design Reactor
   location: Campbell, CA
   logo: /assets/svg/watermarks/designreactor.svg
@@ -106,7 +120,7 @@
   from: 2008-03-01
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
-  skills: ['adobe-creative-cloud','flash','actionscript','html5','css3','css','quartz-composer','lamp','php','javascript','expression-engine','jquery','content-management-systems']
+  skills: ['adobe-creative-cloud','flash','actionscript','css','lamp','php','javascript','expression-engine','jquery','content-management-systems']
   responsibilities:
     - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
     - description: Produced pixel-perfect web materials for marketing campaigns, adhering to critical style guidelines.
