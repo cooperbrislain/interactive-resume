@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:200,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans:200,300,400,500,700,800,900');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
+@import 'font-awesome.min.css';
 
 $title-font: "Work Sans";
 $book-font: "Encode Sans";
@@ -13,6 +14,7 @@ $block-font: "Encode Sans Condensed";
     box-sizing: border-box;
 }
 body {
+    font-size: 25%;
     font-family: $book_font;
     font-weight: 200;
 
@@ -79,32 +81,19 @@ body {
     }
     .contact {
         display: block;
+        position: absolute;
         width: 15em;
         right: 0px;
         top: 10px;
-        dl {
-            dt {
-                display: inline-block;
-                width: 2em;
-                line-height: 1.6em;
-                white-space: nowrap;
-                text-align: right;
-                &:nth-child(7), &:nth-child(9) {
-                    display: none;
-                }
+        section {
+            &:nth-child(n+4) {
+                display: none;
             }
-            dd {
-                display: inline-block;
-                width: 12em;
-                line-height: 1.6em;
-                white-space: nowrap;
-                text-align: left;
-                overflow: visible;
-                font-weight: 700;
-                margin-left: 0.25em;
-                &:nth-child(8), &:nth-child(10) {
-                    display: none;
-                }
+            h3 {
+                display: none;
+            }
+            p {
+                text-align: right;
             }
         }
     }
@@ -149,7 +138,6 @@ body {
             }
         }
     }
-
     .job {
         display: block;
         background-repeat: no-repeat;

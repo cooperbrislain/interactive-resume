@@ -8,7 +8,7 @@
   years: 3
 - title: Unity
   enabled: true
-  related: ['c#','shaders','glsl','real-time-graphics']
+  related: ['c','shaders','glsl','real-time-graphics']
   years: 1
 - title: Flow-Based Programming
   synonyms: ['flow-based','node-based','quartz-composer']
@@ -16,7 +16,8 @@
   years: 10
   enabled: true
 - title: C#
-  related: ['c','unity']
+  related: ['unity']
+  synonyms: ['c']
   enabled: true
   years: 1
 - title: LAMP
@@ -27,7 +28,7 @@
   enabled: true
   years: 10
 - title: Apache
-  enabled: true
+  enabled: false
   years: 5
 - title: PHP
   enabled: true
@@ -104,7 +105,7 @@
   enabled: false
   years: 10
 - title: Arduino
-  enabled: true
+  enabled: false
   years: 3
 - title: Object Oriented Programming
   enabled: false
@@ -125,7 +126,7 @@
   enabled: true
 - title: Photography
   synonyms: ['photographed','photographic','photos']
-  enabled: true
+  enabled: false
   years: 10
 - title: Video Production
   synonyms: ['video','filmed','film']
@@ -151,10 +152,10 @@
   synonyms: ['prototyped','iterated']
   enabled: true
   years: 3
-- title: Spiline Reticulation
-  years: 25
-  enabled: true
 - title: Virtual Environments
   synonyms: ['virtualized','vagrant','virtualbox','vm','virtual-machine','virtual-environment','aws','provisioning']
   years: 5
+  enabled: false
+- title: Spiline Reticulation
+  years: 25
   enabled: true

@@ -28,15 +28,8 @@ COOPER BRISLAIN
 
 {% include list.html items=site.data.coursework %}
 
-## ASSOCIATIONS
-
-- Resident Artist, Wormhole; Oakland • 2015-Present
-- Technology Director, SCTV; UCSC • 2005-2006
-- Student Trustee, Napa Valley College • 2001-2002
-
 ## INTERESTS
 
 - Flow-Based Programming
 - Intelligent Lighting, LED & Projection Mapping
-- AI and Consciousness
 - Synesthetic Experiences

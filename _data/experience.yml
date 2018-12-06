@@ -9,7 +9,7 @@
     - icon: fab fa-github
       url: https://github.com/spaceboycoop/led-test-bench
       title: LED Test Bench
-  tech: ['git','arduino','blender','3d printing','artnet']
+  tech: ['git','arduino','blender','3d printing','artnet','c#']
   responsibilities:
     - description: Collaboratively designed custom-fabricated parts for high-performance __ARTNet__ LED fixtures for use at live events.
     - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
@@ -27,7 +27,7 @@
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
-  skills: ['adobe-creative-cloud','arduino','unity','flow-based-programming','c#','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender','glsl','shaders','experience-design']
+  skills: ['adobe-creative-cloud','arduino','unity','flow-based-programming','c','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender','glsl','shaders','experience-design']
   links:
       - icon: fab fa-vimeo
         url: https://www.vimeo.com/vektorselektor
@@ -72,7 +72,7 @@
   from: 2015-03-01
   to: 2016-08-01
   tags: ['full-time','programming','full-stack']
-  skills: ['adobe-creative-cloud','virtual-environments',full-stack-development','regex','wordpress','content-management-systems','trello','agile-development','scrum','git','angular-js','php','html5','mysql','scss','platform-migration']
+  skills: ['adobe-creative-cloud','virtual-environments','full-stack-development','regex','wordpress','content-management-systems','trello','agile-development','scrum','git','angular-js','php','html5','mysql','scss','platform-migration']
   responsibilities:
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings in __content management system__.
@@ -102,14 +102,14 @@
   company: Insignia Technologies
   location: Monterey, CA
   tags: ['full-time','engineer','programming','front-end']
-  skills: ['flash','actionscript','C#','asp.net']
+  skills: ['flash','actionscript','c','asp.net']
   responsibilities:
   enabled: false
 - title: Software Engineer
   company: CgrafX
   location: Santa Clara, CA
   tags: ['full-stack']
-  skills: ['php','mysql','flash','actionscript','css3']
+  skills: ['php','mysql','flash','actionscript','css3','full-stack-development']
   responsibilities:
   enabled: false
 - title: Software Engineer
@@ -134,7 +134,7 @@
   from: 2007-05-01
   to: 2007-12-15
   tags: ['full-stack','engineer','programming','full-time']
-  skills: ['adobe-creative-cloud','content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript']
+  skills: ['adobe-creative-cloud','content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript','full-stack-development']
   responsibilities:
     - description: Developed custom modules and features for __Joomla__-based __content management system__.
     - description: Optimized __mySQL__ queries for highly trafficked websites.
