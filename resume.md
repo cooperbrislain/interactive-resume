@@ -7,7 +7,7 @@ COOPER BRISLAIN
 ===============
 ### Software Engineer • Creative Coder
 
-> Diversely talented full-stack software engineer seeking a role supporting the development of technologies that will change the direction of human history.
+> Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
 
 ## TECHNICAL SKILLS
 
@@ -22,7 +22,7 @@ COOPER BRISLAIN
 * __BA__
 * __Film & Digital Media__
 * __UC Santa Cruz__
-* 2003-2007  
+* 2003-2007
 
 ### COURSEWORK
 
