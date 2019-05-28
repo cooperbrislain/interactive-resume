@@ -14,7 +14,7 @@ $block-font: "Encode Sans Condensed";
     box-sizing: border-box;
 }
 body {
-    font-size: 30%;
+    font-size: 100%;
     font-family: $book_font;
     font-weight: 200;
 
@@ -106,10 +106,10 @@ body {
         li{
             font-family: $block-font;
             display: inline;
-            color: #777674;
+
             font-weight: 300;
             &:nth-child(even) {
-                color: #333231;
+                color: #777674;
                 font-weight: 500;
             }
             strong {

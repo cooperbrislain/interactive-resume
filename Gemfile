@@ -21,7 +21,7 @@ gem "github-pages", group: :jekyll_plugins
 group :jekyll_plugins do
     gem "jekyll-feed", "~> 0.6"
     gem "jekyll-assets"
-    gem "jekyll-pdf"
+    gem 'jekyll-pdf', :git => 'git://github.com/m1racoli/jekyll-pdf', :branch => 'fix-digest-gem'
     gem "jekyll-sitemap"
     gem "jekyll-gist"
     gem 'jekyll-mentions'

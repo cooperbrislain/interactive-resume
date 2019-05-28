@@ -5,15 +5,15 @@ pdf: true
 ---
 COOPER BRISLAIN
 ===============
-### Software Engineer • Creative Coder
+### Software Engineer – Full-Stack
 
-> Interdisciplinary Software Engineer and Visual Artist seeking role on a team developing innovative software around Augmented Reality, Virtual Reality, IoT, and other emerging fields.
-
+> Full-Stack Software Engineer looking to make an impact building systems that facilitate better discourse on social media. 
+ 
 ## TECHNICAL SKILLS
 
 {% include tag-list.html items=site.data.skills_technical %}
 
-## EXPERIENCE 
+## EXPERIENCE
 
 {% include experience.md %}
 
@@ -30,6 +30,7 @@ COOPER BRISLAIN
 
 ## INTERESTS
 
+- Computational Culture and Social Relations
+- Generative Art
 - Flow-Based Programming
-- Intelligent Lighting, LED & Projection Mapping
-- Synesthetic Experiences
+- Burning Man

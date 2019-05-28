@@ -15,7 +15,7 @@
     - description: Developed production, q/a, and __asset tracking software__ using __QR codes__, __Pub/Sub__, and __mySQL__
     - description: Iterated on product design based on event __post-mortem analysis__.
     - description: Researched and recommended parts, materials, and tools to meet production requirements.
-    - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
+#    - description: Designed custom __3D-printed__ parts to improve durability and normalize assembly.
 #    - description: Developed and iterated __production methodologies__ to meet growing demand.
     - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
     - description: Proposed design recommendations based on common challenges encountered in __event production__.
@@ -79,7 +79,7 @@
     - description: Audited __Wordpress__ extensions and determined optimization strategies to minimize overhead and points of failure.
 #    - description: Brought outdated __git__ repository up-to-date.
     - description: Audited __git__ repository and codebase diffs to determine points at which undesirable behavior was introduced.
-    - description: Developed strategies and solutions to avoid future complications.
+#    - description: Developed strategies and solutions to avoid future complications.
   enabled: true
 - title: Lead Software Engineer
   company: Taylor Online Marketing

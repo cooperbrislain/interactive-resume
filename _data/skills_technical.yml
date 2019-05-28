@@ -1,7 +1,23 @@
 - title: Full-Stack Development
   synonyms: ['full-stack']
+  enabled: false
+  years: 10
+- title: PHP
+  enabled: true
+  years: 15
+- title: mySQL
+  enabled: true
+  years: 12
+- title: HTML5
+  slug: html
+  synonyms: ['html']
   enabled: true
   years: 10
+- title: SCSS
+  slug: css
+  synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
+  enabled: true
+  years: 8
 - title: Git
   synonyms: ['github']
   enabled: true
@@ -30,22 +46,6 @@
 - title: Apache
   enabled: false
   years: 5
-- title: PHP
-  enabled: true
-  years: 15
-- title: mySQL
-  enabled: true
-  years: 12
-- title: HTML5
-  slug: html
-  synonyms: ['html']
-  enabled: true
-  years: 10
-- title: SCSS
-  slug: css
-  synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
-  enabled: true
-  years: 8
 - title: RegEx
   synonyms: ['regular-expressions']
   enabled: false
@@ -70,7 +70,7 @@
   slug: 'front-end'
   synonyms: ['front-end-development']
   related: ['javascript','html','scss','jquery','angular-js']
-  enabled: true
+  enabled: false
   years: 10
 - title: Flash
   synonyms: ['actionscript']
@@ -83,11 +83,11 @@
   years: 10
 - title: GLSL
   synonyms: ['opengl','glsl-shader','glsl-shaders']
-  enabled: true
+  enabled: false
   years: 10
 - title: Shaders
   synonyms: ['shader']
-  enabled: true
+  enabled: false
   years: 10
 - title: Projection Mapping
   synonyms: ['projector-mapping','mapping','mapped','projection-mapped','projection','projector']
@@ -95,7 +95,7 @@
   years: 5
 - title: Video Editing
   synonyms: ['editing','edited','edited-video']
-  enabled: true
+  enabled: false
   years: 5
 - title: Agile Development
   synonyms: ['agile','scrum']
@@ -108,7 +108,7 @@
   enabled: false
   years: 3
 - title: Object Oriented Programming
-  enabled: false
+  enabled: true
   years: 7
 - title: MVC
   enabled: false
@@ -135,7 +135,7 @@
 - title: Event Production
   synonyms: ['event','production']
   years: 10
-  enabled: true
+  enabled: false
 - title: Generative Art
   synonyms: ['generative']
   enabled: true
@@ -146,16 +146,16 @@
   years: 5
 - title: Experience Design
   synonyms: ['designed','user-experience','user-experience-design','xd','ux','ui','human-computer-interaction','interaction-design','interactive']
-  enabled: true
+  enabled: false
   years: 5
 - title: Rapid Prototyping
   synonyms: ['prototyped','iterated']
-  enabled: true
+  enabled: false
   years: 3
 - title: Virtual Environments
   synonyms: ['virtualized','vagrant','virtualbox','vm','virtual-machine','virtual-environment','aws','provisioning']
   years: 5
   enabled: false
-- title: Spiline Reticulation
+- title: Spline Reticulation
   years: 25
   enabled: true
