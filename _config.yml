@@ -39,7 +39,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 bio:     "I was born at a very young age."
 locale:  en_US
 baseurl: "/resume" # the subpath of your site, e.g. /blog
-url: "https://spaceboycoop.github.io" # the base hostname & protocol for your site
+url: "https://cooperbrislain.github.io" # the base hostname & protocol for your site
 
 
 # Jekyll
@@ -60,10 +60,10 @@ sass:
 disqus_shortname:   default
 
 analytics-id:       "UA-121066483-1"
-twitter:            spaceboycoop
-facebook:           spaceboycoop
-instagram:          spaceboycoop
-github:             spaceboycoop
+twitter:            cooperbrislain
+facebook:           cooperbrislain
+instagram:          cooperbrislain
+github:             cooperbrislain
 
 # personal
 location:           Hayward, CA

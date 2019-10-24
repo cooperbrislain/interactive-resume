@@ -7,7 +7,7 @@
   skills: ['adobe-creative-cloud','git','arduino','generative-art','integration-and-automation','trello','agile-development','projection-mapping','rapid-prototyping','experience-design']
   links:
     - icon: fab fa-github
-      url: https://github.com/spaceboycoop/led-test-bench
+      url: https://github.com/cooperbrislain/led-test-bench
       title: LED Test Bench
   tech: ['git','arduino','blender','3d printing','artnet','c#']
   responsibilities:
