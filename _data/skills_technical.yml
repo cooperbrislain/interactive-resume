@@ -2,12 +2,32 @@
   synonyms: ['full-stack']
   enabled: false
   years: 10
-- title: PHP
+- title: React
+  enabled: true
+  years: 1
+- title: Node.js
+  related: ['javascript']
+  enabled: true
+  years: 5
+- title: Javascript
+  synonyms: ['js']
+  related: ['node-js','jquery','angular-js']
   enabled: true
   years: 15
 - title: mySQL
   enabled: true
   years: 12
+- title: Git
+  synonyms: ['github']
+  enabled: true
+  years: 3
+- title: PHP
+  enabled: true
+  years: 15
+- title: JQuery
+  related: ['javascript']
+  enabled: true
+  years: 10
 - title: HTML5
   slug: html
   synonyms: ['html']
@@ -18,10 +38,6 @@
   synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
   enabled: true
   years: 8
-- title: Git
-  synonyms: ['github']
-  enabled: true
-  years: 3
 - title: Unity
   enabled: true
   related: ['c','shaders','glsl','real-time-graphics']
@@ -53,19 +69,6 @@
 - title: Platform Migration
   synonyms: ['platform-migrations','migrated','migration','migrate']
   years: 20
-- title: Node.js
-  related: ['javascript']
-  enabled: true
-  years: 5
-- title: Javascript
-  synonyms: ['js']
-  related: ['node-js','jquery','angular-js']
-  enabled: true
-  years: 15
-- title: JQuery
-  related: ['javascript']
-  enabled: true
-  years: 10
 - title: Front-End Development
   slug: 'front-end'
   synonyms: ['front-end-development']
