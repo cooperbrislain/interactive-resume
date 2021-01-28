@@ -129,8 +129,8 @@ $(document).ready(() => {
     $('strong').each(function(index) {
         let skillName = $(this).text();
         skillName = skillName.toSpinalCase();
-        $(this).attr('data-skill',skillname);
-        $(this).data('skill',skillname);
+        $(this).attr('data-skill',skillName);
+        $(this).data('skill',skillName);
     });
     $('#technical-skills+ul li[data-skill]').each(function() {
         if($(this).data('slug')) {
@@ -149,7 +149,7 @@ $(document).ready(() => {
     });
     // set up canvas
     $('<canvas id="canvas">').appendTo('body');
-    canvas = document.getElementById('canvas');
+    const canvas = document.getElementById('canvas');
     canvas.width = window.innerWidth;
     canvas.height = $(document).height();
     let ctx = document.getElementById('canvas').getContext('2d');
@@ -176,7 +176,7 @@ $(document).ready(() => {
 
     let $skills = $('#technical-skills+ul>li, strong[data-skill]');
     $skills.each(function(index) {
-        let skillname = $(this).data('skill');
+        let skillName = $(this).data('skill');
         /*$(this).on('mouseenter', function() {
             document.$selected = $(this);
             ctx = document.ctx;
