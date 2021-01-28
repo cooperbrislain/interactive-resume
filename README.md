@@ -1,6 +1,6 @@
-This repo contains my resume.
+## Cooper Brislain's Interactive Resume
 
-Master is my general resume. Other versions, for specific jobs, experimenting with different information, etc, can be found in branches. 
+This is the repo for my interactive resume on GitHub Pages.
 
 This uses the following:
 * https://github.com/abeMedia/jekyll-pdf
