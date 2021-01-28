@@ -5,3 +5,4 @@ _site
 !.pdf
 !**/.pdf
 !_site/assets
+.bundle
