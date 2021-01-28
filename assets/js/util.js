@@ -7,16 +7,18 @@
 			b = [];
 
 		$a.each((i, item) => {
-			const $this = $(item),
-				indent = Math.max(0, $this.parents('li').length - 1),
-				href = $this.attr('href'),
-				target = $this.attr('target');
+			const 	$item = $(item),
+					indent = Math.max(0, $item.parents('li').length - 1),
+					href = $item.attr('href'),
+					target = $item.attr('target');
 			b.push(`
-				<a class="link depth-${indent}" 
+				<a 
+					class="link depth-${indent}" 
 					${target === undefined || target === '' ? '' : ` target="${target}"`}
-					${href === undefined || href === '' ? '' : ` href="${href}"`}>
+					${href === undefined || href === '' ? '' : ` href="${href}"`}
+				>
 					<span class="indent-${indent}"></span>
-					${$this.text()}
+					${$item.text()}
 				</a>
 			`);
 		});
@@ -25,11 +27,11 @@
 	};
 
 	$.fn.panel = function(userConfig) {
-		const $this = $(this),
-			$body = $('body'),
-			$window = $(window),
-			id = $this.attr('id');
-		let config;
+		const 	$this = $(this),
+				$body = $('body'),
+				$window = $(window),
+				id = $this.attr('id');
+		let 	config;
 
 		if (this.length === 0) return $this;
 		if (this.length > 1) {
