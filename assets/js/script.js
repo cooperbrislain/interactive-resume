@@ -117,9 +117,9 @@ CanvasRenderingContext2D.prototype.eclipseText = (text, x, y, iterations) => {
     this.restore();
 }
 
-$$(document).ready(() => {
+$(document).ready(() => {
     // assign data from json tags
-    $('[data-json]').each(function() {
+    $('[data-json]').each(() => {
         $(this).data($(this).data('json'));
         $(this).removeAttr('json');
         $(this).removeData('json');
