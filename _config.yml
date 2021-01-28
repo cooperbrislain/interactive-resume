@@ -38,8 +38,8 @@ description: >- # this means to ignore newlines until "baseurl:"
     This is my resume.
 bio:     "I was born at a very young age."
 locale:  en_US
-baseurl: "/interactive-resume" # the subpath of your site, e.g. /blog
-url: "https://cooperbrislain.github.io" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://resume.cooperbrislain.com" # the base hostname & protocol for your site
 
 
 # Jekyll
@@ -59,14 +59,14 @@ sass:
 # Comments
 disqus_shortname:   default
 
-analytics-id:       "UA-121066483-1"
+analytics-id:       "UA-121066483-2"
 twitter:            cooperbrislain
 facebook:           cooperbrislain
 instagram:          cooperbrislain
 github:             cooperbrislain
 
 # personal
-location:           Hayward, CA
+location:           Reno, NV
 phone:              707-980-2340
 email:              cbrislain@gmail.com
 

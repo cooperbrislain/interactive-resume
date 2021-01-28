@@ -1,8 +1,7 @@
-.DS_Store
-!.pdf
-!**/.pdf
-!**/*.pdf
-!_site/assets
+.DS_STORE
+_site
 .sass-cache
 .jekyll-metadata
-.idea
+!.pdf
+!**/.pdf
+!_site/assets
