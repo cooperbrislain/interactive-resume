@@ -1,4 +1,4 @@
-sp = str => str.replace(/(?!^)([A-Z])/g, '$1')
+String.prototype.toSpinalCase = (str) => str.replace(/(?!^)([A-Z])/g, '$1')
         .replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
         .replace(/^(-+)/g, '')
         .trim();
@@ -104,7 +104,7 @@ CanvasRenderingContext2D.prototype.innerGlow = iterations => {
     this.restore();
 }
 
-CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iterations) {
+CanvasRenderingContext2D.prototype.eclipseText = (text, x, y, iterations) => {
     this.save();
     this.globalAlpha = 0.12;
     for (let i=1; i<=iterations; i++) {
@@ -112,11 +112,12 @@ CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iterations
         this.strokeText(text, x, y+5);
     }
     this.globalAlpha = 1;
+    const ctx = document.ctx;
     ctx.fillText(text, x, y+7);
     this.restore();
 }
 
-$(document).ready(() => {
+$$(document).ready(() => {
     // assign data from json tags
     $('[data-json]').each(function() {
         $(this).data($(this).data('json'));
@@ -124,7 +125,7 @@ $(document).ready(() => {
         $(this).removeData('json');
     });
     $('strong').each(function(index) {
-        let skillname = sp($(this).text());
+        let skillName = $(this).text()).toSpinalCase();
         $(this).attr('data-skill',skillname);
         $(this).data('skill',skillname);
     });
@@ -189,8 +190,9 @@ $(document).ready(() => {
                 x: $(this).offset().left+$(this).outerWidth()/2,
                 y: $(this).offset().top+$(this).outerHeight()/2
             };
-            let $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
-            $('.job').not($('.job').has('[data-skill="' + document.$selected.data('skill') + '"]')).fadeOut(function() {
+            const $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
+            // fade out other skills.
+            $('.job').not($('.job').has(`[data-skill="${document.$selected.data('skill')}"]`)).fadeOut(() => {
                 $('canvas').css('pointer-events', 'auto');
                 ctx = document.ctx;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
@@ -206,13 +208,13 @@ $(document).ready(() => {
                 document.$selected.css('visibility','hidden');
                 document.ctx = ctx;
             });
-            $('canvas').on('click', function() {
+            $('canvas').on('click', function(e) {
                 $('[data-skill]').css('visibility','visible');
                 ctx = document.ctx;
                 ctx.globalAlpha = 1;
                 ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
                 document.ctx = ctx;
-                event.stopPropagation();
+                e.preventDefault();
                 $(this).css('pointer-events', 'none');
                 $(this).off('click');
                 $('.job').fadeIn();
@@ -222,7 +224,5 @@ $(document).ready(() => {
 
     $('.btn-grip').on('click', () => { $('#nav .panel').slideToggle() });
 
-    $(document).scroll(function() {
-        $('#nav .panel').slideUp();
-    });
+    $(document).scroll(() => { $('#nav .panel').slideUp(); });
 });
