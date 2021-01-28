@@ -1,0 +1,58 @@
+@import "icons";
+
+.job {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    ul {
+        list-style: none;
+        li {
+            b {
+                font-weight: 900;
+            }
+            &::before {
+                content: "❯";
+                color: #ABACAB;
+                font-weight: 900;
+                width: 1em;
+                margin-left: -1em;
+                font-family: $title-font;
+                font-size: 50%;
+                position: relative;
+                bottom: 2.5pt;
+            }
+            p {
+                display: inline-block;
+            }
+        }
+    }
+    ul.responsibilities {
+        strong[data-skill] {
+            color: #777674;
+        }
+    }
+    a {
+        &.icon {
+            color: #333231;
+            margin: 5px;
+        }
+    }
+    &:nth-child(even) {
+    }
+    &:nth-child(odd) {
+    }
+}
+
+blockquote {
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+a {
+    sup {
+        i {
+            color: #333231;
+        }
+    }
+}

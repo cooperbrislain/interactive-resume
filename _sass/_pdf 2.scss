@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:200,300,400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:200,300,400,500,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
+@import 'font-awesome.min.css';
+
+$title-font: "Work Sans";
+$book-font: "Encode Sans";
+$block-font: "Encode Sans Condensed";
+
+@import "common";
+
+* {
+    color: #232120;
+    box-sizing: border-box;
+}
+body {
+    font-size: 100%;
+    font-family: $book_font;
+    font-weight: 200;
+
+    h1, h2, h3, h4, h5 {
+        font-weight: bold;
+        font-family: $title_font;
+        color: #232221;
+    }
+    h1 {
+        &+h3 {
+            margin-top: 0px;
+        }
+    }
+    h2 {
+    }
+    h3, h4, h5 {
+        margin-bottom: 1em;
+    }
+    a {
+        border-bottom: none;
+        text-decoration: none;
+        color: inherit;
+        sup {
+            display: none;
+        }
+    }
+    b {
+        font-weight: 300;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            line-height: default;
+            p {
+                margin: 0;
+                margin-top: 2.5pt;
+                margin-bottom: 2.5pt;
+            }
+        }
+    }
+    ul.links {
+        display: none;
+    }
+    blockquote {
+        margin: 0px;
+        padding: 0px;
+        width: 65%;
+        ul {
+            margin: 0px;
+            line-height: 1em;
+            li {
+                line-height: default;
+                font-family: $title_font;
+                display: inline-block;
+                width: 15%;
+                padding: 0px;
+                margin: 0px;
+                margin-left: 3pt;
+                margin-right: 3pt;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+    .contact {
+        display: block;
+        position: absolute;
+        width: 15em;
+        right: 0px;
+        top: 10px;
+        section {
+            &:nth-child(n+4) {
+                display: none;
+            }
+            h3 {
+                display: none;
+            }
+            p {
+                text-align: right;
+            }
+        }
+    }
+    h2+ul {
+        li {
+            font-weight: 500;
+        }
+    }
+    #education+ul {
+        li{
+            font-family: $block-font;
+            display: inline;
+
+            font-weight: 300;
+            &:nth-child(even) {
+                color: #777674;
+                font-weight: 500;
+            }
+            strong {
+                font-weight: inherit;
+                color: inherit;
+            }
+        }
+    }
+    h2+ul>li {
+        color: #434241;
+        font-weight: 400;
+    }
+    #technical-skills+ul,
+    #coursework+ul {
+        li {
+            font-family: $block-font;
+            display: inline-block;
+            white-space: nowrap;
+            padding: 0.5em;
+            &:nth-child(even) {
+                font-weight:400;
+                color: #777674;
+            }
+            &:nth-child(odd) {
+                font-weight: 200;
+            }
+        }
+    }
+    .job {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        ul {
+            li {
+                &::before {
+                    content: "❯";
+                    color: #ABACAB;
+                    font-weight: 900;
+                    width: 1em;
+                    left: -1em;
+                    font-family: $title-font;
+                    font-size: 50%;
+                    top: 0.6em;
+                    position: relative;
+                    vertical-align: top;
+                    float: left;
+                }
+                p {
+                    display: block;
+                }
+            }
+        }
+        ul.responsibilities {
+            strong[data-skill] {
+                color: #777674;
+            }
+        }
+    }
+}
+

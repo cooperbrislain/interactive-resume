@@ -1,0 +1,8 @@
+.DS_STORE
+_site
+.sass-cache
+.jekyll-metadata
+!.pdf
+!**/.pdf
+!_site/assets
+.bundle
