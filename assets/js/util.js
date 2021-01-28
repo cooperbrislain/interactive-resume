@@ -1,5 +1,5 @@
-($ = function() {
-	
+(function() {
+
 	$.fn.navList = function() {
 		let	$this = $(this),
 			$a = $this.find('a'),
