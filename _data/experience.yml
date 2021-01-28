@@ -1,4 +1,4 @@
-- title: Lighting R&D Engineer
+- title: Creative Technologist
   company: Simple Machinists
   logo: /assets/svg/watermarks/simplemachinists.svg
   from: 2018-04-01
@@ -19,9 +19,10 @@
 #    - description: Developed and iterated __production methodologies__ to meet growing demand.
     - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
     - description: Proposed design recommendations based on common challenges encountered in __event production__.
-  enabled: true
-- title: Motion Graphics Software Engineer & Visual Artist
+  enabled: false
+- title: VJ, Visual Artist, Creative Technologist
   company: Vektor Selektor
+  type: artist
   logo: /assets/svg/watermarks/vektorselektor.svg
   url: https://www.vektorselektor.com
   from: 2011-01-01
@@ -50,6 +51,7 @@
   enabled: true
 - title: Software Engineer
   company: BetterHelp
+  type: full-time
   skills: ['adobe-creative-cloud','php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello','analytics','integration-and-automation','refactoring','scalability','virtual-environments','vagrant']
   logo: /assets/svg/watermarks/betterhelp.svg
   url: https://www.betterhelp.com
@@ -64,8 +66,9 @@
     - description: __Integrated__ billing system with Paypal's __Braintree API__, standardizing __payment__ flow and allowing acceptance of new payment methods.
     - description: Created super cool __Slackbot__ integrations and __emojis__ to improve team communication and morale.
   enabled: true
-- title: Software Engineer
-  company: Visions in Education
+- title: Programmer
+  company: Granite Solutions for Visions in Education
+  type: contract
   logo: /assets/svg/watermarks/viedu.svg
   url: https://www.viedu.org
   location: Carmichael, CA
@@ -81,8 +84,10 @@
     - description: Audited __git__ repository and codebase diffs to determine points at which undesirable behavior was introduced.
 #    - description: Developed strategies and solutions to avoid future complications.
   enabled: true
-- title: Lead Software Engineer
-  company: Taylor Online Marketing
+- title: Web Developer
+  company: self
+  type: freelance
+  clients: Taylor Online Marketing, Lana Turner Journal
   logo: /assets/svg/watermarks/tolm.svg
   url: https://www.tolm.co
   location: Aptos, CA
@@ -99,12 +104,13 @@
     - description: Improved __efficiency__ and __agility__ by __automating__ frequent or time-consuming tasks.
   enabled: true
 - title: Software Engineer
-  company: Insignia Technologies
+  company: Insignia Technology Services
+  type: contract
   location: Monterey, CA
   tags: ['full-time','engineer','programming','front-end']
   skills: ['flash','actionscript','c','asp.net']
   responsibilities:
-  enabled: false
+  enabled: true
 - title: Software Engineer
   company: CgrafX
   location: Santa Clara, CA
@@ -112,8 +118,9 @@
   skills: ['php','mysql','flash','actionscript','css3','full-stack-development']
   responsibilities:
   enabled: false
-- title: Software Engineer
+- title: Associate Engineer
   company: Design Reactor
+  type: full-time
   location: Campbell, CA
   logo: /assets/svg/watermarks/designreactor.svg
   url: https://www.designreactor.comp
@@ -126,8 +133,9 @@
     - description: Produced pixel-perfect web materials for marketing campaigns, adhering to critical style guidelines.
     - description: Created rich, interactive user interface for agency portfolio, using __Actionscript__ and __Expression Engine__.
   enabled: true
-- title: Software Engineer
+- title: Programmer L2
   company: Jupiter Hosting
+  type: full-time
   logo: /assets/svg/watermarks/jupiterhosting.svg
   url: https://www.jupiterhosting.com
   location: Santa Clara, CA
@@ -141,6 +149,7 @@
   enabled: true
 - title: Support Technician
   company: UCSC Media Services
+  type: part-time
   logo: /assets/svg/watermarks/ucsc.svg
   location: Santa Cruz, CA
   from: 2006-09-01
@@ -153,9 +162,10 @@
     - description: __Maintained__ readiness of equipment pool for rental and checkout, ensuring good working order, cleanliness, and presence of all included components.
   #  - description: Operated __service vans__ on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
   #  - description: Held keys and access codes to secure areas, media cabinets, and equipment closets throughout the university campus.
-  enabled: false
+  enabled: true
 - title: Event Crew
   company: Plan-It Interactive
+  type: hourly
   logo: /assets/svg/watermarks/planit.svg
   url: https://www.interactivegame.com/
   location: Concord, CA
@@ -169,9 +179,11 @@
     - description: Operated climbing wall, ensuring __safety__ of participants.
     - description: Performed on-site __troubleshooting and repair__ of R/C cars.
 #    - description: Drove box trucks with trailers on highway to and from events.
-  enabled: false
+  enabled: true
 - title: Support Technician
-  company: InterX Technologies; Napa, CA
+  company: InterX Technologies
+  location: Napa, CA
+  type: part-time
   from: 1997-09-15
   to: 1998-01-15
   tags: ['part-time','technical']
@@ -180,9 +192,10 @@
     - description: Provided support to users of __MacOS__ System 7/8 as well as __Windows__ 95 experiencing dial-up internet connectivity issues.
     - description: Assisted web designer with updates to company and customer websites.
     - description: Taught introductory class for new Internet users.
-  enabled: false
+  enabled: true
 - title: Mentor
   company: CoreMUD
+  type: volunteer
   from: 1996-01-01
   to: 2000-01-01
   tags: ['part-time','programming']
@@ -194,4 +207,4 @@
     - description: Monitored logs to detect the exploitation of bugs and unintended game imbalances by players seeking to gain an unfair advantage, and issued fixes.
     - description: Assisted with major transition and branch of code base.
     - description: Played with Legos.
-  enabled: false
+  enabled: true
