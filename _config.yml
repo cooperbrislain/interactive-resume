@@ -12,27 +12,27 @@ plugins:
     - jekyll-paginate
 
 # Site
-title:              "Cooper Brislain's Resume"
+title: "Cooper Brislain - Software Engineer"
 description: >-
     This is my resume.
 bio:     "I was born at a very young age."
 locale:  en_US
-baseurl: "/"
 url: "https://resume.cooperbrislain.com"
+baseurl: "/"
 
 # Jekyll
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
-    auto_ids:         true
-    footnote_nr:      1
-    entity_output:    as_char
-    toc_levels:       1..6
-    enable_coderay:   false
+    auto_ids:       true
+    footnote_nr:    1
+    entity_output:  as_char
+    toc_levels:     1..6
+    enable_coderay: false
 mathjax:            true
 sass:
-    sass_dir:         _sass
-    style:            compressed
+    sass_dir:       _sass
+    style:          compressed
 
 # Comments
 disqus_shortname:   default
