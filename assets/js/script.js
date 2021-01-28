@@ -9,7 +9,7 @@ Math.lerp = (value1, value2, amount) => {
     return value1 + (value2 - value1) * amount;
 };
 
-connectBubbles = ($from, $to, from_rad=50, to_rad=50, small_rad=15) => {
+connectBubbles = ($from, $to, fromRadius=50, to_rad=50, small_rad=15) => {
     let ctx = document.ctx;
     let fromAnchor = {
         x: $from.offset().left+$from.outerWidth()/2,
@@ -20,7 +20,7 @@ connectBubbles = ($from, $to, from_rad=50, to_rad=50, small_rad=15) => {
     // from bubble
     ctx.beginPath();
     ctx.strokeStyle = "#4be500";
-    ctx.arc(fromanchor.x,fromanchor.y,from_rad,0,2*Math.PI);
+    ctx.arc(fromAnchor.x,fromAnchor.y,fromRadius,0,2*Math.PI);
     ctx.innerGlow(10);
 
     document.ctx = ctx;
@@ -36,33 +36,34 @@ connectBubbles = ($from, $to, from_rad=50, to_rad=50, small_rad=15) => {
         if ($(this)[0] === $from[0]) {
             return 0;
         }
+        let toRadius;
         if ($(this).is('.job .skills li')) {
             toAnchor = {
                 x: $(this).parent().parent().find('h3').offset().left-15,
                 y: $(this).parent().parent().find('h3').offset().top+$(this).parent().parent().find('h3').outerHeight()/2
             }
-            to_rad = 15;
+            toRadius = 15;
         } else {
             toAnchor = {
                 x: $(this).offset().left+$(this).outerWidth()/2,
                 y: $(this).offset().top+$(this).outerHeight()/2
             }
-            to_rad = 50;
+            toRadius = 50;
         }
 
         // calculate angle
         const ang = Math.atan2(
-            toanchor.y-fromanchor.y,
-            toanchor.x-fromanchor.x
+            toAnchor.y-fromAnchor.y,
+            toAnchor.x-fromAnchor.x
         );
         // calculate segment between
         const lineOrigin = {
-            'x': fromanchor.x+Math.cos(ang)*from_rad,
-            'y': fromanchor.y+Math.sin(ang)*from_rad
+            'x': fromAnchor.x+Math.cos(ang)*fromRadius,
+            'y': fromAnchor.y+Math.sin(ang)*fromRadius
         }
         const lineEnd = {
-            'x': toanchor.x-Math.cos(ang)*to_rad,
-            'y': toanchor.y-Math.sin(ang)*to_rad
+            'x': toAnchor.x-Math.cos(ang)*toRadius,
+            'y': toAnchor.y-Math.sin(ang)*toRadius
         }
 
         ctx = document.ctx;
@@ -73,18 +74,18 @@ connectBubbles = ($from, $to, from_rad=50, to_rad=50, small_rad=15) => {
         ctx.lineWidth = 3;
         ctx.globalAlpha = 0.5;
         ctx.moveTo(
-           lineorigin.x,
-           lineorigin.y
+           lineOrigin.x,
+           lineOrigin.y
         );
         ctx.lineTo(
-            lineend.x,
-            lineend.y
+            lineEnd.x,
+            lineEnd.y
         );
         ctx.stroke();
 
         // glow target
         ctx.beginPath();
-        ctx.arc(toanchor.x,toanchor.y,to_rad,0,2*Math.PI);
+        ctx.arc(toAnchor.x,toAnchor.y,toRadius,0,2*Math.PI);
         ctx.strokeStyle="#32ccf3";
         ctx.innerGlow(15);
 
