@@ -1,25 +1,22 @@
-function sp(str) {
-    // convert to spinal case
-    var spinal = str.replace(/(?!^)([A-Z])/g, '$1')
+sp = str => str.replace(/(?!^)([A-Z])/g, '$1')
         .replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
         .replace(/^(-+)/g, '')
         .trim();
-    return spinal;
-}
 
-Math.lerp = function (value1, value2, amount) {
+Math.lerp = (value1, value2, amount) => {
     amount = amount < 0 ? 0 : amount;
     amount = amount > 1 ? 1 : amount;
     return value1 + (value2 - value1) * amount;
 };
 
-function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
-    ctx = document.ctx;
-
-    fromanchor = {
+connectBubbles = ($from, $to, from_rad=50, to_rad=50, small_rad=15) => {
+    let ctx = document.ctx;
+    let fromAnchor = {
         x: $from.offset().left+$from.outerWidth()/2,
         y: $from.offset().top+$from.outerHeight()/2
     }
+    let toAnchor;
+
     // from bubble
     ctx.beginPath();
     ctx.strokeStyle = "#4be500";
@@ -32,21 +29,21 @@ function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
     // to loop
     $to.each(function() {
         $from = document.$selected;
-        fromanchor = {
+        fromAnchor = {
             x: $from.offset().left+$from.outerWidth()/2,
             y: $from.offset().top+$from.outerHeight()/2
         }
-        if ($(this)[0] == $from[0]) {
+        if ($(this)[0] === $from[0]) {
             return 0;
         }
         if ($(this).is('.job .skills li')) {
-            toanchor = {
+            toAnchor = {
                 x: $(this).parent().parent().find('h3').offset().left-15,
                 y: $(this).parent().parent().find('h3').offset().top+$(this).parent().parent().find('h3').outerHeight()/2
             }
             to_rad = 15;
         } else {
-            toanchor = {
+            toAnchor = {
                 x: $(this).offset().left+$(this).outerWidth()/2,
                 y: $(this).offset().top+$(this).outerHeight()/2
             }
@@ -54,16 +51,16 @@ function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
         }
 
         // calculate angle
-        ang = Math.atan2(
+        const ang = Math.atan2(
             toanchor.y-fromanchor.y,
             toanchor.x-fromanchor.x
         );
         // calculate segment between
-        lineorigin = {
+        const lineOrigin = {
             'x': fromanchor.x+Math.cos(ang)*from_rad,
             'y': fromanchor.y+Math.sin(ang)*from_rad
         }
-        lineend = {
+        const lineEnd = {
             'x': toanchor.x-Math.cos(ang)*to_rad,
             'y': toanchor.y-Math.sin(ang)*to_rad
         }
@@ -95,34 +92,30 @@ function connectBubbles($from, $to, from_rad=50, to_rad=50, small_rad=15) {
     })
 }
 
-CanvasRenderingContext2D.prototype.innerGlow = function(iters) {
+CanvasRenderingContext2D.prototype.innerGlow = iterations => {
     this.save();
-
     this.globalAlpha = 0.08;
     this.clip();
-    for (i=1; i<=iters; i++) {
+    for (let i=1; i<=iterations; i++) {
         this.lineWidth = i;
         this.stroke();
     }
-
     this.restore();
 }
 
-CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iters) {
+CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iterations) {
     this.save();
-
     this.globalAlpha = 0.12;
-    for (i=1; i<=iters; i++) {
+    for (let i=1; i<=iterations; i++) {
         this.lineWidth = i;
         this.strokeText(text, x, y+5);
     }
     this.globalAlpha = 1;
     ctx.fillText(text, x, y+7);
-
     this.restore();
 }
 
-$(document).ready(function() {
+$(document).ready(() => {
     // assign data from json tags
     $('[data-json]').each(function() {
         $(this).data($(this).data('json'));
@@ -130,7 +123,7 @@ $(document).ready(function() {
         $(this).removeData('json');
     });
     $('strong').each(function(index) {
-        var skillname = sp($(this).text());
+        let skillname = sp($(this).text());
         $(this).attr('data-skill',skillname);
         $(this).data('skill',skillname);
     });
@@ -142,7 +135,7 @@ $(document).ready(function() {
         if($(this).data('synonyms')) {
             document.skillname = $(this).data('skill');
             $.each($(this).data('synonyms'), function(index, value) {
-                $items = $('strong[data-skill="' + value + '"]');
+                const $items = $('strong[data-skill="' + value + '"]');
                 $items.attr('data-skill', document.skillname);
                 $items.data('skill', document.skillname);
 
@@ -154,18 +147,18 @@ $(document).ready(function() {
     canvas = document.getElementById('canvas');
     canvas.width = window.innerWidth;
     canvas.height = $(document).height();
-    ctx = document.getElementById('canvas').getContext('2d');
+    let ctx = document.getElementById('canvas').getContext('2d');
     document.ctx = ctx;
-    devicePixelRatio = window.devicePixelRatio || 1,
-    backingStoreRatio = ctx.webkitBackingStorePixelRatio ||
+    let devicePixelRatio = window.devicePixelRatio || 1;
+    let backingStoreRatio = ctx.webkitBackingStorePixelRatio ||
                         ctx.mozBackingStorePixelRatio ||
                         ctx.msBackingStorePixelRatio ||
                         ctx.oBackingStorePixelRatio ||
-                        ctx.backingStorePixelRatio || 1,
-    ratio = devicePixelRatio / backingStoreRatio;
+                        ctx.backingStorePixelRatio || 1;
+    let ratio = devicePixelRatio / backingStoreRatio;
     if (devicePixelRatio !== backingStoreRatio) {
-        var oldWidth = canvas.width;
-        var oldHeight = canvas.height;
+        let oldWidth = canvas.width;
+        let oldHeight = canvas.height;
         canvas.width = oldWidth * ratio;
         canvas.height = oldHeight * ratio;
         canvas.style.width = oldWidth + 'px';
@@ -176,9 +169,9 @@ $(document).ready(function() {
     ctx.lineWidth=3;
     document.ctx = ctx;
 
-    var $skills = $('#technical-skills+ul>li, strong[data-skill]');
+    let $skills = $('#technical-skills+ul>li, strong[data-skill]');
     $skills.each(function(index) {
-        skillname = $(this).data('skill');
+        let skillname = $(this).data('skill');
         /*$(this).on('mouseenter', function() {
             document.$selected = $(this);
             ctx = document.ctx;
@@ -195,7 +188,7 @@ $(document).ready(function() {
                 x: $(this).offset().left+$(this).outerWidth()/2,
                 y: $(this).offset().top+$(this).outerHeight()/2
             };
-            $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
+            let $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
             $('.job').not($('.job').has('[data-skill="' + document.$selected.data('skill') + '"]')).fadeOut(function() {
                 $('canvas').css('pointer-events', 'auto');
                 ctx = document.ctx;
@@ -225,12 +218,8 @@ $(document).ready(function() {
             });
         });
     });
-    // ah finally
 
-    // regular other stuff
-    $('.btn-grip').click(function() {
-        $('#nav .panel').slideToggle();
-    });
+    $('.btn-grip').on('click', () => { $('#nav .panel').slideToggle() });
 
     $(document).scroll(function() {
         $('#nav .panel').slideUp();
