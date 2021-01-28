@@ -125,7 +125,7 @@ $$(document).ready(() => {
         $(this).removeData('json');
     });
     $('strong').each(function(index) {
-        let skillName = $(this).text()).toSpinalCase();
+        let skillName = $(this).text().toSpinalCase();
         $(this).attr('data-skill',skillname);
         $(this).data('skill',skillname);
     });
@@ -224,5 +224,5 @@ $$(document).ready(() => {
 
     $('.btn-grip').on('click', () => { $('#nav .panel').slideToggle() });
 
-    $(document).scroll(() => { $('#nav .panel').slideUp(); });
+    $(document).on('scroll', () => { $('#nav .panel').slideUp(); });
 });
