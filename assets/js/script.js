@@ -1,7 +1,9 @@
-String.prototype.toSpinalCase = (str) => str.replace(/(?!^)([A-Z])/g, '$1')
+String.prototype.toSpinalCase = function() {
+    return this.replace(/(?!^)([A-Z])/g, '$1')
         .replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
         .replace(/^(-+)/g, '')
         .trim();
+}
 
 Math.lerp = (value1, value2, amount) => {
     amount = amount < 0 ? 0 : amount;
@@ -125,7 +127,8 @@ $(document).ready(() => {
         $(this).removeData('json');
     });
     $('strong').each(function(index) {
-        let skillName = $(this).text().toSpinalCase();
+        let skillName = $(this).text();
+        skillName = skillName.toSpinalCase();
         $(this).attr('data-skill',skillname);
         $(this).data('skill',skillname);
     });
