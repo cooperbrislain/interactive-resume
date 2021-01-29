@@ -17,7 +17,6 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
         x: $from.left+$from.outerWidth()/2,
         y: $from.top+$from.outerHeight()/2
     };
-    let toAnchor;
     // from bubble
     ctx.beginPath();
     ctx.strokeStyle = "#4be500";
@@ -28,21 +27,23 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
     document.$selected = $from;
 
     // to loop
-    $to.each(function() {
-        if ($(this)[0] === $from[0]) {
+    $to.each((i, $item) => {
+        if ($item[0] === $from[0]) {
             return 0;
         }
-        let toRadius;
+
+        let toAnchor, toRadius;
+
         if ($(this).is('.job .skills li')) {
             toAnchor = {
-                x: $(this).parent().parent().find('h3').offset().left-15,
-                y: $(this).parent().parent().find('h3').offset().top+$(this).parent().parent().find('h3').outerHeight()/2
+                x: $(this).parent().parent().find('h3').left-15,
+                y: $(this).parent().parent().find('h3').top+$(this).parent().parent().find('h3').outerHeight()/2
             };
             toRadius = 15;
         } else {
             toAnchor = {
-                x: $(this).offset().left+$(this).outerWidth()/2,
-                y: $(this).offset().top+$(this).outerHeight()/2
+                x: $(this).left+$(this).outerWidth()/2,
+                y: $(this).top+$(this).outerHeight()/2
             };
             toRadius = 50;
         }
@@ -57,6 +58,7 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
             'x': fromAnchor.x+Math.cos(angle)*fromRadius,
             'y': fromAnchor.y+Math.sin(angle)*fromRadius
         };
+
         const lineEnd = {
             'x': toAnchor.x-Math.cos(angle)*toRadius,
             'y': toAnchor.y-Math.sin(angle)*toRadius
