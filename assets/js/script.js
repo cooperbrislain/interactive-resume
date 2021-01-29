@@ -1,4 +1,4 @@
-String.prototype.toSpinalCase = function() {
+String.prototype.toKebabCase = function() {
     return this.replace(/(?!^)([A-Z])/g, '$1')
         .replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
         .replace(/^(-+)/g, '')
@@ -14,9 +14,11 @@ Math.lerp = (value1, value2, amount) => {
 connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15) {
     let ctx = document.ctx;
     const fromAnchor = {
-        x: $from.left+$from.outerWidth()/2,
-        y: $from.top+$from.outerHeight()/2
+        x: $from.offset().left+$from.outerWidth()/2,
+        y: $from.offset().top+$from.outerHeight()/2
     };
+    console.log('fromAnchor', fromAnchor);
+
     // from bubble
     ctx.beginPath();
     ctx.strokeStyle = "#4be500";
@@ -25,44 +27,57 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
 
     document.ctx = ctx;
     document.$selected = $from;
-
+    console.log('From', $from);
+    console.log('To', $to);
     // to loop
-    $to.each((i, $item) => {
-        if ($item[0] === $from[0]) {
+    $to.each(function() {
+        const $this = $(this);
+        let toAnchor, toRadius;
+
+        if ($this === $from[0]) {
             return 0;
         }
 
-        let toAnchor, toRadius;
-
-        if ($(this).is('.job .skills li')) {
+        if ($this.is('.job .skills li')) {
+            console.log('job skills li');
+            const $sectionHeading = $this.parent().parent().find('h3');
+            console.log('element: ', $sectionHeading);
             toAnchor = {
-                x: $(this).parent().parent().find('h3').left-15,
-                y: $(this).parent().parent().find('h3').top+$(this).parent().parent().find('h3').outerHeight()/2
+                x: $sectionHeading.offset().left-15,
+                y: $sectionHeading.offset().top+$sectionHeading.outerHeight()/2
             };
+            console.log('toAnchor', toAnchor);
             toRadius = 15;
         } else {
+            console.log('else');
             toAnchor = {
-                x: $(this).left+$(this).outerWidth()/2,
-                y: $(this).top+$(this).outerHeight()/2
+                x: $this.offset().left+$this.outerWidth()/2,
+                y: $this.offset().top+$this.outerHeight()/2
             };
             toRadius = 50;
         }
+
+        console.log(fromAnchor, toAnchor);
 
         // calculate angle
         const angle = Math.atan2(
             toAnchor.y-fromAnchor.y,
             toAnchor.x-fromAnchor.x
         );
+        // console.log(angle);
+
         // calculate segment between
         const lineOrigin = {
             'x': fromAnchor.x+Math.cos(angle)*fromRadius,
             'y': fromAnchor.y+Math.sin(angle)*fromRadius
         };
+        // console.log('Origin', lineOrigin);
 
         const lineEnd = {
             'x': toAnchor.x-Math.cos(angle)*toRadius,
             'y': toAnchor.y-Math.sin(angle)*toRadius
         };
+        // console.log('End', lineEnd);
 
         ctx = document.ctx;
 
@@ -109,14 +124,14 @@ CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iterations
 
 $(document).ready(function() {
     // assign data from json tags
-    $('[data-json]').each(() => {
+    $('[data-json]').each(function () {
         $(this).data($(this).data('json'));
         $(this).removeAttr('json');
         $(this).removeData('json');
     });
     $('strong').each(function(index) {
         let skillName = $(this).text();
-        skillName = skillName.toSpinalCase();
+        skillName = skillName.toKebabCase();
         $(this).attr('data-skill',skillName);
         $(this).data('skill',skillName);
     });
@@ -126,11 +141,11 @@ $(document).ready(function() {
             $(this).data('skill',$(this).data('slug'));
         }
         if($(this).data('synonyms')) {
-            document.skillname = $(this).data('skill');
+            document.curSkill = $(this).data('skill');
             $.each($(this).data('synonyms'), function(index, value) {
-                const $items = $('strong[data-skill="' + value + '"]');
-                $items.attr('data-skill', document.skillname);
-                $items.data('skill', document.skillname);
+                const $items = $(`strong[data-skill="${value}"`);
+                $items.attr('data-skill', document.curSkill);
+                $items.data('skill', document.curSkill);
 
             });
         }
@@ -138,10 +153,10 @@ $(document).ready(function() {
 
     // set up canvas
     $('<canvas id="canvas">').appendTo('body'); // todo: change this to append before scripts?
-
     const canvas = document.getElementById('canvas');
-    canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight;
+    // set width and height to the entire page (as opposed to the window)
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = document.documentElement.clientHeight;
     let ctx = document.getElementById('canvas').getContext('2d');
     document.ctx = ctx;
     let devicePixelRatio = window.devicePixelRatio || 1;
@@ -165,53 +180,90 @@ $(document).ready(function() {
     document.ctx = ctx;
 
     const $skills = $('#technical-skills+ul>li, strong[data-skill]');
-    $skills.each(function(index) {
-        let skillName = $(this).data('skill');
-        /*$(this).on('mouseenter', function() {
-            document.$selected = $(this);
+
+    $(document).on('click', "#technical-skills+ul>li, strong[data-skill]", e => {
+        $this = $(e.target);
+        document.$selected = $this;
+        document.fromAnchor = {
+            x: $this.offset().left+$this.outerWidth()/2,
+            y: $this.offset().top+$this.outerHeight()/2
+        };
+        const $skillAnchors = $(`[data-skill="${document.$selected.data('skill')}"]`);
+        const $job = $('.job');
+        const $canvas = $('canvas');
+        $job.not($job.has(`[data-skill="${document.$selected.data('skill')}"]`)).fadeOut(() => {
+            $canvas.css('pointer-events', 'auto');
+            ctx = document.ctx;
+            ctx.clearRect(0, 0, $canvas.outerWidth(), $canvas.outerHeight());
+            ctx.beginPath();
+            document.ctx = ctx;
+            console.log(document.$selected);
+            connectBubbles(document.$selected, $skillAnchors);
+            ctx = document.ctx;
+            ctx.font = "900 14pt Tajawal";
+            ctx.fillStyle = "black";
+            ctx.strokeStyle = "white";
+            ctx.textAlign = "center";
+            ctx.eclipseText(document.$selected.text().trim(), document.fromAnchor.x, document.fromAnchor.y, 15);
+            document.$selected.css('visibility','hidden');
+            document.ctx = ctx;
+        });
+    });
+
+    $('canvas').on('click', e => {
+        const $canvas = $('canvas');
+        const $this = $(e.target);
+
+        $('[data-skill]').css('visibility','visible');
+        ctx = document.ctx;
+        ctx.globalAlpha = 1;
+        ctx.clearRect(0, 0, $canvas.outerWidth(), $canvas.outerHeight());
+        document.ctx = ctx;
+        e.preventDefault();
+        $this.css('pointer-events', 'none');
+        $this.off('click');
+        $('.job').fadeIn();
+    });
+
+    $(document).on('click',"#technical-skills+ul>li, strong[data-skill]", (e) => {
+        $this = $(e.target);
+        document.$selected = $this;
+        document.fromAnchor = {
+            x: $this.offset().left+$this.outerWidth()/2,
+            y: $this.offset().top+$this.outerHeight()/2
+        };
+        const $skillAnchors = $(`[data-skill="${document.$selected.data('skill')}"]`);
+        // fade out other skills.
+        $('.job').not($('.job').has(`[data-skill="${document.$selected.data('skill')}"]`)).fadeOut(() => {
+            $('canvas').css('pointer-events', 'auto');
             ctx = document.ctx;
             ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
-            ctx.strokeStyle="#DEFAC9";
+            ctx.beginPath();
             document.ctx = ctx;
-            $skill_anchors = $('[data-skill="' + $(this).data('skill') + '"]');
-            connectBubbles($(this), $skill_anchors);
-        });*/
+            connectBubbles(document.$selected, $skillAnchors);
+            ctx = document.ctx;
+            ctx.font = "900 14pt Tajawal";
+            ctx.fillStyle = "black";
+            ctx.strokeStyle = "white";
+            ctx.textAlign = "center";
+            ctx.eclipseText(document.$selected.text().trim(),
+                document.fromAnchor.x,
+                document.fromAnchor.y, 15);
+            document.$selected.css('visibility','hidden');
+            document.ctx = ctx;
+        });
 
-        $(this).on('click',function() {
-            document.$selected = $(this);
-            document.fromanchor = {
-                x: $(this).offset().left+$(this).outerWidth()/2,
-                y: $(this).offset().top+$(this).outerHeight()/2
-            };
-            const $skill_anchors = $('[data-skill="' + document.$selected.data('skill') + '"]');
-            // fade out other skills.
-            $('.job').not($('.job').has(`[data-skill="${document.$selected.data('skill')}"]`)).fadeOut(() => {
-                $('canvas').css('pointer-events', 'auto');
-                ctx = document.ctx;
-                ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
-                ctx.beginPath();
-                document.ctx = ctx;
-                connectBubbles(document.$selected, $skill_anchors);
-                ctx = document.ctx;
-                ctx.font = "900 14pt Tajawal";
-                ctx.fillStyle = "black";
-                ctx.strokeStyle = "white";
-                ctx.textAlign = "center";
-                ctx.eclipseText(document.$selected.text().trim(), document.fromanchor.x, document.fromanchor.y, 15);
-                document.$selected.css('visibility','hidden');
-                document.ctx = ctx;
-            });
-            $('canvas').on('click', function(e) {
-                $('[data-skill]').css('visibility','visible');
-                ctx = document.ctx;
-                ctx.globalAlpha = 1;
-                ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
-                document.ctx = ctx;
-                e.preventDefault();
-                $(this).css('pointer-events', 'none');
-                $(this).off('click');
-                $('.job').fadeIn();
-            });
+        $('canvas').on('click', e => {
+            $this = $(e.target);
+            $('[data-skill]').css('visibility','visible');
+            ctx = document.ctx;
+            ctx.globalAlpha = 1;
+            ctx.clearRect(0, 0, $('canvas').outerWidth(), $('canvas').outerHeight());
+            document.ctx = ctx;
+            e.preventDefault();
+            $this.css('pointer-events', 'none');
+            $this.off('click');
+            $('.job').fadeIn();
         });
     });
 
