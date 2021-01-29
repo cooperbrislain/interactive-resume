@@ -105,5 +105,6 @@
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.7.0, ruby-3.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webrick (v1.7.0, ruby-3.0.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.4.2, ruby-3.0.0-p0) [gem]" level="application" />
+    <orderEntry type="library" name="Chart.js" level="application" />
   </component>
 </module>

@@ -24,6 +24,10 @@ COOPER BRISLAIN
 * __UC Santa Cruz__
 * 2003-2007
 
+* __Full-Stack MERN Boot Camp__
+* __UC Berkeley Extension__
+* 2019
+
 ### COURSEWORK
 
 {% include list.html items=site.data.coursework %}
@@ -34,3 +38,4 @@ COOPER BRISLAIN
 - Generative Art
 - Flow-Based Programming
 - Burning Man
+- Cycling

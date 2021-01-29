@@ -3,7 +3,7 @@ String.prototype.toSpinalCase = function() {
         .replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase()
         .replace(/^(-+)/g, '')
         .trim();
-}
+};
 
 Math.lerp = (value1, value2, amount) => {
     amount = amount < 0 ? 0 : amount;
@@ -11,14 +11,13 @@ Math.lerp = (value1, value2, amount) => {
     return value1 + (value2 - value1) * amount;
 };
 
-connectBubbles = ($from, $to, fromRadius=50, to_rad=50, small_rad=15) => {
+connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15) {
     let ctx = document.ctx;
-    let fromAnchor = {
-        x: $from.offset().left+$from.outerWidth()/2,
-        y: $from.offset().top+$from.outerHeight()/2
-    }
+    const fromAnchor = {
+        x: $from.left+$from.outerWidth()/2,
+        y: $from.top+$from.outerHeight()/2
+    };
     let toAnchor;
-
     // from bubble
     ctx.beginPath();
     ctx.strokeStyle = "#4be500";
@@ -30,11 +29,6 @@ connectBubbles = ($from, $to, fromRadius=50, to_rad=50, small_rad=15) => {
 
     // to loop
     $to.each(function() {
-        $from = document.$selected;
-        fromAnchor = {
-            x: $from.offset().left+$from.outerWidth()/2,
-            y: $from.offset().top+$from.outerHeight()/2
-        }
         if ($(this)[0] === $from[0]) {
             return 0;
         }
@@ -43,30 +37,30 @@ connectBubbles = ($from, $to, fromRadius=50, to_rad=50, small_rad=15) => {
             toAnchor = {
                 x: $(this).parent().parent().find('h3').offset().left-15,
                 y: $(this).parent().parent().find('h3').offset().top+$(this).parent().parent().find('h3').outerHeight()/2
-            }
+            };
             toRadius = 15;
         } else {
             toAnchor = {
                 x: $(this).offset().left+$(this).outerWidth()/2,
                 y: $(this).offset().top+$(this).outerHeight()/2
-            }
+            };
             toRadius = 50;
         }
 
         // calculate angle
-        const ang = Math.atan2(
+        const angle = Math.atan2(
             toAnchor.y-fromAnchor.y,
             toAnchor.x-fromAnchor.x
         );
         // calculate segment between
         const lineOrigin = {
-            'x': fromAnchor.x+Math.cos(ang)*fromRadius,
-            'y': fromAnchor.y+Math.sin(ang)*fromRadius
-        }
+            'x': fromAnchor.x+Math.cos(angle)*fromRadius,
+            'y': fromAnchor.y+Math.sin(angle)*fromRadius
+        };
         const lineEnd = {
-            'x': toAnchor.x-Math.cos(ang)*toRadius,
-            'y': toAnchor.y-Math.sin(ang)*toRadius
-        }
+            'x': toAnchor.x-Math.cos(angle)*toRadius,
+            'y': toAnchor.y-Math.sin(angle)*toRadius
+        };
 
         ctx = document.ctx;
 
@@ -75,27 +69,19 @@ connectBubbles = ($from, $to, fromRadius=50, to_rad=50, small_rad=15) => {
         ctx.strokeStyle = "#02acf3";
         ctx.lineWidth = 3;
         ctx.globalAlpha = 0.5;
-        ctx.moveTo(
-           lineOrigin.x,
-           lineOrigin.y
-        );
-        ctx.lineTo(
-            lineEnd.x,
-            lineEnd.y
-        );
+        ctx.moveTo(lineOrigin.x, lineOrigin.y);
+        ctx.lineTo(lineEnd.x, lineEnd.y);
         ctx.stroke();
-
         // glow target
         ctx.beginPath();
         ctx.arc(toAnchor.x,toAnchor.y,toRadius,0,2*Math.PI);
         ctx.strokeStyle="#32ccf3";
         ctx.innerGlow(15);
-
         document.ctx = ctx;
-    })
-}
+    });
+};
 
-CanvasRenderingContext2D.prototype.innerGlow = iterations => {
+CanvasRenderingContext2D.prototype.innerGlow = function(iterations) {
     this.save();
     this.globalAlpha = 0.08;
     this.clip();
@@ -104,9 +90,9 @@ CanvasRenderingContext2D.prototype.innerGlow = iterations => {
         this.stroke();
     }
     this.restore();
-}
+};
 
-CanvasRenderingContext2D.prototype.eclipseText = (text, x, y, iterations) => {
+CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iterations) {
     this.save();
     this.globalAlpha = 0.12;
     for (let i=1; i<=iterations; i++) {
@@ -117,7 +103,7 @@ CanvasRenderingContext2D.prototype.eclipseText = (text, x, y, iterations) => {
     const ctx = document.ctx;
     ctx.fillText(text, x, y+7);
     this.restore();
-}
+};
 
 $(document).ready(() => {
     // assign data from json tags
