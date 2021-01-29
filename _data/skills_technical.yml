@@ -1,58 +1,70 @@
-- title: Full-Stack Development
-  synonyms: ['full-stack']
-  enabled: false
-  years: 15
 - title: React
+  icon: fab fa-react
   enabled: true
   years: 1
   level: 3
 - title: Node.js
+  icon: fab fa-node
   related: ['javascript']
   enabled: true
   years: 5
   level: 6
 - title: Javascript
+  icon: fab fa-js-square
   synonyms: ['js']
   related: ['node-js','jquery','angular-js']
   enabled: true
   years: 15
   level: 8
 - title: mySQL
+  icon: fab fa-database
   enabled: true
   years: 12
   level: 7
 - title: Git
   synonyms: ['github']
+  icon: fab fa-git-alt
   enabled: false
   years: 3
   level: 5
 - title: PHP
+  icon: fab fa-php
   enabled: true
   years: 15
   level: 7
+- title: C++
+  icon: cpp.png
+  enabled: true
+  years: 25
+  level: 2
 - title: JQuery
+  icon: jquery-icon.png
   related: ['javascript']
   enabled: true
-  years: 10
-  level: 9
+  years: 25
+  level: 8
 - title: HTML
+  icon: fab fa-html5
   slug: html
   synonyms: ['html5']
   enabled: true
   years: 10
   level: 9
 - title: CSS
+  icon: fab fa-css3
   slug: css
   synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
   enabled: true
-  years: 8
+  years: 20
   level: 9
 - title: Unity
+  icon: fab icon-unity
   enabled: false
   related: ['c','shaders','glsl','real-time-graphics']
   years: 1
   level: 1
 - title: Flow-Based Programming
+  icon: fas fa-project-diagram
   synonyms: ['flow-based','node-based','quartz-composer']
   related: ['real-time-graphics','glsl','shaders','generative-art']
   years: 10
@@ -86,6 +98,10 @@
   synonyms: ['platform-migrations','migrated','migration','migrate']
   enabled: false
   level: 4
+- title: Full-Stack Development
+  synonyms: [ 'full-stack' ]
+  enabled: false
+  years: 15
 - title: Front-End Development
   slug: 'front-end'
   synonyms: ['front-end-development']
@@ -120,11 +136,13 @@
   years: 10
   level: 5
 - title: Video Production
+  icon: fas fa-film
   synonyms: ['editing','edited','video-production','production','video','film','filmed']
   enabled: true
   years: 5
   level: 3
 - title: Scrum
+  icon: scrum-icon.png
   synonyms: ['agile','scrum']
   enabled: true
   years: 7
@@ -159,12 +177,20 @@
   synonyms: ['adobe','adobe-photoshop','photoshop','illustrator','premier','adobe-premier','adobe-creative-cloud']
   enabled: true
   level: 8
+- title: Docker
+  icon: fab fa-docker
+  synonyms: ['containerization','docker-compose','compose','vagrant']
+  enabled: true
+  years: 5
+  level: 3
 - title: Photography
+  icon: fas fa-camera-retro
   synonyms: ['photographed','photographic','photos','photo']
   enabled: false
   years: 20
   level: 8
 - title: Event Production
+  icon: fas fa-music
   synonyms: ['event','production']
   years: 5
   enabled: false

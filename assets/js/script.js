@@ -27,8 +27,6 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
 
     document.ctx = ctx;
     document.$selected = $from;
-    console.log('From', $from);
-    console.log('To', $to);
     // to loop
     $to.each(function() {
         const $this = $(this);
@@ -39,17 +37,13 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
         }
 
         if ($this.is('.job .skills li')) {
-            console.log('job skills li');
             const $sectionHeading = $this.parent().parent().find('h3');
-            console.log('element: ', $sectionHeading);
             toAnchor = {
                 x: $sectionHeading.offset().left-15,
                 y: $sectionHeading.offset().top+$sectionHeading.outerHeight()/2
             };
-            console.log('toAnchor', toAnchor);
             toRadius = 15;
         } else {
-            console.log('else');
             toAnchor = {
                 x: $this.offset().left+$this.outerWidth()/2,
                 y: $this.offset().top+$this.outerHeight()/2
@@ -57,27 +51,22 @@ connectBubbles = function($from, $to, fromRadius=50, toRadius=50, smallRadius=15
             toRadius = 50;
         }
 
-        console.log(fromAnchor, toAnchor);
-
         // calculate angle
         const angle = Math.atan2(
             toAnchor.y-fromAnchor.y,
             toAnchor.x-fromAnchor.x
         );
-        // console.log(angle);
 
         // calculate segment between
         const lineOrigin = {
             'x': fromAnchor.x+Math.cos(angle)*fromRadius,
             'y': fromAnchor.y+Math.sin(angle)*fromRadius
         };
-        // console.log('Origin', lineOrigin);
 
         const lineEnd = {
             'x': toAnchor.x-Math.cos(angle)*toRadius,
             'y': toAnchor.y-Math.sin(angle)*toRadius
         };
-        // console.log('End', lineEnd);
 
         ctx = document.ctx;
 
