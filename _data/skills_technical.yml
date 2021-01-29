@@ -1,164 +1,200 @@
 - title: Full-Stack Development
   synonyms: ['full-stack']
   enabled: false
-  years: 10
+  years: 15
 - title: React
   enabled: true
   years: 1
+  level: 3
 - title: Node.js
   related: ['javascript']
   enabled: true
   years: 5
+  level: 6
 - title: Javascript
   synonyms: ['js']
   related: ['node-js','jquery','angular-js']
   enabled: true
   years: 15
+  level: 8
 - title: mySQL
   enabled: true
   years: 12
+  level: 7
 - title: Git
   synonyms: ['github']
-  enabled: true
+  enabled: false
   years: 3
+  level: 5
 - title: PHP
   enabled: true
   years: 15
+  level: 7
 - title: JQuery
   related: ['javascript']
   enabled: true
   years: 10
-- title: HTML5
+  level: 9
+- title: HTML
   slug: html
-  synonyms: ['html']
+  synonyms: ['html5']
   enabled: true
   years: 10
-- title: SCSS
+  level: 9
+- title: CSS
   slug: css
   synonyms: ['sass','scss','style-sheets','cascading-style-sheets','css3']
   enabled: true
   years: 8
+  level: 9
 - title: Unity
-  enabled: true
+  enabled: false
   related: ['c','shaders','glsl','real-time-graphics']
   years: 1
+  level: 1
 - title: Flow-Based Programming
   synonyms: ['flow-based','node-based','quartz-composer']
   related: ['real-time-graphics','glsl','shaders','generative-art']
   years: 10
-  enabled: true
+  enabled: false
+  level: 6
 - title: C#
   related: ['unity']
   synonyms: ['c']
-  enabled: true
+  enabled: false
   years: 1
+  level: 2
 - title: LAMP
   related: ['linux','apache','php','mysql','html5','scss']
-  enabled: true
+  enabled: false
   years: 12
+  level: 7
 - title: Linux
-  enabled: true
+  enabled: false
   years: 10
+  level: 5
 - title: Apache
   enabled: false
   years: 5
+  level: 3
 - title: RegEx
   synonyms: ['regular-expressions']
   enabled: false
   years: 20
+  level: 7
 - title: Platform Migration
   synonyms: ['platform-migrations','migrated','migration','migrate']
-  years: 20
+  enabled: false
+  level: 4
 - title: Front-End Development
   slug: 'front-end'
   synonyms: ['front-end-development']
   related: ['javascript','html','scss','jquery','angular-js']
   enabled: false
   years: 10
+  level: 5
 - title: Flash
   synonyms: ['actionscript']
-  enabled: true
+  enabled: false
   years:  5
+  level: 7
 - title: Real-Time Graphics
   synonyms: ['real-time','live','audio-reactive']
   related: ['generative-art','flow-based-programming']
-  enabled: true
+  enabled: false
   years: 10
+  level: 4
 - title: GLSL
   synonyms: ['opengl','glsl-shader','glsl-shaders']
   enabled: false
   years: 10
+  level: 3
 - title: Shaders
   synonyms: ['shader']
   enabled: false
   years: 10
-- title: Projection Mapping
-  synonyms: ['projector-mapping','mapping','mapped','projection-mapped','projection','projector']
+  level: 4
+- title: Lighting/Visuals
+  synonyms: ['projection-mapping','led-mapping','mapping','mapped','visuals','projection','lighting']
+  enabled: true
+  years: 10
+  level: 5
+- title: Video Production
+  synonyms: ['editing','edited','video-production','production','video','film','filmed']
   enabled: true
   years: 5
-- title: Video Editing
-  synonyms: ['editing','edited','edited-video']
-  enabled: false
-  years: 5
-- title: Agile Development
+  level: 3
+- title: Scrum
   synonyms: ['agile','scrum']
   enabled: true
   years: 7
+  level: 5
 - title: Creative Coding
   enabled: false
   years: 10
+  level: 0
 - title: Arduino
   enabled: false
   years: 3
+  level: 3
 - title: Object Oriented Programming
-  enabled: true
+  enabled: false
   years: 7
+  level: 4
 - title: MVC
   enabled: false
   years: 2
+  level: 3
 - title: Relational Databases
   enabled: false
   years: 8
+  level: 7
 - title: Content Management Systems
   slug: 'cms'
   synonyms: ['content-management-system','content-management-systems','content-management','joomla','drupal','wordpress']
-  enabled: true
+  enabled: false
+  level: 6
   years: 10
-- title: Adobe Creative Cloud
-  synonyms: ['adobe','adobe-photoshop','photoshop','illustrator','premier','adobe-premier']
+- title: Adobe Photoshop
+  synonyms: ['adobe','adobe-photoshop','photoshop','illustrator','premier','adobe-premier','adobe-creative-cloud']
   enabled: true
+  level: 8
 - title: Photography
-  synonyms: ['photographed','photographic','photos']
+  synonyms: ['photographed','photographic','photos','photo']
   enabled: false
-  years: 10
-- title: Video Production
-  synonyms: ['video','filmed','film']
-  enabled: false
-  years: 5
+  years: 20
+  level: 8
 - title: Event Production
   synonyms: ['event','production']
-  years: 10
+  years: 5
   enabled: false
+  level: 2
 - title: Generative Art
   synonyms: ['generative']
-  enabled: true
+  enabled: false
   years: 10
+  level: 5
 - title: Integration and Automation
   synonyms: ['integration','automation','integrated','integrate','automated']
-  enabled: true
+  enabled: false
   years: 5
+  level: 3
 - title: Experience Design
   synonyms: ['designed','user-experience','user-experience-design','xd','ux','ui','human-computer-interaction','interaction-design','interactive']
   enabled: false
   years: 5
+  level: 2
 - title: Rapid Prototyping
   synonyms: ['prototyped','iterated']
   enabled: false
   years: 3
+  level: 2
 - title: Virtual Environments
   synonyms: ['virtualized','vagrant','virtualbox','vm','virtual-machine','virtual-environment','aws','provisioning']
   years: 5
   enabled: false
+  level: 3
 - title: Spline Reticulation
   years: 25
-  enabled: true
+  enabled: false
+  level: 10
