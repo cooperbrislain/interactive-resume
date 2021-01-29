@@ -20,6 +20,7 @@
     - description: Analyzed failed units for causes and __revised__ design to __reduce or eliminate rate of failure__.
     - description: Proposed design recommendations based on common challenges encountered in __event production__.
   enabled: false
+  
 - title: VJ, Visual Artist, Creative Technologist
   company: Vektor Selektor
   type: artist
@@ -28,7 +29,21 @@
   from: 2011-01-01
   to: present
   tags: ['part-time','gig','art','production','creative','programming']
-  skills: ['adobe-creative-cloud','arduino','unity','flow-based-programming','c','real-time-graphics-for-live-events','glsl-shaders','quartz-composer','projection-mapping','photography','generative-art','video-editing','blender','glsl','shaders','experience-design']
+  skills: ['adobe-creative-cloud',
+           'arduino',
+           'unity',
+           'flow-based-programming',
+           'c',
+           'real-time-graphics-for-live-events',
+           'glsl-shaders',
+           'quartz-composer',
+           'projection-mapping',
+           'photography',
+           'generative-art',
+           'video-editing','
+           'blender',
+           'glsl','shaders',
+          ]
   links:
       - icon: fab fa-vimeo
         url: https://www.vimeo.com/vektorselektor
@@ -41,7 +56,12 @@
       - icon: fab fa-facebook
         url: https://www.facebook.com/vektorselektor
         title: VektorSelektor on Facebook
-  tech: ['git','unity','c#','javascript','glsl','quartz composer']
+  tech: ['git',
+         'unity',
+         'c#',
+         'javascript',
+         'glsl',
+         'quartz composer']
   responsibilities:
     - description: Created audio-reactive, __realtime visual content__ for live events using __Unity__, __Quartz Composer__, __GLSL Shaders__ and __Processing__.
     - description: Design __human-computer interaction__ schemes for controlling live visuals using control surfaces and gesture devices, including Wii Remote, XBox Kinect, LEAP Motion, and various MIDI controllers.
@@ -49,10 +69,18 @@
     - description: Solve complex technical challenges on location, using limited available resources.
     - description: Performed original content live before audiences of up to 10,000.
   enabled: true
+
 - title: Software Engineer
   company: BetterHelp
   type: full-time
-  skills: ['adobe-creative-cloud','php','lamp','linux','apache','mysql','html5','javascript','regex','full-stack-development','git','front-end-development','agile-development','trello','analytics','integration-and-automation','refactoring','scalability','virtual-environments','vagrant']
+  skills: ['full-stack-development',
+           'php',
+           'mysql',
+           'html5',
+           'javascript',
+           'git',
+           'scrum'
+          ]
   logo: /assets/svg/watermarks/betterhelp.svg
   url: https://www.betterhelp.com
   location: Sunnyvale, CA
@@ -66,6 +94,7 @@
     - description: __Integrated__ billing system with Paypal's __Braintree API__, standardizing __payment__ flow and allowing acceptance of new payment methods.
     - description: Created super cool __Slackbot__ integrations and __emojis__ to improve team communication and morale.
   enabled: true
+
 - title: Programmer
   company: Granite Solutions for Visions in Education
   type: contract
@@ -75,7 +104,17 @@
   from: 2015-03-01
   to: 2016-08-01
   tags: ['full-time','programming','full-stack']
-  skills: ['adobe-creative-cloud','virtual-environments','full-stack-development','regex','wordpress','content-management-systems','trello','agile-development','scrum','git','angular-js','php','html5','mysql','scss','platform-migration']
+  skills: [
+      'php',
+      'mysql',
+      'angular',
+      'html5',
+      'css',
+      'sass',
+      'wordpress',
+      'scrum',
+      'git',
+      ]
   responsibilities:
     - description: Modernized student information portal.
     - description: Standardized course catalog and event listings in __content management system__.
@@ -84,17 +123,32 @@
     - description: Audited __git__ repository and codebase diffs to determine points at which undesirable behavior was introduced.
 #    - description: Developed strategies and solutions to avoid future complications.
   enabled: true
+
 - title: Web Developer
-  company: self
+  company: Freelance
   type: freelance
   clients: Taylor Online Marketing, Lana Turner Journal
-  logo: /assets/svg/watermarks/tolm.svg
-  url: https://www.tolm.co
-  location: Aptos, CA
+#  logo: /assets/svg/watermarks/tolm.svg
+#  url: https://www.tolm.co
+  location: Santa Cruz, CA
   from: 2010-03-01
   to: 2017-12-31
   tags: ['part-time','freelance','full-stack','programming','engineer']
-  skills: ['virtual-environments','system-administration','php','lamp','mysql','joomla','wordpress','git','full-stack-development','javascript','jquery','front-end-development','flash','content-management-systems','linux','apache','nginx','system-administration','html5','scss','regex','adobe-creative-cloud','platform-migration','integration-and-automation','rest','api','plesk']
+  skills: ['php',
+           'mysql',
+           'git',
+           'javascript',
+           'jquery',
+           'html5',
+           'css',
+           'sass',
+           'flash',
+           'joomla',
+           'wordpress',
+           'system-administration',
+           'adobe-photoshop',
+           'restful-apis'
+          ]
   responsibilities:
     - description: Designed __mySQL__ database for auto-shipping leads.
     - description: Built __RESTful__ API for partners and affiliates.
@@ -103,6 +157,7 @@
     - description: Designed __tools__ for the reporting and __visualization__ of lead data.
     - description: Improved __efficiency__ and __agility__ by __automating__ frequent or time-consuming tasks.
   enabled: true
+
 - title: Software Engineer
   company: Insignia Technology Services
   type: contract
@@ -110,14 +165,22 @@
   tags: ['full-time','engineer','programming','front-end']
   skills: ['flash','actionscript','c','asp.net']
   responsibilities:
+    - description: Built interactive flash interfaces for various training and testing modules.
+    - description: Added right-to-left language support to all training modules.
   enabled: true
+
 - title: Software Engineer
   company: CgrafX
   location: Santa Clara, CA
   tags: ['full-stack']
-  skills: ['php','mysql','flash','actionscript','css3','full-stack-development']
+  skills: ['php',
+           'mysql',
+           'flash',
+           'actionscript',
+           'css']
   responsibilities:
   enabled: false
+
 - title: Associate Engineer
   company: Design Reactor
   type: full-time
@@ -127,12 +190,18 @@
   from: 2008-03-01
   to: 2008-08-15
   tags: ['full-time','engineer','creative','programming','full-stack']
-  skills: ['adobe-creative-cloud','flash','actionscript','css','lamp','php','javascript','expression-engine','jquery','content-management-systems']
+  skills: ['flash',
+           'css',
+           'php',
+           'javascript',
+           'jquery',
+           'adobe-photoshop']
   responsibilities:
     - description: Developed interactive __Flash__ landing page for __Disney Parks 2008__ campaign.
     - description: Produced pixel-perfect web materials for marketing campaigns, adhering to critical style guidelines.
     - description: Created rich, interactive user interface for agency portfolio, using __Actionscript__ and __Expression Engine__.
   enabled: true
+
 - title: Programmer L2
   company: Jupiter Hosting
   type: full-time
@@ -142,11 +211,17 @@
   from: 2007-05-01
   to: 2007-12-15
   tags: ['full-stack','engineer','programming','full-time']
-  skills: ['adobe-creative-cloud','content-management-systems','php','lamp','mysql','javascript','joomla','flash','actionscript','full-stack-development']
+  skills: ['php',
+           'mysql',
+           'javascript',
+           'flash',
+           'html',
+           'css',]
   responsibilities:
     - description: Developed custom modules and features for __Joomla__-based __content management system__.
     - description: Optimized __mySQL__ queries for highly trafficked websites.
   enabled: true
+
 - title: Support Technician
   company: UCSC Media Services
   type: part-time
@@ -155,7 +230,9 @@
   from: 2006-09-01
   to: 2007-06-15
   tags: ['part-time','production','technical']
-  skills: ['production','technical-support','projection-mapping','video-production','video-editing']
+  skills: ['technical-support',
+           'video-production',
+           'video-editing']
   responsibilities:
     - description: Set up and struck media equipment for __special events__ and academic __productions__.
     - description: Provided __technical support__ to students and faculty in the use of __media equipment__ including __projectors__, __video cameras__, __audio systems__, and __computers__
@@ -163,6 +240,7 @@
   #  - description: Operated __service vans__ on campus while observing high safety standards and awareness in accordance with an active campus with high pedestrian traffic.
   #  - description: Held keys and access codes to secure areas, media cabinets, and equipment closets throughout the university campus.
   enabled: true
+
 - title: Event Crew
   company: Plan-It Interactive
   type: hourly
@@ -172,7 +250,8 @@
   from: 2000-06-01
   to: 2000-08-30
   tags: ['part-time','production']
-  skills: ['event-production','production','safety']
+  skills: ['event-production',
+           'safety']
   responsibilities:
     - description: Set up and struck large __interactive play systems__ for __special events__.
 #    - description: Regularly loaded and unloaded __heavy__ equipment.
@@ -180,26 +259,41 @@
     - description: Performed on-site __troubleshooting and repair__ of R/C cars.
 #    - description: Drove box trucks with trailers on highway to and from events.
   enabled: true
-- title: Support Technician
+
+- title: Mac Technical Support
   company: InterX Technologies
   location: Napa, CA
   type: part-time
   from: 1997-09-15
   to: 1998-01-15
   tags: ['part-time','technical']
-  skills: ['adobe-photoshop','technical-support','h4x0ring','javascript','html','apache','pop3','tcp-ip','windows','macos']
+  skills: ['technical-support',
+           'h4x0ring',
+           'javascript',
+           'html',
+           'perl',
+           'shell-scripting',
+           'tcp-ip',
+           'windows',
+           'macos',
+           'linux',
+           'adobe-photoshop']
   responsibilities:
     - description: Provided support to users of __MacOS__ System 7/8 as well as __Windows__ 95 experiencing dial-up internet connectivity issues.
     - description: Assisted web designer with updates to company and customer websites.
     - description: Taught introductory class for new Internet users.
   enabled: true
+
 - title: Mentor
   company: CoreMUD
   type: volunteer
   from: 1996-01-01
   to: 2000-01-01
   tags: ['part-time','programming']
-  skills: ['c','game-development','capitalism','adobe-photoshop']
+  skills: ['c',
+           'game-development',
+           'capitalism',
+           'adobe-photoshop']
   responsibilities:
     - description: Created in-game stories, experiences, and spaces for text-based sci-fi online roleplaying game.
     - description: Mentored new coders in observance of good coding practices, story and game-world guidelines, balance, and quality.
