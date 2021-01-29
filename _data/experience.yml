@@ -5,22 +5,27 @@
   url: https://www.vektorselektor.com
   from: 2011-01-01
   to: present
-  tags: ['part-time','gig','art','production','creative','programming']
-  skills: ['adobe-creative-cloud',
-           'arduino',
-           'unity',
-           'flow-based-programming',
-           'c',
-           'real-time-graphics-for-live-events',
-           'glsl-shaders',
-           'quartz-composer',
-           'projection-mapping',
-           'photography',
-           'generative-art',
-           'video-editing','
-           'blender',
-           'glsl','shaders',
-          ]
+  tags:
+    - art
+    - production
+    - creative
+    - programming
+    - creative-coding
+    - graphics
+  skills:
+    - event-visuals
+    - projection-mapping
+    - led-mapping
+    - c++
+    - glsl
+    - unity
+    - arduino
+    - event-visuals
+    - flow-based-programming
+    - photography,
+    - adobe-photoshop
+    - video-production
+    - generative-art,
   links:
       - icon: fab fa-vimeo
         url: https://www.vimeo.com/vektorselektor

@@ -107,7 +107,7 @@ CanvasRenderingContext2D.prototype.eclipseText = function(text, x, y, iterations
     this.restore();
 };
 
-$(document).ready(() => {
+$(document).ready(function() {
     // assign data from json tags
     $('[data-json]').each(() => {
         $(this).data($(this).data('json'));
@@ -135,11 +135,13 @@ $(document).ready(() => {
             });
         }
     });
+
     // set up canvas
-    $('<canvas id="canvas">').appendTo('body');
+    $('<canvas id="canvas">').appendTo('body'); // todo: change this to append before scripts?
+
     const canvas = document.getElementById('canvas');
-    canvas.width = window.innerWidth;
-    canvas.height = $(document).height();
+    canvas.width = document.body.clientWidth;
+    canvas.height = document.body.clientHeight;
     let ctx = document.getElementById('canvas').getContext('2d');
     document.ctx = ctx;
     let devicePixelRatio = window.devicePixelRatio || 1;
@@ -162,7 +164,7 @@ $(document).ready(() => {
     ctx.lineWidth=3;
     document.ctx = ctx;
 
-    let $skills = $('#technical-skills+ul>li, strong[data-skill]');
+    const $skills = $('#technical-skills+ul>li, strong[data-skill]');
     $skills.each(function(index) {
         let skillName = $(this).data('skill');
         /*$(this).on('mouseenter', function() {
