@@ -9,7 +9,7 @@ COOPER BRISLAIN
 
 > Full-Stack Software Engineer looking to make an impact building systems that facilitate better discourse on social media. 
  
-## TECHNICAL SKILLS
+## SKILLS
 
 {% include tag-list.html items=site.data.skills_technical %}
 

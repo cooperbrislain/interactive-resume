@@ -3,6 +3,9 @@
         {% if item.enabled %}
             {% if item.slug %}
                 <li data-skill="{{ item.slug }}" data-json="{{ item | jsonify | xml_escape }}">
+                    {% if item.icon %}
+                        <i class="{{ item.icon }}"></i>
+                    {% endif %}
                     {{ item.title }}
                 </li>
             {% else %}

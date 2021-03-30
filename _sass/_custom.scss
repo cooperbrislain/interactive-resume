@@ -304,3 +304,13 @@ canvas {
     left: 0;
     pointer-events: none;
 }
+
+li[data-skill] {
+    width: auto;
+    display: inline-block;
+    i {
+        ::after {
+            content: "<br />";
+        }
+    }
+}
